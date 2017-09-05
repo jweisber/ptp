@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Probability Through Paradox</title>
+  <meta name="description" content="Probability Through Paradox">
+  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Probability Through Paradox" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Probability Through Paradox" />
+  
+  
+  
+
+<meta name="author" content="Jonathan Weisberg">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="the-monty-hall-problem.html">
+<link rel="next" href="three-prisoners.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="custom.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="the-monty-hall-problem.html"><a href="the-monty-hall-problem.html"><i class="fa fa-check"></i><b>1</b> The Monty Hall Problem</a><ul>
+<li class="chapter" data-level="1.1" data-path="ask-marilyn.html"><a href="ask-marilyn.html"><i class="fa fa-check"></i><b>1.1</b> Ask Marilyn</a></li>
+<li class="chapter" data-level="1.2" data-path="three-prisoners.html"><a href="three-prisoners.html"><i class="fa fa-check"></i><b>1.2</b> Three Prisoners</a></li>
+<li class="chapter" data-level="1.3" data-path="monty-hall-again.html"><a href="monty-hall-again.html"><i class="fa fa-check"></i><b>1.3</b> Monty Hall Again</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Probability Through Paradox</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="ask-marilyn" class="section level2">
+<h2><span class="header-section-number">1.1</span> Ask Marilyn</h2>
+<p>Marilyn vos Savant has the highest IQ ever recorded. At least, the <em>Guinness Book of Records</em> said so until they dropped this category in 1990 on the grounds that IQ tests weren’t reliable enough. But we’ll come back to IQ-bashing later. What I’m getting at is: she’s famous for being smart.</p>
+<p>In her column for <em>Parade</em> magazine, called “Ask Marilyn”, she answers hard questions from readers: puzzles, brain teasers, philosophical quandaries… you name it. When she published her answer to our first puzzle, a bunch of people with fancy credentials wrote in to complain she was wrong. Here was the question:</p>
+<blockquote>
+<p>Suppose you’re on a game show, and you’re given the choice of three doors. Behind one door is a car, behind the others, goats. You pick a door, say #1, and the host, who knows what’s behind the doors, opens another door, say #3, which has a goat. He says to you, “Do you want to pick door #2?” Is it to your advantage to switch your choice of doors? —<em>Craig F. Whitaker, Columbia, Maryland</em></p>
+</blockquote>
+<p>If you’re like me, your gut says it doesn’t matter. There are two doors left; one has the car behind it; so they both have the same one-in-two chance of being a winner. Flip a coin, stick or move. It doesn’t matter.</p>
+<p>But Marilyn says you should switch! And you know what? She’s right.</p>
+<p>Why? Because the host knows where the car is, and he’s not going to just show it to you. That means he effectively just told you it’s behind behind door #2, unless you got lucky with your first pick of door #1. Because unless you got lucky on your first pick, his choice of which door to open was forced. He had to open door #3 to avoid showing you the car behind door #2. Unless, again, you got lucky on your first pick. But that’s only a one-in-three chance. So there’s a two-in-three chance door #2 has the car.</p>
+<p>Still don’t believe me? It’s okay, that’s normal.</p>
+<p>Here’s how Marilyn convinced her readers to switch. Imagine the same game, but with 100 doors. You pick door #1, and the host opens every single other door except one, let’s say #42. What do you think now, is it just a fifty-fifty shot? No way! Unless you got <em>very</em> lucky on your first pick and the car is behind door #1, you’ve just learned that the lucky door is #42.</p>
+<p><em>Still</em> don’t believe me?? That’s okay, that’s normal too! One of the most famous mathematicians of the 20th century wasn’t convinced either. Paul Erdős published over 1,500 papers in mathematics, more than any other mathematician ever. A lot of them were even advanced work in probability theory! But when his friend, Andrew Vázsonyi, told him about this puzzle, he wasn’t having it. He kept asking Vázsonyi for a better explanation why he should switch. Vázsonyi even showed him a computer simulation he’d made of the game, where switching doors won the car two-thirds of the time. But Erdős still wanted a pure, mathematical explanation.</p>
+<p>(Fun facts about Erdős by the way: he basically lived for math. He would travel the world, visiting friends at their houses, often uninvited. He would drink coffee (and, eventually, take methamphetamine) and do math with his host, until whatever problem they solved whatever problem the host had been working on before Erdős showed up. Then he’d move on to the next house, and the next problem. He was such a character, and so ubiquitous, that mathematicians make a game of tracing their connection to him. Every mathematician has an “Erdős number”. It’s kind of like six degrees of Kevin Bacon. Erdős (and only Erdős) has the number zero. People who coauthored papers with Erdős have number 1. People who coauthored with them have number 2. Their coauthors have number 3, and so on.)</p>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="the-monty-hall-problem.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="three-prisoners.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "night",
+"family": "serif",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+<!-- </html> -->

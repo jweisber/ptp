@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="the-monty-hall-problem.html">
-
+<link rel="prev" href="ask-marilyn.html">
+<link rel="next" href="monty-hall-again.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -64,7 +64,9 @@
 <ul class="summary">
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
 <li class="chapter" data-level="1" data-path="the-monty-hall-problem.html"><a href="the-monty-hall-problem.html"><i class="fa fa-check"></i><b>1</b> The Monty Hall Problem</a><ul>
-<li class="chapter" data-level="1.1" data-path="three-prisoners.html"><a href="three-prisoners.html"><i class="fa fa-check"></i><b>1.1</b> Three Prisoners</a></li>
+<li class="chapter" data-level="1.1" data-path="ask-marilyn.html"><a href="ask-marilyn.html"><i class="fa fa-check"></i><b>1.1</b> Ask Marilyn</a></li>
+<li class="chapter" data-level="1.2" data-path="three-prisoners.html"><a href="three-prisoners.html"><i class="fa fa-check"></i><b>1.2</b> Three Prisoners</a></li>
+<li class="chapter" data-level="1.3" data-path="monty-hall-again.html"><a href="monty-hall-again.html"><i class="fa fa-check"></i><b>1.3</b> Monty Hall Again</a></li>
 </ul></li>
 </ul>
 
@@ -84,18 +86,35 @@
 
             <section class="normal" id="section-">
 <div id="three-prisoners" class="section level2">
-<h2><span class="header-section-number">1.1</span> Three Prisoners</h2>
+<h2><span class="header-section-number">1.2</span> Three Prisoners</h2>
 <p>In my last year as an undergraduate I took a class that changed my life. It literally defined my career as a philosopher. To this day, my career is devoted to the concepts, tools, and problems I met there for the first time.</p>
-
-</div>
+<p>One of those problems, which my professor assigned as homework, goes like this:</p>
+<blockquote>
+<p>Three prisoners, A, B, and C, with apparently equally good records have applied for parole. The parole board has decided to release two of the three, and the prisoners know this but not which two. A warder friend of prisoner A knows who will be released. Prisoner A realizes that it would be unethical to ask the warder if he, A, is to be released, but thinks of asking for the name of one prisoner other than himself who is to be released. He thinks that before he asks, his chances of release are 2/3. He thinks that if the warder says “B will be released,” his own chances have now gone down to 1/2, because either A and B or B and C are to be released. And so A decided not to reduce his chances by asking. However, A is mistaken in this calculations. Explain.</p>
+</blockquote>
+<p>This homework problem got me so turned inside out, I ended up writing a computer program to run simulations of it! Just like Vázsonyi. (Fools and wise men think alike, I guess.)</p>
+<p>Well, my professor laughed. He called my computer simulation an “empirical” approach, and he didn’t mean it as a compliment. Like Erdős, he wanted me to use <em>reason</em>, not a brute-force, computerized experiment.</p>
+<p>Well, here’s one reasoned argument that prisoner A is mistaken. By A’s logic, their chances would also go down to 1/2 if the warder identified C instead of B. Because then there would be only one more prisoner to be released, with two candidates remaining: A and B. But if A’s chances would be the same no matter what the warder said, then the warder’s response couldn’t possibly be informative. If your chances of having a certain disease are the same whether a certain medical test comes up positive or not, then the test must be useless, right?</p>
+<p>This argument is right as far as it goes. But it doesn’t really explain where the prisoner went wrong. It just tells us she must’ve gone wrong <em>somewhere</em>. But where?</p>
+<p>I think the correct explanation involves a famous precept known as <em>The Principle of Total Evidence</em>. It says pretty much what it sounds like: to get the true probability of something, you have to take account of <em>all</em> the evidence you have. And the warder wouldn’t just be telling her that B will be released. She would also be telling her, implicitly, that the warder chose to identify B as one of the released prisoners.</p>
+<p>It’s really counterintuitive that this extra information makes a difference. But it turns out to make all the difference in the world. Here’s one way to see how.</p>
+<p>A knows B can’t be the pardoned prisoner, because the warder said so. So there are two possibilities remaining:</p>
+<ul>
+<li>A is the pardoned prisoner.</li>
+<li>C is the pardoned prisoner.</li>
+</ul>
+<p>In the first scenario, where A has been pardoned, the guard had a choice between identifying B or C in her response. She chose to identify B, but she could have identified C instead. But in the second scenario, the guard had no choice. She had to name B, since she couldn’t tell A that she’s still condemned.</p>
+<p>So when the guard says “B is still condemned”, her report is exactly what you’d expect in the second scenario, where C was pardoned. Whereas in the first scenario, where A was pardoned, the guard’s report was half as likely. She could just as easily have named C instead. So the guard’s report fits twice as well with the second scenario. And that’s why A’s chance of survival is still 1/3.</p>
+<p>It helps to visualize the idea. Start with the king’s decision about who to pardon. He chooses one of the three prisoners at random, so each has the same 1/3 chance: [Tree Diagram] Then consider the guard’s options. If A is pardoned, she can choose to name either B or C. But if B is pardoned, she has to name C—otherwise she’ll give away A’s fate. And likewise, she has to name C if B is pardoned. So there are two possible outcomes where the guard names B: [Tree Diagram 2] And look! One of them is half as likely as the other, namely the one where A was pardoned. So when the guard names B, A’s chance of having been pardoned is half that of still being condemned. In other words, her chance of survival is 1/3, versus a 2/3 chance of still being condemned.</p>
+<p>So A’s chances really do stay fixed. The warden’s report is no reprieve. It makes no difference to A’s chances, as seems right.</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="the-monty-hall-problem.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="ask-marilyn.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="monty-hall-again.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
