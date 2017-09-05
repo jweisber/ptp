@@ -1,0 +1,9 @@
+bookdown::gitbook:
+  css: custom.css
+  config:
+    toc:
+      collapse: section
+    fontsettings:
+      theme: night
+      family: serif
+      size: 2

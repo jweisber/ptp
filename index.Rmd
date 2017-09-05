@@ -1,0 +1,22 @@
+---
+title: "Probability Through Paradox"
+author: "Jonathan Weisberg"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+#documentclass: book
+#bibliography: [book.bib, packages.bib]
+#biblio-style: apalike
+#link-citations: yes
+---
+
+# Preface {-}
+
+This book introduces probability by way of its many paradoxes.
+
+When I first had the idea to write a book like this, I sat down to list as many puzzles and paradoxes of probability as I could think of off the top of my head. There were over twenty-five, right off the bat. After a bit more thought and discussion with friends on facebook, the number grew to well over thirty.
+
+I had always known there were plenty of probabilistic puzzles around. But I was still surprised to see them all listed in one place. And then I was struck by how much of what I know about probability is bound up with the items on that least. So I decided the book was a good idea. You can learn a lot about probability just by getting to know its paradoxes.
+
+It's also a good way to learn about probability because puzzles and paradoxes are a common frame of reference for experts who talk and write about probability. They even serve as a shibboleth sometimes; fluency with these paradoxes is the secret-handshake by which initiates identify their peers.
+
+These considerations are especially true of philosophical approaches to probability, but they also apply to its mathematical and applied facets. So, although our approach will be primarily philosophical, I hope that you will find plenty of interest in this book whatever your orientation.

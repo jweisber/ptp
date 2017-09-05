@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Probability Through Paradox</title>
+  <meta name="description" content="Probability Through Paradox">
+  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Probability Through Paradox" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Probability Through Paradox" />
+  
+  
+  
+
+<meta name="author" content="Jonathan Weisberg">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="bayesian-solutions.html">
+<link rel="next" href="bertrands-paradox.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="custom.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="the-monty-hall-problem.html"><a href="the-monty-hall-problem.html"><i class="fa fa-check"></i><b>1</b> The Monty Hall Problem</a><ul>
+<li class="chapter" data-level="1.1" data-path="three-prisoners.html"><a href="three-prisoners.html"><i class="fa fa-check"></i><b>1.1</b> Three Prisoners</a></li>
+<li class="chapter" data-level="1.2" data-path="monty-hall-again.html"><a href="monty-hall-again.html"><i class="fa fa-check"></i><b>1.2</b> Monty Hall Again</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="the-taxicab-problem.html"><a href="the-taxicab-problem.html"><i class="fa fa-check"></i><b>2</b> The Taxicab Problem</a><ul>
+<li class="chapter" data-level="2.1" data-path="green-cabblue-cab.html"><a href="green-cabblue-cab.html"><i class="fa fa-check"></i><b>2.1</b> Green Cab/Blue Cab</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="confirmation.html"><a href="confirmation.html"><i class="fa fa-check"></i><b>3</b> Confirmation</a><ul>
+<li class="chapter" data-level="3.1" data-path="the-raven-paradox.html"><a href="the-raven-paradox.html"><i class="fa fa-check"></i><b>3.1</b> The Raven Paradox</a></li>
+<li class="chapter" data-level="3.2" data-path="h-d-confirmation.html"><a href="h-d-confirmation.html"><i class="fa fa-check"></i><b>3.2</b> H-D Confirmation</a></li>
+<li class="chapter" data-level="3.3" data-path="the-tacking-problem.html"><a href="the-tacking-problem.html"><i class="fa fa-check"></i><b>3.3</b> The Tacking Problem</a></li>
+<li class="chapter" data-level="3.4" data-path="bayesian-confirmation.html"><a href="bayesian-confirmation.html"><i class="fa fa-check"></i><b>3.4</b> Bayesian Confirmation</a></li>
+<li class="chapter" data-level="3.5" data-path="bayesian-solutions.html"><a href="bayesian-solutions.html"><i class="fa fa-check"></i><b>3.5</b> Bayesian Solutions</a></li>
+<li class="chapter" data-level="3.6" data-path="taking-stock.html"><a href="taking-stock.html"><i class="fa fa-check"></i><b>3.6</b> Taking Stock</a></li>
+<li class="chapter" data-level="3.7" data-path="bertrands-paradox.html"><a href="bertrands-paradox.html"><i class="fa fa-check"></i><b>3.7</b> Bertrand’s Paradox</a></li>
+<li class="chapter" data-level="3.8" data-path="the-grue-paradox.html"><a href="the-grue-paradox.html"><i class="fa fa-check"></i><b>3.8</b> The Grue Paradox</a></li>
+<li class="chapter" data-level="3.9" data-path="the-precisifiers.html"><a href="the-precisifiers.html"><i class="fa fa-check"></i><b>3.9</b> The Precisifiers</a></li>
+<li class="chapter" data-level="3.10" data-path="the-posers.html"><a href="the-posers.html"><i class="fa fa-check"></i><b>3.10</b> The Posers</a></li>
+<li class="chapter" data-level="3.11" data-path="the-launderers.html"><a href="the-launderers.html"><i class="fa fa-check"></i><b>3.11</b> The Launderers</a></li>
+<li class="chapter" data-level="3.12" data-path="the-mysterians.html"><a href="the-mysterians.html"><i class="fa fa-check"></i><b>3.12</b> The Mysterians</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Probability Through Paradox</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="taking-stock" class="section level2">
+<h2><span class="header-section-number">3.6</span> Taking Stock</h2>
+<p>Lorem ipsum dolor sit amet…</p>
+<p>\chapter{The Problem of Priors</p>
+<p>Lorem ipsum dolor sit amet…</p>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="bayesian-solutions.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="bertrands-paradox.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "night",
+"family": "serif",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+<!-- </html> -->
