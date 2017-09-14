@@ -68,6 +68,15 @@
 <li class="chapter" data-level="1.2" data-path="three-prisoners.html"><a href="three-prisoners.html"><i class="fa fa-check"></i><b>1.2</b> Three Prisoners</a></li>
 <li class="chapter" data-level="1.3" data-path="monty-hall-again.html"><a href="monty-hall-again.html"><i class="fa fa-check"></i><b>1.3</b> Monty Hall Again</a></li>
 </ul></li>
+<li class="chapter" data-level="2" data-path="the-gamblers-fallacy.html"><a href="the-gamblers-fallacy.html"><i class="fa fa-check"></i><b>2</b> The Gambler’s Fallacy</a><ul>
+<li class="chapter" data-level="2.1" data-path="independence.html"><a href="independence.html"><i class="fa fa-check"></i><b>2.1</b> Independence</a></li>
+<li class="chapter" data-level="2.2" data-path="bias.html"><a href="bias.html"><i class="fa fa-check"></i><b>2.2</b> Bias</a></li>
+<li class="chapter" data-level="2.3" data-path="fairness.html"><a href="fairness.html"><i class="fa fa-check"></i><b>2.3</b> Fairness</a></li>
+<li class="chapter" data-level="2.4" data-path="the-gamblers-fallacy-1.html"><a href="the-gamblers-fallacy-1.html"><i class="fa fa-check"></i><b>2.4</b> The Gambler’s Fallacy</a></li>
+<li class="chapter" data-level="2.5" data-path="fallacies-vs-misfortunes.html"><a href="fallacies-vs-misfortunes.html"><i class="fa fa-check"></i><b>2.5</b> Fallacies vs. Misfortunes</a></li>
+<li class="chapter" data-level="2.6" data-path="the-hot-hand.html"><a href="the-hot-hand.html"><i class="fa fa-check"></i><b>2.6</b> The Hot Hand</a></li>
+<li class="chapter" data-level="2.7" data-path="girls-revisited.html"><a href="girls-revisited.html"><i class="fa fa-check"></i><b>2.7</b> Girls Revisited</a></li>
+</ul></li>
 </ul>
 
       </nav>
@@ -90,23 +99,36 @@
 <p>In my last year as an undergraduate I took a class that changed my life. It literally defined my career as a philosopher. To this day, my career is devoted to the concepts, tools, and problems I met there for the first time.</p>
 <p>One of those problems, which my professor assigned as homework, goes like this:</p>
 <blockquote>
-<p>Three prisoners, A, B, and C, with apparently equally good records have applied for parole. The parole board has decided to release two of the three, and the prisoners know this but not which two. A warder friend of prisoner A knows who will be released. Prisoner A realizes that it would be unethical to ask the warder if he, A, is to be released, but thinks of asking for the name of one prisoner other than himself who is to be released. He thinks that before he asks, his chances of release are 2/3. He thinks that if the warder says “B will be released,” his own chances have now gone down to 1/2, because either A and B or B and C are to be released. And so A decided not to reduce his chances by asking. However, A is mistaken in this calculations. Explain.</p>
+<p>Three prisoners, A, B, and C, are condemned to die in the morning. But the king decides in the night to pardon one of them. He makes his choice at random and communicates it to the guard, who is sworn to secrecy. She can only tell the prisoners that one of them will be released at dawn.</p>
+<p>Prisoner A welcomes the news, as he now has a 1/3 chance of survival. Hoping to go even further, he says to the guard, “I know you can’t tell me whether I am condemned or pardoned. But at least one other prisoner must still be condemned, so can you just name one who is?”. The guard replies (truthfully) that B is still condemned. “Ok”, says A, “then it’s either me or C who was pardoned. So my chance of survival has gone up to 1/2”.</p>
+<p>Unfortunately for A, he is mistaken. But how?</p>
 </blockquote>
 <p>This homework problem got me so turned inside out, I ended up writing a computer program to run simulations of it! Just like Vázsonyi. (Fools and wise men think alike, I guess.)</p>
 <p>Well, my professor laughed. He called my computer simulation an “empirical” approach, and he didn’t mean it as a compliment. Like Erdős, he wanted me to use <em>reason</em>, not a brute-force, computerized experiment.</p>
-<p>Well, here’s one reasoned argument that prisoner A is mistaken. By A’s logic, their chances would also go down to 1/2 if the warder identified C instead of B. Because then there would be only one more prisoner to be released, with two candidates remaining: A and B. But if A’s chances would be the same no matter what the warder said, then the warder’s response couldn’t possibly be informative. If your chances of having a certain disease are the same whether a certain medical test comes up positive or not, then the test must be useless, right?</p>
+<p>Well, here’s one reasoned argument that prisoner A is mistaken. By A’s logic, their chances would also go down to 1/2 if the guard identified C instead of B. Because then there would be only one more prisoner to be released, with two candidates remaining: A and B. But if A’s chances would be the same no matter what the guard said, then the guard’s response couldn’t possibly be informative. If your chances of having a certain disease are the same whether a certain medical test comes up positive or not, then the test must be useless, right?</p>
 <p>This argument is right as far as it goes. But it doesn’t really explain where the prisoner went wrong. It just tells us she must’ve gone wrong <em>somewhere</em>. But where?</p>
-<p>I think the correct explanation involves a famous precept known as <em>The Principle of Total Evidence</em>. It says pretty much what it sounds like: to get the true probability of something, you have to take account of <em>all</em> the evidence you have. And the warder wouldn’t just be telling her that B will be released. She would also be telling her, implicitly, that the warder chose to identify B as one of the released prisoners.</p>
+<p>I think the correct explanation involves a famous precept known as <em>The Total Evidence Requirement</em>. It says pretty much what it sounds like: to get the true probability of something, you have to take account of <em>all</em> the evidence you have. And the guard wouldn’t just be telling her that B will be released. She would also be telling her (implicitly) that the guard chose to identify B as one of the released prisoners.</p>
 <p>It’s really counterintuitive that this extra information makes a difference. But it turns out to make all the difference in the world. Here’s one way to see how.</p>
-<p>A knows B can’t be the pardoned prisoner, because the warder said so. So there are two possibilities remaining:</p>
+<p>A knows B can’t be the pardoned prisoner, because the guard said so. So there are two possibilities remaining:</p>
 <ul>
 <li>A is the pardoned prisoner.</li>
 <li>C is the pardoned prisoner.</li>
 </ul>
 <p>In the first scenario, where A has been pardoned, the guard had a choice between identifying B or C in her response. She chose to identify B, but she could have identified C instead. But in the second scenario, the guard had no choice. She had to name B, since she couldn’t tell A that she’s still condemned.</p>
 <p>So when the guard says “B is still condemned”, her report is exactly what you’d expect in the second scenario, where C was pardoned. Whereas in the first scenario, where A was pardoned, the guard’s report was half as likely. She could just as easily have named C instead. So the guard’s report fits twice as well with the second scenario. And that’s why A’s chance of survival is still 1/3.</p>
-<p>It helps to visualize the idea. Start with the king’s decision about who to pardon. He chooses one of the three prisoners at random, so each has the same 1/3 chance: [Tree Diagram] Then consider the guard’s options. If A is pardoned, she can choose to name either B or C. But if B is pardoned, she has to name C—otherwise she’ll give away A’s fate. And likewise, she has to name C if B is pardoned. So there are two possible outcomes where the guard names B: [Tree Diagram 2] And look! One of them is half as likely as the other, namely the one where A was pardoned. So when the guard names B, A’s chance of having been pardoned is half that of still being condemned. In other words, her chance of survival is 1/3, versus a 2/3 chance of still being condemned.</p>
-<p>So A’s chances really do stay fixed. The warden’s report is no reprieve. It makes no difference to A’s chances, as seems right.</p>
+<p>This is essentially the same solution we used for the Monty Hall problem. And we can use a diagram to visualize it.</p>
+<p>The king chooses one of the three prisoners at random, so each has the same 1/3 chance:</p>
+<div class="figure">
+<img src="img/Three-Prisoner-Tree-1.png" />
+
+</div>
+<p>Then we consider the guard’s options. If A is pardoned, she can choose to name either B or C. But if B is pardoned, she has to name C—otherwise she’ll give away A’s fate. And likewise, she has to name C if B is pardoned. So there are two possible outcomes where the guard names B:</p>
+<div class="figure">
+<img src="img/Three-Prisoner-Tree-2.png" />
+
+</div>
+<p>And look! One of them is half as likely as the other, namely the one where A was pardoned. So when the guard names B, A’s chance of having been pardoned is half that of still being condemned. In other words, her chance of survival is 1/3, versus a 2/3 chance of still being condemned.</p>
+<p>So A’s chances really do stay fixed. The guard’s report is no reprieve. It makes no difference to A’s chances, as seems right.</p>
 </div>
             </section>
 
