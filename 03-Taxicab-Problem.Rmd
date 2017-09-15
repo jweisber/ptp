@@ -50,25 +50,25 @@ We're being asked to calculate the second number in the taxicab problem, whereas
 
 Which means they correctly identify blue cabs as "blue" 80% of the time, and likewise for green. But it's not exactly super clear from the wording, so it's easy to read it as saying "blue" $\overset{\small 80\%}{\Longrightarrow}$ blue.
 
-But even once that's sorted out, it's still tricky. You might have assumed the order doesn't matter: if it's 80% in one direction, then it's 80% in the other direction too.
+But even once that's sorted out, it's still tricky. You might have assumed the order doesn't matter: if it's 80% in one direction, then it's 80% in the other direction too, no?
 
-But the numbers in each direction are actually independent. If you live in Toronto there's a 100% chance you live in Canada, but not the other way around. Very few Canada-dwellers live in Toronto. Likewise, most humans are "pentadactyl"---they have five digits on each limb. But very few pentadactyl creatures are people. Just think of all the other great apes, cats, cows, and even bats!
+No. The numbers in each direction are actually independent. If you live in Toronto there's a 100% chance you live in Canada, but not the other way around. Very few Canada-dwellers live in Toronto.
+
+Likewise, most humans are "pentadactyl"---they have five digits on each limb. But very few pentadactyl creatures are people. Just think of all the chimps, gorillas, cats, cows, and even bats! They're all pentadactyl too. (Evolution is weird.)
 
 Once you've seen a few examples, a diagram helps illustrate the general point. Given two cases $A$ and $B$, they can overlap in all kinds of ways. We can have most of the As be Bs, but not vice versa:
 
 Or we can have most As be Bs and vice versa:
 
-In probability-speak, the point we've discussing is all about *conditional probability*: the chance of something under a certain *condition*. The probability the witness will say "blue" given that the cab really is blue is 80%. That's usually written $Pr(W \given B) = 80\%$: the probability of $W$ (the witness saying "blue") given $B$ (the cab really is blue). Put another way, suppose for the moment the cab really is blue. How likely is it then the witness will say "blue"? 80%.
+In probability-speak, we're learning crucial lessons about *conditional probability*: the chance of something under a certain *condition*. The probability the witness will say "blue" given that the cab really is blue is 80%. That's usually written $Pr(W \given B) = 80\%$: the probability of $W$ (the witness saying "blue") given $B$ (the cab really being blue). Put another way, suppose for the moment the cab really is blue. How likely is it then the witness will say "blue"? 80%.
 
 The general format is:
 
 $$ Pr(Q \given P) = x \mbox{ means the probability of $Q$, given $P$, is $x$.}$$
 
-The thing to the right of the $\given$ is the condition, the thing we are supposing for the moment is true, namely $P$. To the left of the $\given$ is $Q$, the thing we are considering the probability of given $P$ as an assumption.
+The $P$ to the right of the $\given$ is the condition, the thing we are supposing for the moment is true. The $Q$ to the left of the $\given$ is the thing we are considering the probability of, given $P$ as an assumption.
 
-So in the taxicab problem we're told $Pr(W \given B)$, the probability the witness will say "blue" given the cab really is blue. That's 80%. We're also told $Pr(B)$, the probability that a random cab is blue: that's 15%.
-
-What we're asked to figure out is $Pr(B \given W)$, the probability the cab really is blue given that the witness said "blue". And using our diagram we found that was about 12/29, or about 41%.
+So in the taxicab problem we're told $Pr(W \given B)$, the probability the witness will say "blue" given the cab really is blue. What we're asked to figure out is $Pr(B \given W)$, the probability the cab really is blue given that the witness said "blue". And using our diagram we found that was about 12/29, or about 41%.
 
 
 ## Doctors Without Base Rates
@@ -81,15 +81,17 @@ Consider a relatively rare virus, like HIV. Very few North Americans have HIV an
 
 The test is so accurate, it's hard to see how there could be much room for optimism. But, of course, if it were that simple we wouldn't be talking about it.
 
-Imagine taking a thousand random Americans and giving them the blood test. The one person with HIV will test positive, but so will one of the 999 people who doesn't have HIV. Because a tenth of a percent of 999 is basically one (0.999 if you want to be exact). So even if you test positive, there's still a fifty-fifty shot you don't have HIV. In every two positive tests, there's one true and one false---yours might be the false positive.
+Imagine taking a thousand random North Americans and giving them the blood test. The one person with HIV will test positive. But so will one of the 999 people who don't have HIV. Because a tenth of a percent of 999 is basically one (0.999 if you want to be exact). So even if you test positive, there's still a fifty-fifty shot you don't have HIV. Out of every two positive tests, there's one true and one false---so yours might be the false positive.
 
-One way of thinking about what's going on here is that you have two pieces of relevant information. One the one hand, the test is highly accurate, which points to you having the virus. But on the other, very few people have the virus, which points the opposite way. And you just have to work through the numbers to see how those two things balance out.
+One way of thinking about what's going on here is that you have two pieces of relevant information. One the one hand, the test is highly accurate, which points to you having the virus. But on the other, very few people have the virus, which points the opposite way. So you have to work through the numbers to see how those two, conflicting pieces of information balance out.
 
 The tendency to focus on just the first piece of information, the accuracy of the test, is called "base rate neglect". Because, well, the other piece of information, the rate of HIV in the overall population, is called the "base rate".
 
 So doctors know better than to neglect the base right, right? Well, maybe not as much as you'd hope. In study after study, everyone from undergraduates with no statistical training, to medical students, to trained and experienced medical doctors seem prone to base rate neglect. For example, in [one study](http://journals.sagepub.com/doi/pdf/10.1111/j.1539-6053.2008.00033.x) of 160 gynecologists, only 21% got the right answer on a similar problem (breast cancer instead of HIV, mammograms instead of blood tests).
 
 But there is some good news. After a bit of training, 87% of those same gynecologists solved these problems correctly. Curiously, part of that training was one weird trick: translating the problem into *natural frequencies*. Instead of "the chance of a North American having HIV is a tenth of a percent", try "one in every thousand North Americans has HIV". Rather than frame things in terms of percentages or probabilities, frame them in terms of sets of individuals---a thousand North Americans, or a hundred taxicabs. That makes it much easier for humans to find the right answer, these psychologists say.
+
+You may have noticed this kind of natural frequency language in medical pamphlets, like at your doctors office. Because of this research on human reasoning, it's increasingly common to explain the prevalence of some condition, or how to interpret a certain diagnosis, in natural frequency terms. And, you might have noticed, I used it too when I explained how to get the right answers!
 
 
 ## Bayes' Theorem
