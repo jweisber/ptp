@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="three-prisoners.html">
-<link rel="next" href="the-gamblers-fallacy.html">
+<link rel="prev" href="conditional-probabilities.html">
+<link rel="next" href="bayes-theorem.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -105,28 +105,25 @@
 
             <section class="normal" id="section-">
 $$\newcommand{\given}{\,|\,}$$
-<div id="monty-hall-again" class="section level2">
-<h2><span class="header-section-number">1.3</span> Monty Hall Again</h2>
-<p>Erdős left Vázsonyi’s house unsatisfied and unconvinced. But a few days later he called: someone had finally explained to his satisfaction why you should switch doors in the Monty Hall problem. “He proceeded to tell me the reasoning”, said Vázsonyi, “but I couldn’t fathom his explanation.”</p>
-<p>I guess we’ll never know what persuaded Erdős. But luckily we don’t need to, because the same technique we used on the three-prisoner puzzle works on Monty Hall. We can even use the same tree diagram, we just have to change the labels.</p>
-<p>The first branching-point is now the placement of the car, and each door has the same 1/3 chance. The second branching-point is Monty’s decision about which door to open. And just like the guard, his hand is forced in all but one case:</p>
-<div class="figure">
-<img src="img/Monty-Hall-Tree.png" />
-
+<div id="doctors-without-base-rates" class="section level2">
+<h2><span class="header-section-number">3.2</span> Doctors Without Base Rates</h2>
+<p>So now you’re all trained up and immunized, right? You’ll never be one of those eighty-percent suckers again, <em>right</em>??</p>
+<p>Turns out even people who should know better, people with extensive scientific and statistical training, fall prey to this fallacy. And that includes medical doctors, which you might find… concerning.</p>
+<p>Consider a relatively rare virus, like HIV. Very few North Americans have HIV and don’t know it, fewer than one in every thousand. Now imagine a highly accurate (and highly fictional) blood test. It always detects the presence of the virus, and only gives a false positive in a tenth of a percent of cases. If you take the blood test and you get a positive result, how worried should you be?</p>
+<p>The test is so accurate, it’s hard to see how there could be much room for optimism. But, of course, if it were that simple we wouldn’t be talking about it.</p>
+<p>Imagine taking a thousand random Americans and giving them the blood test. The one person with HIV will test positive, but so will one of the 999 people who doesn’t have HIV. Because a tenth of a percent of 999 is basically one (0.999 if you want to be exact). So even if you test positive, there’s still a fifty-fifty shot you don’t have HIV. In every two positive tests, there’s one true and one false—yours might be the false positive.</p>
+<p>One way of thinking about what’s going on here is that you have two pieces of relevant information. One the one hand, the test is highly accurate, which points to you having the virus. But on the other, very few people have the virus, which points the opposite way. And you just have to work through the numbers to see how those two things balance out.</p>
+<p>The tendency to focus on just the first piece of information, the accuracy of the test, is called “base rate neglect”. Because, well, the other piece of information, the rate of HIV in the overall population, is called the “base rate”.</p>
+<p>So doctors know better than to neglect the base right, right? Well, maybe not as much as you’d hope. In study after study, everyone from undergraduates with no statistical training, to medical students, to trained and experienced medical doctors seem prone to base rate neglect. For example, in <a href="http://journals.sagepub.com/doi/pdf/10.1111/j.1539-6053.2008.00033.x">one study</a> of 160 gynecologists, only 21% got the right answer on a similar problem (breast cancer instead of HIV, mammograms instead of blood tests).</p>
+<p>But there is some good news. After a bit of training, 87% of those same gynecologists solved these problems correctly. Curiously, part of that training was one weird trick: translating the problem into <em>natural frequencies</em>. Instead of “the chance of a North American having HIV is a tenth of a percent”, try “one in every thousand North Americans has HIV”. Rather than frame things in terms of percentages or probabilities, frame them in terms of sets of individuals—a thousand North Americans, or a hundred taxicabs. That makes it much easier for humans to find the right answer, these psychologists say.</p>
 </div>
-<p>Your initial choice was door #1, so if the car is behind door #2 Monty has to open door #3. Otherwise he’ll be showing you that you have the wrong door. Likewise, he has to open #2 if the car is behind #3. Only if the car is behind #1 does Monty have a choice. So there are two possible situations where Monty opens door #3. But one of them is half as likely as the other, namely the one where the car is behind door #1. So, when you see Monty open door #3, the car is probably behind door #2. Switch!</p>
-<p>The Total Evidence Requirement is clearly something to take seriously. To get the right answer, you have to take account of all the information you have. Monty isn’t just showing you that door #3 is a bust, he’s also likely giving something away with his choice of door to open.</p>
-<p>So it’s as important to consider <em>how</em> you get your information as it is to consider what information you got. These days there’s a lot of talk about the dangers filter bubbles. But the news has always been a selective window onto the world, because only some things sell. “Man Bites Dog” is news, as journalists say, while “Dog Bites Man” is not. Or, to take a more political and realistic example from the recent news, “Seven Die in Terrorist Attack on London Bridge” is news, “Thousands Die Quietly of Cancer” is not.</p>
-
-</div>
-<!-- </div> -->
             </section>
 
           </div>
         </div>
       </div>
-<a href="three-prisoners.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="the-gamblers-fallacy.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="conditional-probabilities.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="bayes-theorem.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

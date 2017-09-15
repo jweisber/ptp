@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="three-prisoners.html">
-<link rel="next" href="the-gamblers-fallacy.html">
+<link rel="prev" href="heuristics-biases.html">
+<link rel="next" href="r-is-for-terror.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -77,15 +77,13 @@
 <li class="chapter" data-level="2.6" data-path="the-hot-hand.html"><a href="the-hot-hand.html"><i class="fa fa-check"></i><b>2.6</b> The Hot Hand</a></li>
 <li class="chapter" data-level="2.7" data-path="girls-revisited.html"><a href="girls-revisited.html"><i class="fa fa-check"></i><b>2.7</b> Girls Revisited</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="the-taxicab-problem.html"><a href="the-taxicab-problem.html"><i class="fa fa-check"></i><b>3</b> The Taxicab Problem</a><ul>
-<li class="chapter" data-level="3.1" data-path="conditional-probabilities.html"><a href="conditional-probabilities.html"><i class="fa fa-check"></i><b>3.1</b> Conditional Probabilities</a></li>
-<li class="chapter" data-level="3.2" data-path="doctors-without-base-rates.html"><a href="doctors-without-base-rates.html"><i class="fa fa-check"></i><b>3.2</b> Doctors Without Base Rates</a></li>
-<li class="chapter" data-level="3.3" data-path="bayes-theorem.html"><a href="bayes-theorem.html"><i class="fa fa-check"></i><b>3.3</b> Bayes’ Theorem</a></li>
-<li class="chapter" data-level="3.4" data-path="heuristics-biases.html"><a href="heuristics-biases.html"><i class="fa fa-check"></i><b>3.4</b> Heuristics &amp; Biases</a><ul>
-<li class="chapter" data-level="3.4.1" data-path="heuristics-biases.html"><a href="heuristics-biases.html#the-bank-teller-fallacy"><i class="fa fa-check"></i><b>3.4.1</b> The Bank Teller Fallacy</a></li>
-<li class="chapter" data-level="3.4.2" data-path="heuristics-biases.html"><a href="heuristics-biases.html#r-is-for-terror"><i class="fa fa-check"></i><b>3.4.2</b> R is for Terror</a></li>
-</ul></li>
-<li class="chapter" data-level="3.5" data-path="social-distortions.html"><a href="social-distortions.html"><i class="fa fa-check"></i><b>3.5</b> Social Distortions</a></li>
+<li class="chapter" data-level="3" data-path="the-taxicab-problem.html"><a href="the-taxicab-problem.html"><i class="fa fa-check"></i><b>3</b> The Taxicab Problem</a></li>
+<li class="chapter" data-level="4" data-path="conditional-probabilities.html"><a href="conditional-probabilities.html"><i class="fa fa-check"></i><b>4</b> Conditional Probabilities</a></li>
+<li class="chapter" data-level="5" data-path="doctors-without-base-rates.html"><a href="doctors-without-base-rates.html"><i class="fa fa-check"></i><b>5</b> Doctors Without Base Rates</a></li>
+<li class="chapter" data-level="6" data-path="bayes-theorem.html"><a href="bayes-theorem.html"><i class="fa fa-check"></i><b>6</b> Bayes’ Theorem</a></li>
+<li class="chapter" data-level="7" data-path="heuristics-biases.html"><a href="heuristics-biases.html"><i class="fa fa-check"></i><b>7</b> Heuristics &amp; Biases</a><ul>
+<li class="chapter" data-level="7.1" data-path="the-bank-teller-fallacy.html"><a href="the-bank-teller-fallacy.html"><i class="fa fa-check"></i><b>7.1</b> The Bank Teller Fallacy</a></li>
+<li class="chapter" data-level="7.2" data-path="r-is-for-terror.html"><a href="r-is-for-terror.html"><i class="fa fa-check"></i><b>7.2</b> R is for Terror</a></li>
 </ul></li>
 </ul>
 
@@ -104,29 +102,37 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-$$\newcommand{\given}{\,|\,}$$
-<div id="monty-hall-again" class="section level2">
-<h2><span class="header-section-number">1.3</span> Monty Hall Again</h2>
-<p>Erdős left Vázsonyi’s house unsatisfied and unconvinced. But a few days later he called: someone had finally explained to his satisfaction why you should switch doors in the Monty Hall problem. “He proceeded to tell me the reasoning”, said Vázsonyi, “but I couldn’t fathom his explanation.”</p>
-<p>I guess we’ll never know what persuaded Erdős. But luckily we don’t need to, because the same technique we used on the three-prisoner puzzle works on Monty Hall. We can even use the same tree diagram, we just have to change the labels.</p>
-<p>The first branching-point is now the placement of the car, and each door has the same 1/3 chance. The second branching-point is Monty’s decision about which door to open. And just like the guard, his hand is forced in all but one case:</p>
-<div class="figure">
-<img src="img/Monty-Hall-Tree.png" />
-
+<div id="the-bank-teller-fallacy" class="section level2">
+<h2><span class="header-section-number">7.1</span> The Bank Teller Fallacy</h2>
+<p>This question is from their 1983 paper:</p>
+<blockquote>
+<p>Linda is 31 years old, single, outspoken, and very bright. She majored in philosophy. As a student, she was deeply concerned with issues of discrimination and social justice, and also participated in anti-nuclear demonstrations. Which is more probable?</p>
+<ol style="list-style-type: decimal">
+<li>Linda is a bank teller.</li>
+<li>Linda is a bank teller and is active in the feminist movement.</li>
+</ol>
+</blockquote>
+<p>Almost 85% of their subjects chose (2). But that can’t be right, and you don’t need to know anything about Linda to prove it.</p>
+<ul>
+<li>To be a feminist and a bank teller, you need to be a bank teller. So whenever (2) is false, so is (1). But not vice versa.</li>
+<li>Imagine throwing a dart randomly at a Venn diagram. You can’t hit the feminist bank tellers without hitting the bank tellers.</li>
+</ul>
+<p>So why do people choose (2)?</p>
+<ul>
+<li>Kahneman and Tversky suggested that people are relying on a “representativeness” heuristic.
+<ul>
+<li>They’re gauging how much the description of Linda is representative of the class of bank tellers (not very) vs. the class of feminist bank tellers (more so).</li>
+<li>Ordinarily, representativeness is a decent guide to probability. But not always.</li>
+</ul></li>
+</ul>
 </div>
-<p>Your initial choice was door #1, so if the car is behind door #2 Monty has to open door #3. Otherwise he’ll be showing you that you have the wrong door. Likewise, he has to open #2 if the car is behind #3. Only if the car is behind #1 does Monty have a choice. So there are two possible situations where Monty opens door #3. But one of them is half as likely as the other, namely the one where the car is behind door #1. So, when you see Monty open door #3, the car is probably behind door #2. Switch!</p>
-<p>The Total Evidence Requirement is clearly something to take seriously. To get the right answer, you have to take account of all the information you have. Monty isn’t just showing you that door #3 is a bust, he’s also likely giving something away with his choice of door to open.</p>
-<p>So it’s as important to consider <em>how</em> you get your information as it is to consider what information you got. These days there’s a lot of talk about the dangers filter bubbles. But the news has always been a selective window onto the world, because only some things sell. “Man Bites Dog” is news, as journalists say, while “Dog Bites Man” is not. Or, to take a more political and realistic example from the recent news, “Seven Die in Terrorist Attack on London Bridge” is news, “Thousands Die Quietly of Cancer” is not.</p>
-
-</div>
-<!-- </div> -->
             </section>
 
           </div>
         </div>
       </div>
-<a href="three-prisoners.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="the-gamblers-fallacy.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="heuristics-biases.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="r-is-for-terror.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

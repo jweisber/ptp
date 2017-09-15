@@ -1,5 +1,7 @@
 bookdown::gitbook:
   css: custom.css
+  includes:
+    before_body: preamble.tex
   split_by: section
   config:
     toc:
