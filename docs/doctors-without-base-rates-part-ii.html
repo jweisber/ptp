@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="heuristics-biases.html">
-<link rel="next" href="simpsons-paradox.html">
+<link rel="prev" href="bayes-ltp-awesome.html">
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -90,6 +90,7 @@
 <li class="chapter" data-level="4" data-path="simpsons-paradox.html"><a href="simpsons-paradox.html"><i class="fa fa-check"></i><b>4</b> Simpson’s Paradox</a><ul>
 <li class="chapter" data-level="4.1" data-path="the-law-of-total-probability.html"><a href="the-law-of-total-probability.html"><i class="fa fa-check"></i><b>4.1</b> The Law of Total Probability</a></li>
 <li class="chapter" data-level="4.2" data-path="bayes-ltp-awesome.html"><a href="bayes-ltp-awesome.html"><i class="fa fa-check"></i><b>4.2</b> Bayes + LTP = Awesome</a></li>
+<li class="chapter" data-level="4.3" data-path="doctors-without-base-rates-part-ii.html"><a href="doctors-without-base-rates-part-ii.html"><i class="fa fa-check"></i><b>4.3</b> Doctors Without Base Rates, part II</a></li>
 </ul></li>
 </ul>
 
@@ -108,30 +109,51 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-$$
-\newcommand{\given}{\,|\,}
-$$
-$$
-\renewcommand{\neg}{\mathbin{\sim}}
-$$
-<div id="social-distortions" class="section level2">
-<h2><span class="header-section-number">3.5</span> Social Distortions</h2>
-<p>Before moving let’s pause to reflect on the social and political implications of all this. If psychologists like Kahneman and Tversky are right, and our reasoning is distorted by heuristics like availability, then are those distortions reflected in the shape of our society?</p>
-<p>You could write whole books on this question, and people do. So I’ll just note one possible (and provocative) answer, represented in <a href="https://www.psychologytoday.com/blog/the-narcissus-in-all-us/200903/mass-murder-is-nothing-fear">the following remark</a> from psychologist Joshua D. Foster:</p>
+$$\newcommand{\given}{\,|\,}$$
+<div id="doctors-without-base-rates-part-ii" class="section level2">
+<h2><span class="header-section-number">4.3</span> Doctors Without Base Rates, part II</h2>
+<p>In our discussion of the base rate fallacy, we saw how to account for base rates correctly using Bayes’ theorem:</p>
+<p><span class="math display">\[ Pr(H \given E) = Pr(H)\frac{Pr(E \given H)}{Pr(E)}. \]</span></p>
+<p>We also discussed the following, counterintuitive example:</p>
 <blockquote>
-<p>the 2009 budget for homeland security (the folks that protect us from terrorists) will likely be about $50 billion. Don’t get us wrong, we like the fact that people are trying to prevent terrorism, but even at its absolute worst, terrorists killed about 3,000 Americans in a single year. And less than 100 Americans are killed by terrorists in most years. By contrast, the budget for the National Highway Traffic Safety Administration (the folks who protect us on the road) is about $1 billion, even though more than 40,000 people will die this year on the nation’s roads.</p>
+<p>About 1 in every 100 people have Weisberg’s syndrome (an annoying but mostly harmless disease). There’s a blood test that’s 90% accurate: in 90% of cases where the disease is present, the test comes up positive, and in 90% of cases where it’s absent the test comes up negative.</p>
+<p>Suppose a randomly selected person tests positive. What are the chances they have the disease?</p>
 </blockquote>
-<p>That’s hardly the final word on this question. But I think it’s a decent place to start thinking about such matters.</p>
+<p>Using a picture, we estimated the answer was about 1/11. Now let’s use Bayes’ theorem to solve this problem exactly:</p>
+<ul>
+<li>We want to calculate <span class="math inline">\(Pr(D \given P)\)</span>, the probability of having the disease given a positive blood test. Bayes’ theorem says: <span class="math display">\[ Pr(D \given P) = Pr(D) \frac{Pr(P \given D)}{Pr(P)}.\]</span></li>
+<li>So to apply Bayes’ theorem, we need three numbers:
+<ul>
+<li><span class="math inline">\(Pr(D) = 1/100\)</span>, that’s the base rate given in the problem.</li>
+<li><span class="math inline">\(Pr(P \given D) = 90/100\)</span>, that’s the test-accuracy given.</li>
+<li><span class="math inline">\(Pr(P) = \ldots\)</span> uh-oh this number isn’t given to us.</li>
+</ul></li>
+<li>You guessed it, LTP to the rescue! <span class="math display">\[
+  \begin{aligned}
+Pr(P) &amp;= Pr(P \given D)Pr(D) + Pr(P \given \neg D)Pr(\neg D)\\
+      &amp;= (90/100)(1/100) + (10/100)(99/100)\\
+      &amp;= 1,080/10,000\\
+      &amp;= 27/250.
+  \end{aligned}
+  \]</span></li>
+<li>So our final answer is: <span class="math display">\[
+  \begin{aligned}
+  Pr(D \given P) &amp;= 1/100 \frac{90/100}{27/250}\\
+             &amp;= 0.0833\overline{3}.
+  \end{aligned}
+  \]</span></li>
+</ul>
+<p>Moral: Bayes’ theorem and the LTP make a powerful combination. In fact, you’ll often see Bayes’ theorem written with the LTP built in: <span class="math display">\[ Pr(H \given E) = \frac{Pr(E \given H)Pr(H)}{ Pr(E \given H) Pr(H) + Pr(E \given \neg H)Pr(\neg H)}.\]</span> But… ew.</p>
 
 </div>
-<!-- </div> -->
+</div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="heuristics-biases.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="simpsons-paradox.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="bayes-ltp-awesome.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

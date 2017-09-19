@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="heuristics-biases.html">
-<link rel="next" href="simpsons-paradox.html">
+<link rel="prev" href="social-distortions.html">
+<link rel="next" href="the-law-of-total-probability.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -87,10 +87,10 @@
 </ul></li>
 <li class="chapter" data-level="3.5" data-path="social-distortions.html"><a href="social-distortions.html"><i class="fa fa-check"></i><b>3.5</b> Social Distortions</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="simpsons-paradox.html"><a href="simpsons-paradox.html"><i class="fa fa-check"></i><b>4</b> Simpson’s Paradox</a><ul>
+<li class="chapter" data-level="4" data-path="berkeley-admissions.html"><a href="berkeley-admissions.html"><i class="fa fa-check"></i><b>4</b> Berkeley Admissions</a><ul>
 <li class="chapter" data-level="4.1" data-path="the-law-of-total-probability.html"><a href="the-law-of-total-probability.html"><i class="fa fa-check"></i><b>4.1</b> The Law of Total Probability</a></li>
-<li class="chapter" data-level="4.2" data-path="bayes-ltp-awesome.html"><a href="bayes-ltp-awesome.html"><i class="fa fa-check"></i><b>4.2</b> Bayes + LTP = Awesome</a></li>
 </ul></li>
+<li class="chapter" data-level="5" data-path="doctors-without-base-rates-part-ii.html"><a href="doctors-without-base-rates-part-ii.html"><i class="fa fa-check"></i><b>5</b> Doctors Without Base Rates, part II</a></li>
 </ul>
 
       </nav>
@@ -108,30 +108,44 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-$$
-\newcommand{\given}{\,|\,}
-$$
-$$
-\renewcommand{\neg}{\mathbin{\sim}}
-$$
-<div id="social-distortions" class="section level2">
-<h2><span class="header-section-number">3.5</span> Social Distortions</h2>
-<p>Before moving let’s pause to reflect on the social and political implications of all this. If psychologists like Kahneman and Tversky are right, and our reasoning is distorted by heuristics like availability, then are those distortions reflected in the shape of our society?</p>
-<p>You could write whole books on this question, and people do. So I’ll just note one possible (and provocative) answer, represented in <a href="https://www.psychologytoday.com/blog/the-narcissus-in-all-us/200903/mass-murder-is-nothing-fear">the following remark</a> from psychologist Joshua D. Foster:</p>
-<blockquote>
-<p>the 2009 budget for homeland security (the folks that protect us from terrorists) will likely be about $50 billion. Don’t get us wrong, we like the fact that people are trying to prevent terrorism, but even at its absolute worst, terrorists killed about 3,000 Americans in a single year. And less than 100 Americans are killed by terrorists in most years. By contrast, the budget for the National Highway Traffic Safety Administration (the folks who protect us on the road) is about $1 billion, even though more than 40,000 people will die this year on the nation’s roads.</p>
-</blockquote>
-<p>That’s hardly the final word on this question. But I think it’s a decent place to start thinking about such matters.</p>
+$$\newcommand{\given}{\,|\,}$$
+<div id="berkeley-admissions" class="section level1">
+<h1><span class="header-section-number">4</span> Berkeley Admissions</h1>
+<p>In 1973, the University of California at Berkeley got worried about being sued for discriminating against women in their graduate admissions. Only 35% of female applicants had been admitted compared with 44% of male applicants.</p>
+<p>Peter Bickel, a professor in the statistics department, was recruited to look into it. He found that men and women actually had roughly the same acceptance rates department by department. In fact, women had a higher acceptance rate across most of the larger departments.</p>
+<p>How could that be? Women had applied more to the selective departments, men to the less selective departments. Many more women than men had applied to the English department, for example, whereas more men had applied to Mechanical Engineering. And English admitted a much lower portion of applicants than Mechanical Engineering.</p>
+<p>For example, here are the admissions rates for men and for women at the six largest departments:</p>
+<div class="figure">
+<img src="img/Berkeley-Admissions.png" />
 
 </div>
-<!-- </div> -->
+<p>But here are the corresponding numbers of male and female applicants:</p>
+<div class="figure">
+<img src="img/Berkeley-Admissions-2.png" />
+
+</div>
+<p>The imbalances in the second figure are quite striking.</p>
+<p>That doesn’t mean sexism played no role here. You might be suspicious, for example, about why women and men differed so much in their choices of where to apply. And just because one group does better in an admissions process doesn’t mean they aren’t being discriminated against. Harvard once had an admissions cap on Jews because they were so overrepresented!</p>
+<p>But it does mean the initial appearance of discrimination in the Berkeley process was misleading. And it’s a great illustration of <em>Simpson’s paradox</em>: a trend can appear at one level of analysis yet be reversed at a finer-grained level.</p>
+<p>In fact, it’s even possible for one group to have higher admissions <em>across the board</em>, in every department, and yet have a lower admission rate overall. Imagine a fictional case with just two departments. And let’s combine our two bar charts by using width to display the number of applicants:</p>
+<div class="figure">
+<img src="img/Fictional-Admissions-Bar-Chart.png" />
+
+</div>
+<p>Each blue bar is taller than its partner red bar, and yet there’s more red area overall. Here’s the same idea in a Venn diagram:</p>
+<div class="figure">
+<img src="img/Fictional-Admissions-Venn-Diagram.png" />
+
+</div>
+<p>The moral: there’s a part-whole fallacy to watch out for with probabilities. Just because a trend is present in every slice of a population doesn’t mean it’ll be present in the population overall.</p> 
+</div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="heuristics-biases.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="simpsons-paradox.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="social-distortions.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="the-law-of-total-probability.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -184,4 +198,4 @@ gitbook.start({
 </script>
 </body>
 
-<!-- </html> -->
+</html>

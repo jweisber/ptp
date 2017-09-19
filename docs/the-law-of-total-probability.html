@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="heuristics-biases.html">
-<link rel="next" href="simpsons-paradox.html">
+<link rel="prev" href="simpsons-paradox.html">
+<link rel="next" href="bayes-ltp-awesome.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -114,24 +114,39 @@ $$
 $$
 \renewcommand{\neg}{\mathbin{\sim}}
 $$
-<div id="social-distortions" class="section level2">
-<h2><span class="header-section-number">3.5</span> Social Distortions</h2>
-<p>Before moving let’s pause to reflect on the social and political implications of all this. If psychologists like Kahneman and Tversky are right, and our reasoning is distorted by heuristics like availability, then are those distortions reflected in the shape of our society?</p>
-<p>You could write whole books on this question, and people do. So I’ll just note one possible (and provocative) answer, represented in <a href="https://www.psychologytoday.com/blog/the-narcissus-in-all-us/200903/mass-murder-is-nothing-fear">the following remark</a> from psychologist Joshua D. Foster:</p>
-<blockquote>
-<p>the 2009 budget for homeland security (the folks that protect us from terrorists) will likely be about $50 billion. Don’t get us wrong, we like the fact that people are trying to prevent terrorism, but even at its absolute worst, terrorists killed about 3,000 Americans in a single year. And less than 100 Americans are killed by terrorists in most years. By contrast, the budget for the National Highway Traffic Safety Administration (the folks who protect us on the road) is about $1 billion, even though more than 40,000 people will die this year on the nation’s roads.</p>
-</blockquote>
-<p>That’s hardly the final word on this question. But I think it’s a decent place to start thinking about such matters.</p>
+<div id="the-law-of-total-probability" class="section level2">
+<h2><span class="header-section-number">4.1</span> The Law of Total Probability</h2>
+<p>There is a right way to do part-whole reasoning with probabilities, though! And it introduces us to a powerful companion principle to Bayes’ theorem from the last chapter.</p>
+<p>Consider this question: if 20% of all applicants to Chemistry are admitted, and 30% percent of applicants to Philosophy, what’s the overall admittance rate across these two departments? Well, it has to be somewhere between 20% and 30%. But what percentage exactly?</p>
+<p>It won’t necessarily be smack in the middle at 25%. Imagine 100 people apply to Chemistry and only 10 to philosophy. Then 23 people will be admitted out of 110. So the overall rate will be about 21%.</p>
+<p>In the reverse situation where 100 people apply to Philosophy and 10 to Chemistry, 32 people will be admitted out of 110, or about 29%.</p>
+<p>So the overall rate is closer to the departmental rate of the larger department. And if they’re equal sizes, then it will be smack in the middle at 25%.</p>
+<p>The Law of Total Probability describes this general pattern. A person’s chance of being admitted, <span class="math inline">\(Pr(A)\)</span>, is somewhere between their chances of being admitted to Chemistry if they apply there, <span class="math inline">\(Pr(A|C)\)</span>, and their chance of being admitted to Philosophy if they apply there, <span class="math inline">\(Pr(A|P)\)</span>:</p>
+<p><span class="math display">\[ Pr(A|C) &lt; Pr(A) &lt; Pr(P). \]</span></p>
+<p>(I’m assuming they applied to just one department, for simplicity.)</p>
+<p>But where exactly will <span class="math inline">\(Pr(A)\)</span> fall in that interval? Well, the more likely it is they applied to Chemistry, the closer it will be to the left end. And the more likely it is they applied to Philosophy, the closer it’ll be to the right.</p>
+<p>Here’s another way to think about the same principle.</p>
+<p>Suppose you want to know whether <span class="math inline">\(A\)</span> is true—whether you’ll get an A in your next philosophy class, for example. One way to get a handle on that is to break the question down into cases. Maybe the class will be boring, maybe not. We’ll use <span class="math inline">\(B\)</span> for boring and <span class="math inline">\(\neg B\)</span> for not boring (the tilde symbol <span class="math inline">\(\neg\)</span> being a common way to symbolize negation).</p>
+<p>If the class is boring your chances of getting an A aren’t so good, let’s suppose. Wheres you’re likely to do well if it’s not boring. So the more likely it is the class is boring, the lower your chances of getting an A will be.</p>
+<p>That kind of reasoning is captured and made precise by:</p>
+<dl>
+<dt>The Law of Total Probability</dt>
+<dd><p><span class="math display">\[Pr(A) = Pr(A \given B) Pr(B) + Pr(A \given \neg B) Pr(\neg B).\]</span></p>
+</dd>
+</dl>
+<p>In terms of our tree-diagramming technique, the LTP says to add up the final quantities from the <span class="math inline">\(A\)</span>-and-<span class="math inline">\(B\)</span> and <span class="math inline">\(A\)</span>-and-<span class="math inline">\(\neg B\)</span> branches to get <span class="math inline">\(Pr(A)\)</span>.</p>
+<div class="figure">
+<img src="img/LTP-Tree.png" />
 
 </div>
-<!-- </div> -->
+</div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="heuristics-biases.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="simpsons-paradox.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="simpsons-paradox.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="bayes-ltp-awesome.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

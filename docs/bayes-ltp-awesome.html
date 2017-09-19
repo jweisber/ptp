@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="heuristics-biases.html">
-<link rel="next" href="simpsons-paradox.html">
+<link rel="prev" href="the-law-of-total-probability.html">
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -114,24 +114,63 @@ $$
 $$
 \renewcommand{\neg}{\mathbin{\sim}}
 $$
-<div id="social-distortions" class="section level2">
-<h2><span class="header-section-number">3.5</span> Social Distortions</h2>
-<p>Before moving let’s pause to reflect on the social and political implications of all this. If psychologists like Kahneman and Tversky are right, and our reasoning is distorted by heuristics like availability, then are those distortions reflected in the shape of our society?</p>
-<p>You could write whole books on this question, and people do. So I’ll just note one possible (and provocative) answer, represented in <a href="https://www.psychologytoday.com/blog/the-narcissus-in-all-us/200903/mass-murder-is-nothing-fear">the following remark</a> from psychologist Joshua D. Foster:</p>
+<div id="bayes-ltp-awesome" class="section level2">
+<h2><span class="header-section-number">4.2</span> Bayes + LTP = Awesome</h2>
+<p>A big part of why the LTP is interesting is that it makes for a powerful combination with Bayes’ theorem. In fact, you often can’t even use Bayes’ theorem without using the LTP first.</p>
+<p>Remember the taxicab problem and base rate neglect? We saw that getting the right medical diagnosis depends on handling base rates correctly, often via Bayes’ theorem.</p>
+<p>To keep things simple, we imagined a fictional blood test for HIV that always comes up positive when the virus is present. But real medical tests aren’t so dependable. They can generate false negatives as well as false positives. And the LTP helps us get the right answer in these more realistic cases.</p>
+<p>Here’s an example, still fictional, but more realistic:</p>
 <blockquote>
-<p>the 2009 budget for homeland security (the folks that protect us from terrorists) will likely be about $50 billion. Don’t get us wrong, we like the fact that people are trying to prevent terrorism, but even at its absolute worst, terrorists killed about 3,000 Americans in a single year. And less than 100 Americans are killed by terrorists in most years. By contrast, the budget for the National Highway Traffic Safety Administration (the folks who protect us on the road) is about $1 billion, even though more than 40,000 people will die this year on the nation’s roads.</p>
+<p>About 1 in every 100 people have Weisberg’s syndrome (an annoying but mostly harmless disease). There’s a blood test that’s 90% accurate: in 90% of cases where the disease is present, the test comes up positive, and in 90% of cases where it’s absent the test comes up negative.</p>
+<p>Suppose a randomly selected person tests positive. What are the chances they have the disease?</p>
 </blockquote>
-<p>That’s hardly the final word on this question. But I think it’s a decent place to start thinking about such matters.</p>
+<p>Bayes’ theorem says that for any hypothesis <span class="math inline">\(H\)</span> and piece of evidence <span class="math inline">\(E\)</span>:</p>
+<dl>
+<dt>Bayes’ Theorem</dt>
+<dd><p><span class="math display">\[ Pr(H \given E) = Pr(H)\frac{Pr(E \given H)}{Pr(E)}. \]</span></p>
+</dd>
+</dl>
+<p>We want to calculate <span class="math inline">\(Pr(D \given P)\)</span>, the probability of having Weisberg’s disease given a positive blood test. So Bayes’ theorem says:</p>
+<p><span class="math display">\[ Pr(D \given P) = Pr(D) \frac{Pr(P \given D)}{Pr(P)}.\]</span></p>
+<p>So we need the three numbers on the right hand side:</p>
+<ul>
+<li><span class="math inline">\(Pr(D) = 1/100\)</span>, that’s the base rate given in the problem.</li>
+<li><span class="math inline">\(Pr(P \given D) = 90/100\)</span>, that’s the test-accuracy, also given.</li>
+<li><span class="math inline">\(Pr(P) = \ldots\)</span> uh-oh, this number isn’t given in the description of the problem!</li>
+</ul>
+<p>You guessed it, LTP to the rescue! We can calculate the chance of a positive blood test, <span class="math inline">\(Pr(P)\)</span>, by breaking it into two cases. What’s the chance of a positive test if you really have the disease, and what’s the chance if you don’t. Then weigh each case according to the chance it’s true.</p>
+<p>In terms of the LTP, that means we calculate:</p>
+<p><span class="math display">\[
+\begin{aligned}
+  Pr(P) &amp;= Pr(P \given D)Pr(D) + Pr(P \given \neg D)Pr(\neg D)\\
+        &amp;= (90/100)(1/100) + (10/100)(99/100)\\
+        &amp;= 1,080/10,000\\
+        &amp;= 27/250.
+\end{aligned}
+\]</span></p>
+<p>Where did I get the 99/100 term from, you might be wondering? Well if 1 in 100 people have the disease then 99/100 people don’t.</p>
+<p>So the chance of a positive blood test is 27/250, which is about 11%. And now we have all three terms we need to apply Bayes’ theorem:</p>
+<p><span class="math display">\[
+\begin{aligned}
+Pr(D \given P) &amp;= 1/100 \frac{90/100}{27/250}\\
+               &amp;= 0.08333\ldots
+\end{aligned}
+\]</span></p>
+<p>Once again, the answer is pretty counterintuitive. Despite a test with 90% accuracy, there’s still a less than 10% chance you have the disease if you get a positive test. Base rates, don’t neglect ’em.</p>
+<p>But the new lesson is: Bayes’ theorem and the LTP together can solve some problems we wouldn’t be able to solve otherwise. In fact, you’ll often see Bayes’ theorem written with the LTP already built in to the denominator:</p>
+<p><span class="math display">\[ Pr(H \given E) = \frac{Pr(E \given H)Pr(H)}{ Pr(E \given H) Pr(H) + Pr(E \given \neg H)Pr(\neg H)}.\]</span></p>
+<p>That’s ugly, but really useful if you’re doing these calculations on the regular.</p>
+<p>We’re more interested in the philosophical significance of Bayes’ theorem, though. And this messy version obscures a lot of philosophically interesting stuff, as we’ll see in the next few chapters. So we’ll stick to the simple version.</p>
 
 </div>
-<!-- </div> -->
+</div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="heuristics-biases.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="simpsons-paradox.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="the-law-of-total-probability.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
