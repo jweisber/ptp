@@ -1,0 +1,114 @@
+# The Grue Paradox
+
+
+A lot of science works by extrapolating from observed patterns.
+
+Pollsters, for example, survey a random sample of voters to gauge the leaning of the electorate as a whole. If 54% of respondents prefer Candidate X, they conclude that 54% of all voters prefer X, give or take.
+
+Similarly, climate scientists  extrapolate from historical trends to estimate future trends. The planet has been steadily warming for the last 100 years, which is one reason to expect it will continue to warm for the next few years, at least.
+
+A fundamental principle of scientific inquiry thus seems to be something like: expect the unobserved to resemble the observed. Philosophers call this *the Principle of Induction*.
+
+
+## A Gruesome Concept
+
+But one philosopher, Nelson Goodman, identified a difficult puzzle about the principle of induction. It revolves around a bizarre concept of his invention, which he dubbed "grue".
+
+There are two ways for an object to be grue. Some green things are grue, but only some. It depends on when we first encounter them. If our first observation of a green object happens before the year 2020, then it's grue. So the Statue of Liberty is grue: it's a green object that was first observed before the year 2020 (*long* before).
+
+But if our first encounter with a green object is in the year 2020 or later, then it's not grue. Likewise if we never observe it---because it's on the far side of the universe, for example, or buried deep underground.
+
+I said there are two ways for an object to be grue: some blue objects are grue, too. Not the ones observed before 2020, though. Instead it's the ones that *aren't* observed before 2020. If a blue object is observed for the first time *after* 2019, or it's never observed at all, then it's grue. So blue sapphires that won't be mined before the year 2020 are grue.
+
+As usual, it helps to have a diagram:
+
+![](img/Grue-Table.png)
+
+We can also define 'grue' in explicit, verbal terms:
+
+Grue
+
+:    An object is *grue* if EITHER (a) it is green and first observed before the year 2020, OR (b) it's blue and not observed before 2020.
+
+To test your understanding, see if you can explain why the following are examples of grue things: the $20 bill in my pocket, Kermit the Frog, the first (Canadian) $5 bill to be printed in 2020, the first sapphire to be mined in 2020, and blue planets on the far side of the universe.
+
+Then see if you can explain why these things aren't grue: fire engines, the [Star of India](https://en.wikipedia.org/wiki/Star_of_India_(gem)), and the first $20 bill to be printed in 2020.
+
+Once you've got all those down, try this question: do grue objects change colour in the year 2020? It's a common confusion to say they do.
+
+But no, grue objects don't change colour. The Statue of Liberty is green and (let's assume) it always will be. So it's grue, and always will be, because it's a green thing that was first observed before the year 2020. Part (a) of the definition of 'grue' guarantees that.
+
+The only way time comes into it is in determining which green things are grue (and which blue things). If a green thing is first observed before 2020, then it's grue, ever and always. Likewise, if a blue thing is *not* first observed before 2020, then it's grue, and always has been!
+
+
+## The Paradox
+
+So what's the big deal about grue? Well ask yourself whether you've ever seen a grue emerald.
+
+I have. In fact, every emerald I've ever seen has been grue. And the same goes for every emerald you've ever seen. Every emerald anyone has ever seen has been grue.
+
+Why? Because they're all green. And they've all been observed before the year 2020 (it's 2017 as I write this). So they're all grue the first way---they all satisfy part (a) of the definition. (Notice it's an EITHER/OR definition, so you only have to satisfy one of the two parts to be grue.)
+
+So all the emeralds we've ever seen have been grue. Let's apply the Principle of Induction then:
+
+1. All observed emeralds have been grue.
+2. Therefore *all* emeralds are grue.
+
+But if all emeralds are grue, then the first emeralds to be mined in 2020 will be grue. And that means they'll be blue! Because they won't have been observed before 2020, so the only way for them to be grue is to be blue. So there are blue emeralds out there, just waiting to be pulled out of the earth!
+
+Uh-oh, something has definitely gone off the rails here. But what?
+
+Another way put the challenge: we have two "patterns" in our observed data. The emeralds we've seen are uniformly green, but they're also uniformly grue. We can't project both these patterns into the future, though. They contradict each other starting in 2020.
+
+Now, the green pattern is the real one, obviously. The grue "pattern" is bogus, and no one but a philosopher would even bother thinking about it. So *why* is it bogus? What's so special about green?
+
+Apparently the Principle of Induction has a huge hole in it! It says to extrapolate from observed patterns. But *which* patterns?
+
+Patterns are cheap, as any data scientist will tell you. Given a bunch of data points on an *xy*-plane, there are lots of ways to connect the dots. Even if they all lie on a straight line, you could draw an oscillating curve that passes through each point, or even a much wilder (and sillier) curve.
+
+Fun fact: deciding which patterns to use and which to ignore is a big part of what machine learning experts do. And it's one reason humans are still essential to designing artificial intelligence. Thanks to our experience, and our genetic inheritance, we have *lots* of information about which patterns are likely to continue, and which are bogus "patterns" like grue.
+
+But how do we pass all that wisdom on to the machines, so that they can take it from here? How do we tell them the difference between green and grue?
+
+
+## Disjunctivitis
+
+Here's one very natural reply. The problem with grue is it's a *disjunctive* concept: it's defined using EITHER/OR. It suffers from "disjunctivitis".
+
+But the beauty of Goodman's puzzle is the neat way it exposes the flaw here. It allows us to make 'green' the disjunctive concept instead!
+
+How? Start by building grue a friend, a concept to fill in the missing spaces in our original diagram. We'll call it "bleen":
+
+![](img/Grue-Bleen-Table.png)
+
+Here's how you'd define green in terms of grue and bleen then:
+
+Green
+
+:   An object is *green* if EITHER (a) it's grue and first observed before the year 2020, OR (b) it's bleen and not observed before 2020.
+
+Now maybe you're thinking: you *could* define green that way, but that's not how it's *actually* defined. In reality, we already understand the concept of green, and we have to learn the concept of grue from its disjunctive definition.
+
+The problem is, that's just a fact about *us humans*, not about grue vs. green. That's just the way we *homo sapiens* happen to be built (or maybe socialized, or both). Some bizarre species of alien could grow up thinking in grue/bleen terms instead. And when they landed on Earth, we'd have to explain our green/blue language to them using an EITHER/OR definition. Then *they* would be looking at *us* thinking: you guys have a very weird, disjunctive way of thinking!
+
+What could we say to them to establish the superiority of our way of thinking? It's been more than 70 years since Goodman first posed this challenge. Yet no answer has emerged as the clear and decisively correct one.
+
+
+## Time Dependence
+
+Another common reply to Goodman's challenge is to say that 'grue' is defective because it's time-dependent. It means different things depending on the time an object is first observed.
+
+But the same reversal of fortunes that toppled the "disjunctivitis" diagnosis happens here. We can define green in terms of grue and bleen. And when we do, it's green that's the time-dependent concept, not grue.
+
+So we're left in the same spot. We need some way of showing that the "true" order of definition is the one we're used to. By what criterion can we say that green is more fundamental, more basic, than grue?
+
+
+## The Moral
+
+Though it might seem just cute, or a mere curiosity, Goodman's puzzle is actually profound. In fact, I see it as one of the deepest and most troubling problems we'll encounter in this book.
+
+The reason why will become clearer soon, especially when we discuss Bertrand's paradox in the next chapter. But to give you the gist of what we're dealing with, here is the lesson I (and many others) take from the grue paradox.
+
+Whatever the logic of science is, it cannot be written down or summarized in a few, simple principles. The Principle of Induction is barely even a schema, needing much filling in. And the real substance can't be filled in, at least not in any simple way with the tools we have like logic and probability.
+
+Which observed patterns should we expect to apply in general? Which ones should we tell the machines to extrapolate from, and which to ignore? We know intuitively how to answer this question in many cases. We know that green is legit, and grue is bogus. But we have no way of making this tacit knowledge explicit in general, so that we can program it all into a machine.

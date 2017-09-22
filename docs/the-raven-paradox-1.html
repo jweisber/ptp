@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="independence.html">
-<link rel="next" href="fairness.html">
+<link rel="prev" href="the-raven-paradox.html">
+<link rel="next" href="the-hosiasson-lindenbaum-solution.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -121,18 +121,47 @@
             <section class="normal" id="section-">
 $$\newcommand{\given}{\,|\,}$$
 $$\renewcommand{\neg}{\mathbin{\sim}}$$
-<div id="bias" class="section level2">
-<h2><span class="header-section-number">2.2</span> Bias</h2>
-<p>Flips of an ordinary coin (like a Canadian Loony) also illustrate independence. Even if you get ten heads in a row, the eleventh toss is still fifty-fifty. That’s because ordinary coins—not the kind you get at a magic shop—are symmetric and evenly balanced. So each toss is… well, a tossup. If it’s <em>really</em> an ordinary coin, the initial ten heads in a row is just a coincidence.</p>
-<p>Coin flips aren’t just independent though, they’re also <em>unbiased</em>: heads and tails are equally likely. A process is <em>biased</em> if some outcomes are more likely than others. Like a loaded coin that comes up heads three quarters of the time is biased.</p>
+<div id="the-raven-paradox-1" class="section level2">
+<h2><span class="header-section-number">5.1</span> The Raven Paradox</h2>
+<p>In the mid-20th Century, one group of philosophers sought to discover the fundamental principles of scientific reasoning. They wanted a “logic of confirmation”, as Carl Hempel called it.</p>
+<p>Would Nicod’s Criterion be part of that logic? Maybe not:</p>
+<blockquote>
+<p>Suppose you’re an ornithologist testing the hypothesis that all ravens are black. You could go out looking for ravens, but you’re short on research funds. So instead you adopt the following, perverse method.</p>
+<p>You wander around campus looking for non-black things and verifying that they are not ravens: red shoes, brown walls, yellow pencils, green statues, etc. Eventually you bump into your department chair, who wants to know why you aren’t doing your research. “I am!”, you reply, “I’m just making clever use of Nicod’s Criterion to make the job easier.”</p>
+<p>“How in the world is that?!”, your chair asks in disbelief. Your cheery retort: “With each observation of a red shoe or a yellow pencil, I confirm the hypothesis that all non-black things are non-ravens. And that’s the same as proving the hypothesis that all ravens are black! Because the two hypothesis are logically equivalent.”</p>
+</blockquote>
+<p>Your chair is a logic nerd, it turns out, and so she recognizes you’re right about one thing here. The following two hypotheses are indeed logically equivalent:</p>
+<ul>
+<li>All ravens are black.</li>
+<li>All non-black things are non-ravens.</li>
+</ul>
+<p>Imagine collecting all the ravens in the world and all the black objects into a room, and placing them into designated circles:</p>
+<div class="figure">
+<img src="img/Raven-Venn-1.png" />
+
+</div>
+<p>If all ravens are black, the only part of the raven circle with anything in it will be the part that overlaps with the black circle. The crescent region on the left will be empty:</p>
+<div class="figure">
+<img src="img/Raven-Venn-2.png" />
+
+</div>
+<p>But that’s just what the second hypothesis says, too. If all the non-black things are non-ravens, then all the things outside the black circle must also be outside the raven circle. So again, the left crescent will be empty.</p>
+<p>And yet, your department chair flatly denies your request for more funding. She doesn’t even miss a beat; it’s a hard pass.</p>
+<p>“What gives?”, you protest. “You agreed these are equivalent hypotheses. Are you saying my observation only confirm one of them?”</p>
+<p>“No”, says your chair, “I agree with Carl Hempel’s famous <em>Equivalence Condition</em>: whatever confirms one of these hypotheses must confirm the other as well.”</p>
+<p>“So you’re questioning Nicod’s Criterion??”</p>
+<p>“No”, she replies, “not right now, anyway.”</p>
+<p>“So what’s the problem?”</p>
+<p>“Well, you are confirming that all ravens are black. But only very, <em>very</em> slowly. So slowly that it’s not worth doing. Each observation you make of a red shoe, or a yellow pencil, confirms the hypothesis. But by so little that it might as well be no support for the hypothesis at all.”</p>
+<p>What in the world is she talking about?</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="independence.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="fairness.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="the-raven-paradox.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="the-hosiasson-lindenbaum-solution.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

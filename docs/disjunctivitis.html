@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="independence.html">
-<link rel="next" href="fairness.html">
+<link rel="prev" href="the-paradox.html">
+<link rel="next" href="time-dependence.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -100,7 +100,8 @@
 <li class="chapter" data-level="6.1" data-path="a-gruesome-concept.html"><a href="a-gruesome-concept.html"><i class="fa fa-check"></i><b>6.1</b> A Gruesome Concept</a></li>
 <li class="chapter" data-level="6.2" data-path="the-paradox.html"><a href="the-paradox.html"><i class="fa fa-check"></i><b>6.2</b> The Paradox</a></li>
 <li class="chapter" data-level="6.3" data-path="disjunctivitis.html"><a href="disjunctivitis.html"><i class="fa fa-check"></i><b>6.3</b> Disjunctivitis</a></li>
-<li class="chapter" data-level="6.4" data-path="response-2-time-dependence.html"><a href="response-2-time-dependence.html"><i class="fa fa-check"></i><b>6.4</b> Response 2: Time-Dependence</a></li>
+<li class="chapter" data-level="6.4" data-path="time-dependence.html"><a href="time-dependence.html"><i class="fa fa-check"></i><b>6.4</b> Time Dependence</a></li>
+<li class="chapter" data-level="6.5" data-path="the-moral.html"><a href="the-moral.html"><i class="fa fa-check"></i><b>6.5</b> The Moral</a></li>
 </ul></li>
 </ul>
 
@@ -121,18 +122,32 @@
             <section class="normal" id="section-">
 $$\newcommand{\given}{\,|\,}$$
 $$\renewcommand{\neg}{\mathbin{\sim}}$$
-<div id="bias" class="section level2">
-<h2><span class="header-section-number">2.2</span> Bias</h2>
-<p>Flips of an ordinary coin (like a Canadian Loony) also illustrate independence. Even if you get ten heads in a row, the eleventh toss is still fifty-fifty. That’s because ordinary coins—not the kind you get at a magic shop—are symmetric and evenly balanced. So each toss is… well, a tossup. If it’s <em>really</em> an ordinary coin, the initial ten heads in a row is just a coincidence.</p>
-<p>Coin flips aren’t just independent though, they’re also <em>unbiased</em>: heads and tails are equally likely. A process is <em>biased</em> if some outcomes are more likely than others. Like a loaded coin that comes up heads three quarters of the time is biased.</p>
+<div id="disjunctivitis" class="section level2">
+<h2><span class="header-section-number">6.3</span> Disjunctivitis</h2>
+<p>Here’s one very natural reply. The problem with grue is it’s a <em>disjunctive</em> concept: it’s defined using EITHER/OR. It suffers from “disjunctivitis”.</p>
+<p>But the beauty of Goodman’s puzzle is the neat way it exposes the flaw here. It allows us to make ‘green’ the disjunctive concept instead!</p>
+<p>How? Start by building grue a friend, a concept to fill in the missing spaces in our original diagram. We’ll call it “bleen”:</p>
+<div class="figure">
+<img src="img/Grue-Bleen-Table.png" />
+
+</div>
+<p>Here’s how you’d define green in terms of grue and bleen then:</p>
+<dl>
+<dt>Green</dt>
+<dd><p>An object is <em>green</em> if EITHER (a) it’s grue and first observed before the year 2020, OR (b) it’s bleen and not observed before 2020.</p>
+</dd>
+</dl>
+<p>Now maybe you’re thinking: you <em>could</em> define green that way, but that’s not how it’s <em>actually</em> defined. In reality, we already understand the concept of green, and we have to learn the concept of grue from its disjunctive definition.</p>
+<p>The problem is, that’s just a fact about <em>us humans</em>, not about grue vs. green. That’s just the way we <em>homo sapiens</em> happen to be built (or maybe socialized, or both). Some bizarre species of alien could grow up thinking in grue/bleen terms instead. And when they landed on Earth, we’d have to explain our green/blue language to them using an EITHER/OR definition. Then <em>they</em> would be looking at <em>us</em> thinking: you guys have a very weird, disjunctive way of thinking!</p>
+<p>What could we say to them to establish the superiority of our way of thinking? It’s been more than 70 years since Goodman first posed this challenge. Yet no answer has emerged as the clear and decisively correct one.</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="independence.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="fairness.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="the-paradox.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="time-dependence.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -172,17 +187,6 @@ gitbook.start({
 });
 </script>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(script.src))
-      script.src  = script.src.replace(/^https?:/, '');
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
 </body>
 
 <!-- </html> -->

@@ -92,11 +92,9 @@ In terms of our tree-diagramming technique, the LTP says to add up the final qua
 
 ## Bayes + LTP = Awesome
 
-A big part of why the LTP is interesting is that it makes for a powerful combination with Bayes' theorem. In fact, you often can't even use Bayes' theorem without using the LTP first.
+A big part of why the LTP is interesting is that it makes for a powerful combination with Bayes' theorem. In fact, you often need the LTP to get to the point where you can apply Bayes' theorem.
 
-Remember the taxicab problem and base rate neglect? We saw that getting the right medical diagnosis depends on handling base rates correctly, often via Bayes' theorem.
-
-To keep things simple, we imagined a fictional blood test for HIV that always comes up positive when the virus is present. But real medical tests aren't so dependable. They can generate false negatives as well as false positives. And the LTP helps us get the right answer in these more realistic cases.
+Remember the problem of base rate neglect? In one example, we imagined a fictional blood test for HIV that always comes up positive when the virus is present. But real medical tests aren't so dependable. They can generate false negatives as well as false positives. And the LTP helps us get the right answer in these more realistic cases.
 
 Here's an example, still fictional, but more realistic:
 

@@ -1,0 +1,100 @@
+# The Raven Paradox
+
+
+Generalization is an essential part of science.
+
+Without general principles, we couldn't predict how things will turn out. Will this vaccine immunize you or make you sick? Does the rocket have enough fuel to make it into orbit? General principles of medicine and physics give us the answers here, if we can discover them.
+
+Generalities also help us understand the world. Why does your bicycle stay upright as long as the wheels are turning, then tip over when you stop? Why do rainbows appear after a rainstorm. General principles about momentum and electromagnetism illuminate these phenomena.
+
+But how does science verify a generalization? How do we establish that a principle is generally true? The obvious and classic answer: by verifying its *instances*. To establish that all electrons have negative charge, examine lots of electrons. To test whether all humans mortal, go and examine lots of humans.
+
+These reflections lead to the principle of scientific reasoning known as *Nicod's Criterion*:
+
+Nicod's Criterion
+
+:   A generalization is confirmed by each observed instance of it (unless you've already found a counterexample, of course).
+
+It's a simple and plausible idea. So of course it leads to paradox.
+
+
+## The Raven Paradox
+
+In the mid-20th Century, one group of philosophers sought to discover the fundamental principles of scientific reasoning. They wanted a "logic of confirmation", as Carl Hempel called it.
+
+Would Nicod's Criterion be part of that logic? Maybe not:
+
+> Suppose you're an ornithologist testing the hypothesis that all ravens are black. You could go out looking for ravens, but you're short on research funds. So instead you adopt the following, perverse method.
+>
+> You wander around campus looking for non-black things and verifying that they are not ravens: red shoes, brown walls, yellow pencils, green statues, etc. Eventually you bump into your department chair, who wants to know why you aren't doing your research. "I am!", you reply, "I'm just making clever use of Nicod's Criterion to make the job easier."
+>
+> "How in the world is that?!", your chair asks in disbelief. Your cheery retort: "With each observation of a red shoe or a yellow pencil, I confirm the hypothesis that all non-black things are non-ravens. And that's the same as proving the hypothesis that all ravens are black! Because the two hypothesis are logically equivalent."
+
+Your chair is a logic nerd, it turns out, and so she recognizes you're right about one thing here. The following two hypotheses are indeed logically equivalent:
+
+- All ravens are black.
+- All non-black things are non-ravens.
+
+Imagine collecting all the ravens in the world and all the black objects into a room, and placing them into designated circles:
+
+![](img/Raven-Venn-1.png)
+
+If all ravens are black, the only part of the raven circle with anything in it will be the part that overlaps with the black circle. The crescent region on the left will be empty:
+
+![](img/Raven-Venn-2.png)
+
+But that's just what the second hypothesis says, too. If all the non-black things are non-ravens, then all the things outside the black circle must also be outside the raven circle. So again, the left crescent will be empty.
+
+And yet, your department chair flatly denies your request for more funding. She doesn't even miss a beat; it's a hard pass.
+
+"What gives?", you protest. "You agreed these are equivalent hypotheses. Are you saying my observation only confirm one of them?"
+
+"No", says your chair, "I agree with Carl Hempel's famous *Equivalence Condition*: whatever confirms one of these hypotheses must confirm the other as well."
+
+"So you're questioning Nicod's Criterion??"
+
+"No", she replies, "not right now, anyway."
+
+"So what's the problem?"
+
+"Well, you are confirming that all ravens are black. But only very, *very* slowly. So slowly that it's not worth doing. Each observation you make of a red shoe, or a yellow pencil, confirms the hypothesis. But by so little that it might as well be no support for the hypothesis at all."
+
+What in the world is she talking about?
+
+
+## The Hosiasson-Lindenbaum Solution
+
+It turns out your chair did a minor in philosophy, where she read about a little-known Polish logician named Janina Hosiasson-Lindenbaum, who was shot dead by the Nazis in 1942. But two years before that, she published an influential analysis of precisely the issue you and your chair are debating.
+
+She concluded that observing a red shoe does support the hypothesis that all ravens are black, but by a tiny, negligible amount. And, it turns out, philosophers nowadays generally agree that she was right.
+
+How could a red shoe have any bearing at all on ravens and their colouring? Well, any object you observed could, in principle, disprove your hypothesis. Each turn of your head could reveal (say) a white raven. When you see something else instead, like a red shoe, the hypothesis passes a sort of test.
+
+But it's only a very weak sort of test. Most things you encounter aren't black, and aren't ravens. So you'll probably turn your head to see something non-black, in which case it just has to be a non-raven for the hypothesis to avoid disproof. Since ravens aren't a frequent sight, the hypothesis will probably pass this test.
+
+But if you go looking for ravens, then the hypothesis faces a more serious test. It says each raven you find will be black. Assuming you haven't yet established anything about ravens' colouring, the hypothesis could well turn out to be wrong. Some of the ravens you find could well be white. When you find they're not, your hypothesis' bona fides get a real, substantial boost.
+
+
+## Hats & Grasshoppers
+
+So is Nicod's Criterion legit then? Your chair hinted at reservations, and for good reasons.
+
+Nicod's Criterion seems plausible, and it applies just fine to lots of cases. But not to all cases. And that means it can't be a fundamental scientific principle---part of the "logic of confirmation".
+
+Here's one example where it fails:
+
+> Three philosophers go to dinner and check their hats at the door. After dinner the waiter returns their hats, and philosopher A notices she has B's hat. Now consider this general statement: each philosopher has been given the wrong hat. Will this be confirmed or disconfirmed if B turns out to have A's hat?
+
+The answer: it will be *disconfirmed*, even though this would be a positive instance of the general claim. If B finds that he has A's hat, then that's a case of getting the wrong hat. But it also means C will definitely get the right hat, since hers is the only hat left unaccounted for.
+
+I like that example because it's tidy. It's easy to keep track of just three hats in your head, and the consequences are perfectly certain. C *must* get her own hat if A and B have been given each other's.
+
+But the tidiness here comes at the price of realism, as it so often does. So here's a less tidy, and slightly more realistic, example:
+
+> An entomologist friend of yours tells you about a remote island in the Atlantic Ocean, Pitcairn Island, which has no grasshoppers. In other words: all the grasshoppers in the world live outside of Pitcairn Island.
+>
+> A few years later, you and your friend take a trip to a neighbouring island, where you see many grasshoppers. You express some doubts about your friends prior assurances. But he insists that these are positive instances of his hypothesis: they are examples of grasshoppers living outside of Pitcairn Island.
+>
+> But, to settle the matter, he agrees to take the ferry with you over to Pitcairn Island. At the docks, the ferry arrives from Pitcairn and a horde of grasshoppers disembarks, swarming past you. "More confirmation of my hypothesis!", your friend declares. "A whole swarm of grasshoppers outside of Pitcairn Island!"
+
+I hope you will agree that your friend's scientific credentials might now be in doubt.

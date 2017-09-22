@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="independence.html">
-<link rel="next" href="fairness.html">
+<link rel="prev" href="the-paradox.html">
+<link rel="next" href="response-2-time-dependence.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -99,7 +99,7 @@
 <li class="chapter" data-level="6" data-path="the-grue-paradox.html"><a href="the-grue-paradox.html"><i class="fa fa-check"></i><b>6</b> The Grue Paradox</a><ul>
 <li class="chapter" data-level="6.1" data-path="a-gruesome-concept.html"><a href="a-gruesome-concept.html"><i class="fa fa-check"></i><b>6.1</b> A Gruesome Concept</a></li>
 <li class="chapter" data-level="6.2" data-path="the-paradox.html"><a href="the-paradox.html"><i class="fa fa-check"></i><b>6.2</b> The Paradox</a></li>
-<li class="chapter" data-level="6.3" data-path="disjunctivitis.html"><a href="disjunctivitis.html"><i class="fa fa-check"></i><b>6.3</b> Disjunctivitis</a></li>
+<li class="chapter" data-level="6.3" data-path="disjunctiveness.html"><a href="disjunctiveness.html"><i class="fa fa-check"></i><b>6.3</b> Disjunctiveness</a></li>
 <li class="chapter" data-level="6.4" data-path="response-2-time-dependence.html"><a href="response-2-time-dependence.html"><i class="fa fa-check"></i><b>6.4</b> Response 2: Time-Dependence</a></li>
 </ul></li>
 </ul>
@@ -121,18 +121,33 @@
             <section class="normal" id="section-">
 $$\newcommand{\given}{\,|\,}$$
 $$\renewcommand{\neg}{\mathbin{\sim}}$$
-<div id="bias" class="section level2">
-<h2><span class="header-section-number">2.2</span> Bias</h2>
-<p>Flips of an ordinary coin (like a Canadian Loony) also illustrate independence. Even if you get ten heads in a row, the eleventh toss is still fifty-fifty. That’s because ordinary coins—not the kind you get at a magic shop—are symmetric and evenly balanced. So each toss is… well, a tossup. If it’s <em>really</em> an ordinary coin, the initial ten heads in a row is just a coincidence.</p>
-<p>Coin flips aren’t just independent though, they’re also <em>unbiased</em>: heads and tails are equally likely. A process is <em>biased</em> if some outcomes are more likely than others. Like a loaded coin that comes up heads three quarters of the time is biased.</p>
+<div id="disjunctiveness" class="section level2">
+<h2><span class="header-section-number">6.3</span> Disjunctiveness</h2>
+<p>Here’s one very natural and appealing reply. The problem with grue is that it’s a <em>disjunctive</em> concept: it’s defined using EITHER/OR.</p>
+<p>Part of the beauty of Goodman’s puzzle, however, is that it comes with a neat way of exposing the flaw in this diagnosis. Because it allows us to make ‘green’ the disjunctive concept in stead.</p>
+<p>How? Let’s start by building grue a friend, a concept to fill in the missing spaces in our original diagram. We’ll call it “been”:</p>
+<div class="figure">
+<img src="img/Grue-Bleen-Table.png" />
+
+</div>
+<p>To make the definition explicit:</p>
+<dl>
+<dt>Bleen</dt>
+<dd><p>An object is <em>bleen</em> if EITHER (a) it is blue and first observed before the year 2020, OR (b) it’s green and not observed before 2020.</p>
+</dd>
+</dl>
+<p>Now imagine some bizarre species of alien lands on Earth, and they don’t have concepts like green and blue. Instead they think, and speak, in terms of grue and bleen.</p>
+<p>They hear us talking green/blue talk, and they want to know what it’s all about. How would we tell them? Much the same way they would have to explain grue and bleen to us. We would provide them an EITHER/OR definition, in terms of the grue/bleen language they’re familiar with.</p>
+<p>Or, what comes to the same thing, we’d give them this diagram:</p>
+<p>Question 2: are disjunctive concepts always deficient? Or do they sometimes reveal real, legitimate patterns.</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="independence.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="fairness.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="the-paradox.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="response-2-time-dependence.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -172,17 +187,6 @@ gitbook.start({
 });
 </script>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(script.src))
-      script.src  = script.src.replace(/^https?:/, '');
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
 </body>
 
 <!-- </html> -->

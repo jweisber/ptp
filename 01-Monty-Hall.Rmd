@@ -47,7 +47,7 @@ Well, here's one reasoned argument that prisoner A is mistaken. By A's logic, th
 
 This argument is right as far as it goes. But it doesn't really explain where the prisoner went wrong. It just tells us she must've gone wrong *somewhere*. But where?
 
-I think the correct explanation involves a famous precept known as *The Total Evidence Requirement*. It says pretty much what it sounds like: to get the true probability of something, you have to take account of *all* the evidence you have. And the guard wouldn't just be telling her that B will be released. She would also be telling her (implicitly) that the guard chose to identify B as one of the released prisoners.
+I think the correct explanation involves a famous precept known as *The Total Evidence Requirement*. It says pretty much what it sounds like: to get the true probability of something, you have to take account of *all* the evidence you have. And the guard isn't just telling A that B is still condemned. She's also telling B, implicitly, that she *chose* to identify B as one of the condemned prisoners.
 
 It's really counterintuitive that this extra information makes a difference. But it turns out to make all the difference in the world. Here's one way to see how.
 

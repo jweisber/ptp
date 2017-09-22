@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="independence.html">
-<link rel="next" href="fairness.html">
+<link rel="prev" href="the-grue-paradox.html">
+<link rel="next" href="the-paradox.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -97,9 +97,9 @@
 <li class="chapter" data-level="5.3" data-path="hats-grasshoppers.html"><a href="hats-grasshoppers.html"><i class="fa fa-check"></i><b>5.3</b> Hats &amp; Grasshoppers</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="the-grue-paradox.html"><a href="the-grue-paradox.html"><i class="fa fa-check"></i><b>6</b> The Grue Paradox</a><ul>
-<li class="chapter" data-level="6.1" data-path="a-gruesome-concept.html"><a href="a-gruesome-concept.html"><i class="fa fa-check"></i><b>6.1</b> A Gruesome Concept</a></li>
+<li class="chapter" data-level="6.1" data-path="green-grue-and-you.html"><a href="green-grue-and-you.html"><i class="fa fa-check"></i><b>6.1</b> Green, Grue, and You</a></li>
 <li class="chapter" data-level="6.2" data-path="the-paradox.html"><a href="the-paradox.html"><i class="fa fa-check"></i><b>6.2</b> The Paradox</a></li>
-<li class="chapter" data-level="6.3" data-path="disjunctivitis.html"><a href="disjunctivitis.html"><i class="fa fa-check"></i><b>6.3</b> Disjunctivitis</a></li>
+<li class="chapter" data-level="6.3" data-path="response-1-disjunctiveness.html"><a href="response-1-disjunctiveness.html"><i class="fa fa-check"></i><b>6.3</b> Response 1: Disjunctiveness</a></li>
 <li class="chapter" data-level="6.4" data-path="response-2-time-dependence.html"><a href="response-2-time-dependence.html"><i class="fa fa-check"></i><b>6.4</b> Response 2: Time-Dependence</a></li>
 </ul></li>
 </ul>
@@ -119,20 +119,35 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-$$\newcommand{\given}{\,|\,}$$
-$$\renewcommand{\neg}{\mathbin{\sim}}$$
-<div id="bias" class="section level2">
-<h2><span class="header-section-number">2.2</span> Bias</h2>
-<p>Flips of an ordinary coin (like a Canadian Loony) also illustrate independence. Even if you get ten heads in a row, the eleventh toss is still fifty-fifty. That’s because ordinary coins—not the kind you get at a magic shop—are symmetric and evenly balanced. So each toss is… well, a tossup. If it’s <em>really</em> an ordinary coin, the initial ten heads in a row is just a coincidence.</p>
-<p>Coin flips aren’t just independent though, they’re also <em>unbiased</em>: heads and tails are equally likely. A process is <em>biased</em> if some outcomes are more likely than others. Like a loaded coin that comes up heads three quarters of the time is biased.</p>
+$$\newcommand{\given}{\,|\,} \renewcommand{\neg}{\mathbin{\sim}}$$
+<div id="green-grue-and-you" class="section level2">
+<h2><span class="header-section-number">6.1</span> Green, Grue, and You</h2>
+<p>In the 1940’s, the philosopher Nelson Goodman posed a famous problem for this principle, based on the invented concept, “grue”.</p>
+<dl>
+<dt>Grue</dt>
+<dd><p>An object is <em>grue</em> if EITHER (a) it is green and first observed before the year 2018, OR (b) it’s blue and not observed before 2018.<br />
+<br />
+<img src="img/Grue-Table.png" /></p>
+</dd>
+</dl>
+<p>Some examples of grue things:</p>
+<ul>
+<li>The Statue of Liberty, the $20 bill in my pocket, Kermit the Frog.</li>
+<li>The first $5 bill to be printed in 2018, the first sapphire to be mined in 2018, any blue planets on the far side of the universe.</li>
+</ul>
+<p>Some non-grue things:</p>
+<ul>
+<li>Fire engines, the Star of India, the first $20 bill to be printed in 2018.</li>
+</ul>
+<p>Test your understanding: do grue things change colour in 2018?</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="independence.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="fairness.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="the-grue-paradox.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="the-paradox.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -172,17 +187,6 @@ gitbook.start({
 });
 </script>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(script.src))
-      script.src  = script.src.replace(/^https?:/, '');
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
 </body>
 
 <!-- </html> -->

@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="independence.html">
-<link rel="next" href="fairness.html">
+<link rel="prev" href="time-dependence.html">
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -100,7 +100,8 @@
 <li class="chapter" data-level="6.1" data-path="a-gruesome-concept.html"><a href="a-gruesome-concept.html"><i class="fa fa-check"></i><b>6.1</b> A Gruesome Concept</a></li>
 <li class="chapter" data-level="6.2" data-path="the-paradox.html"><a href="the-paradox.html"><i class="fa fa-check"></i><b>6.2</b> The Paradox</a></li>
 <li class="chapter" data-level="6.3" data-path="disjunctivitis.html"><a href="disjunctivitis.html"><i class="fa fa-check"></i><b>6.3</b> Disjunctivitis</a></li>
-<li class="chapter" data-level="6.4" data-path="response-2-time-dependence.html"><a href="response-2-time-dependence.html"><i class="fa fa-check"></i><b>6.4</b> Response 2: Time-Dependence</a></li>
+<li class="chapter" data-level="6.4" data-path="time-dependence.html"><a href="time-dependence.html"><i class="fa fa-check"></i><b>6.4</b> Time Dependence</a></li>
+<li class="chapter" data-level="6.5" data-path="the-moral.html"><a href="the-moral.html"><i class="fa fa-check"></i><b>6.5</b> The Moral</a></li>
 </ul></li>
 </ul>
 
@@ -121,18 +122,22 @@
             <section class="normal" id="section-">
 $$\newcommand{\given}{\,|\,}$$
 $$\renewcommand{\neg}{\mathbin{\sim}}$$
-<div id="bias" class="section level2">
-<h2><span class="header-section-number">2.2</span> Bias</h2>
-<p>Flips of an ordinary coin (like a Canadian Loony) also illustrate independence. Even if you get ten heads in a row, the eleventh toss is still fifty-fifty. That’s because ordinary coins—not the kind you get at a magic shop—are symmetric and evenly balanced. So each toss is… well, a tossup. If it’s <em>really</em> an ordinary coin, the initial ten heads in a row is just a coincidence.</p>
-<p>Coin flips aren’t just independent though, they’re also <em>unbiased</em>: heads and tails are equally likely. A process is <em>biased</em> if some outcomes are more likely than others. Like a loaded coin that comes up heads three quarters of the time is biased.</p>
+<div id="the-moral" class="section level2">
+<h2><span class="header-section-number">6.5</span> The Moral</h2>
+<p>Though it might seem just cute, or a mere curiosity, Goodman’s puzzle is actually profound. In fact, I see it as one of the deepest and most troubling problems we’ll encounter in this book.</p>
+<p>The reason why will become clearer soon, especially when we discuss Bertrand’s paradox in the next chapter. But to give you the gist of what we’re dealing with, here is the lesson I (and many others) take from the grue paradox.</p>
+<p>Whatever the logic of science is, it cannot be written down or summarized in a few, simple principles. The Principle of Induction is barely even a schema, needing much filling in. And the real substance can’t be filled in, at least not in any simple way with the tools we have like logic and probability.</p>
+<p>Which observed patterns should we expect to apply in general? Which ones should we tell the machines to extrapolate from, and which to ignore? We know intuitively how to answer this question in many cases. We know that green is legit, and grue is bogus. But we have no way of making this tacit knowledge explicit in general, so that we can program it all into a machine.</p>
+
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="independence.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="fairness.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="time-dependence.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -172,17 +177,6 @@ gitbook.start({
 });
 </script>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(script.src))
-      script.src  = script.src.replace(/^https?:/, '');
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
 </body>
 
 <!-- </html> -->
