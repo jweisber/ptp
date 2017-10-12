@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="the-gamblers-fallacy-1.html">
-<link rel="next" href="the-hot-hand.html">
+<link rel="prev" href="the-cube-factory.html">
+<link rel="next" href="disjunctivitis-1.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -105,6 +105,10 @@
 </ul></li>
 <li class="chapter" data-level="7" data-path="bertrands-pardox.html"><a href="bertrands-pardox.html"><i class="fa fa-check"></i><b>7</b> Bertrand’s Pardox</a><ul>
 <li class="chapter" data-level="7.1" data-path="the-cube-factory.html"><a href="the-cube-factory.html"><i class="fa fa-check"></i><b>7.1</b> The Cube Factory</a></li>
+<li class="chapter" data-level="7.2" data-path="the-paradox-1.html"><a href="the-paradox-1.html"><i class="fa fa-check"></i><b>7.2</b> The Paradox</a></li>
+<li class="chapter" data-level="7.3" data-path="disjunctivitis-1.html"><a href="disjunctivitis-1.html"><i class="fa fa-check"></i><b>7.3</b> Disjunctivitis</a></li>
+<li class="chapter" data-level="7.4" data-path="time-dependence-1.html"><a href="time-dependence-1.html"><i class="fa fa-check"></i><b>7.4</b> Time Dependence</a></li>
+<li class="chapter" data-level="7.5" data-path="the-moral-1.html"><a href="the-moral-1.html"><i class="fa fa-check"></i><b>7.5</b> The Moral</a></li>
 </ul></li>
 </ul>
 
@@ -125,20 +129,32 @@
             <section class="normal" id="section-">
 $$\newcommand{\given}{\,|\,}$$
 $$\renewcommand{\neg}{\mathbin{\sim}}$$
-<div id="fallacies-vs.misfortunes" class="section level2">
-<h2><span class="header-section-number">2.5</span> Fallacies vs. Misfortunes</h2>
-<p>But wait: imagine you flip a coin a thousand times and it lands heads every time. Every. Damn. Time. Shouldn’t you at least be suspicious? It sure looks like something weird is going on, something that makes this coin land heads repeatedly. So shouldn’t you expect heads on the next flip? How could that be a fallacy?</p>
-<p>It’s not a fallacy! It’s perfectly good reasoning. It’s only a fallacy when you know the process is fair (or assume it is). And here, you doubt the process is fair, with good reason.</p>
-<p>The lesson: there’s a difference between a fallacy and misfortune. A fallacy is a logical error, a failure to correctly use the information you have. When you know a process is fair but neglect the independence that entails, that’s an error of logic. You should know better.</p>
-<p>But sometimes you just get bad information. If a fair coin really did land heads a thousand times in a row, you’d be forgiven for thinking it’s not actually fair. You’d be in the unfortunate position of having some misleading information—<em>really</em> misleading information in this example. (But don’t worry too much. Information <em>this</em> misleading is also <em>really</em> unlikely.)</p>
+<div id="the-paradox-1" class="section level2">
+<h2><span class="header-section-number">7.2</span> The Paradox</h2>
+<p>So what’s the big deal about grue? Well ask yourself whether you’ve ever seen a grue emerald.</p>
+<p>I have. In fact, every emerald I’ve ever seen has been grue. And the same goes for every emerald you’ve ever seen. Every emerald anyone has ever seen has been grue.</p>
+<p>Why? Because they’re all green. And they’ve all been observed before the year 2020 (it’s 2017 as I write this). So they’re all grue the first way—they all satisfy part (a) of the definition. (Notice it’s an EITHER/OR definition, so you only have to satisfy one of the two parts to be grue.)</p>
+<p>So all the emeralds we’ve ever seen have been grue. Let’s apply the Principle of Induction then:</p>
+<ol style="list-style-type: decimal">
+<li>All observed emeralds have been grue.</li>
+<li>Therefore <em>all</em> emeralds are grue.</li>
+</ol>
+<p>But if all emeralds are grue, then the first emeralds to be mined in 2020 will be grue. And that means they’ll be blue! Because they won’t have been observed before 2020, so the only way for them to be grue is to be blue. So there are blue emeralds out there, just waiting to be pulled out of the earth!</p>
+<p>Uh-oh, something has definitely gone off the rails here. But what?</p>
+<p>Another way put the challenge: we have two “patterns” in our observed data. The emeralds we’ve seen are uniformly green, but they’re also uniformly grue. We can’t project both these patterns into the future, though. They contradict each other starting in 2020.</p>
+<p>Now, the green pattern is the real one, obviously. The grue “pattern” is bogus, and no one but a philosopher would even bother thinking about it. So <em>why</em> is it bogus? What’s so special about green?</p>
+<p>Apparently the Principle of Induction has a huge hole in it! It says to extrapolate from observed patterns. But <em>which</em> patterns?</p>
+<p>Patterns are cheap, as any data scientist will tell you. Given a bunch of data points on an <em>xy</em>-plane, there are lots of ways to connect the dots. Even if they all lie on a straight line, you could draw an oscillating curve that passes through each point, or even a much wilder (and sillier) curve.</p>
+<p>Fun fact: deciding which patterns to use and which to ignore is a big part of what machine learning experts do. And it’s one reason humans are still essential to designing artificial intelligence. Thanks to our experience, and our genetic inheritance, we have <em>lots</em> of information about which patterns are likely to continue, and which are bogus “patterns” like grue.</p>
+<p>But how do we pass all that wisdom on to the machines, so that they can take it from here? How do we tell them the difference between green and grue?</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="the-gamblers-fallacy-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="the-hot-hand.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="the-cube-factory.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="disjunctivitis-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -178,17 +194,6 @@ gitbook.start({
 });
 </script>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(script.src))
-      script.src  = script.src.replace(/^https?:/, '');
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
 </body>
 
 <!-- </html> -->

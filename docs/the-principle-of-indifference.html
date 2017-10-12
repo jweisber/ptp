@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="the-gamblers-fallacy-1.html">
-<link rel="next" href="the-hot-hand.html">
+<link rel="prev" href="the-cube-factory.html">
+<link rel="next" href="how-widespread-is-the-problem.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -105,6 +105,12 @@
 </ul></li>
 <li class="chapter" data-level="7" data-path="bertrands-pardox.html"><a href="bertrands-pardox.html"><i class="fa fa-check"></i><b>7</b> Bertrand’s Pardox</a><ul>
 <li class="chapter" data-level="7.1" data-path="the-cube-factory.html"><a href="the-cube-factory.html"><i class="fa fa-check"></i><b>7.1</b> The Cube Factory</a></li>
+<li class="chapter" data-level="7.2" data-path="the-principle-of-indifference.html"><a href="the-principle-of-indifference.html"><i class="fa fa-check"></i><b>7.2</b> The Principle of Indifference</a></li>
+<li class="chapter" data-level="7.3" data-path="how-widespread-is-the-problem.html"><a href="how-widespread-is-the-problem.html"><i class="fa fa-check"></i><b>7.3</b> How Widespread is the Problem?</a></li>
+<li class="chapter" data-level="7.4" data-path="the-laws-of-probability.html"><a href="the-laws-of-probability.html"><i class="fa fa-check"></i><b>7.4</b> The Laws of Probability</a></li>
+<li class="chapter" data-level="7.5" data-path="the-problem-of-priors.html"><a href="the-problem-of-priors.html"><i class="fa fa-check"></i><b>7.5</b> The Problem of Priors</a></li>
+<li class="chapter" data-level="7.6" data-path="grue-all-over-again.html"><a href="grue-all-over-again.html"><i class="fa fa-check"></i><b>7.6</b> Grue All Over Again</a></li>
+<li class="chapter" data-level="7.7" data-path="where-this-leaves-us.html"><a href="where-this-leaves-us.html"><i class="fa fa-check"></i><b>7.7</b> Where This Leaves Us</a></li>
 </ul></li>
 </ul>
 
@@ -125,20 +131,34 @@
             <section class="normal" id="section-">
 $$\newcommand{\given}{\,|\,}$$
 $$\renewcommand{\neg}{\mathbin{\sim}}$$
-<div id="fallacies-vs.misfortunes" class="section level2">
-<h2><span class="header-section-number">2.5</span> Fallacies vs. Misfortunes</h2>
-<p>But wait: imagine you flip a coin a thousand times and it lands heads every time. Every. Damn. Time. Shouldn’t you at least be suspicious? It sure looks like something weird is going on, something that makes this coin land heads repeatedly. So shouldn’t you expect heads on the next flip? How could that be a fallacy?</p>
-<p>It’s not a fallacy! It’s perfectly good reasoning. It’s only a fallacy when you know the process is fair (or assume it is). And here, you doubt the process is fair, with good reason.</p>
-<p>The lesson: there’s a difference between a fallacy and misfortune. A fallacy is a logical error, a failure to correctly use the information you have. When you know a process is fair but neglect the independence that entails, that’s an error of logic. You should know better.</p>
-<p>But sometimes you just get bad information. If a fair coin really did land heads a thousand times in a row, you’d be forgiven for thinking it’s not actually fair. You’d be in the unfortunate position of having some misleading information—<em>really</em> misleading information in this example. (But don’t worry too much. Information <em>this</em> misleading is also <em>really</em> unlikely.)</p>
+<div id="the-principle-of-indifference" class="section level2">
+<h2><span class="header-section-number">7.2</span> The Principle of Indifference</h2>
+<p>If you’re thinking we must have screwed up our arithmetic somewhere, you can go back and check. But I promise you, that’s not the cause of the problem.</p>
+<p>It’s something else, a famous principle we relied on without mentioning explicitly:</p>
+<dl>
+<dt>The Principle of Indifference</dt>
+<dd><p>If all you know is there are <span class="math inline">\(n\)</span> possibilities, each possibility has the same probability: <span class="math inline">\(1/n\)</span>.</p>
+</dd>
+</dl>
+<p>If all you know is that a coin has two sides, each has probability 1/2. If all you know is a die has six sides, each has probability 1/6.</p>
+<p>When the range of possibilities lies on a continuum—like if the length of a cube’s sides has to be somewhere between 1 and 3—there’s an extension of this basic idea.</p>
+<dl>
+<dt>The Principle of Indifference II</dt>
+<dd><p>If the range of possible outcomes is an interval of size <span class="math inline">\(x\)</span>, and you have no information about where in that interval the truth lies, the probability of any subinterval of length <span class="math inline">\(y\)</span> is <span class="math inline">\(y/x\)</span>.</p>
+</dd>
+</dl>
+<p>The cube factory example demonstrates a problem with this principle: it gives contradictory results depending how we frame the question. If we think about things in terms of the lengths of the sides, then <span class="math inline">\(x = 2\)</span> and <span class="math inline">\(y = 1\)</span>, so the probability is <span class="math inline">\(1/2\)</span>. But if we think in terms of volume instead, then <span class="math inline">\(x = 26\)</span> and <span class="math inline">\(y = y\)</span>, so the probability is <span class="math inline">\(7/26\)</span>.</p>
+<p>The problem isn’t in the arithmetic. It comes from a curious—but uncontroversial!—mathematical fact. The same set of possibilities can be represented on different scales (side-length vs volume), and its relative size on each scale can be different.</p>
+<p>The volume scale is the cube of the side-length scale, and cubing numbers results in larger increases for larger numbers. So cubing the 1-to-2 range increases its length, but cubing the 2-to-3 range increases it even more.</p>
+<p>The Principle of Indifference says to use the size of a range of possibilities to determine its probabilities. But size on which scale? <em>That’s</em> the problem.</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="the-gamblers-fallacy-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="the-hot-hand.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="the-cube-factory.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="how-widespread-is-the-problem.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

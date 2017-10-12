@@ -3,11 +3,11 @@
 
 A lot of science works by extrapolating from observed patterns.
 
-Pollsters, for example, survey a random sample of voters to gauge the leaning of the electorate as a whole. If 54% of respondents prefer Candidate X, they conclude that 54% of all voters prefer X, give or take.
+Pollsters survey a sample of voters to gauge the leaning of the electorate as a whole, for example. If 54% of respondents prefer Candidate X, they conclude that 54% of all voters (give or take) prefer X.
 
-Similarly, climate scientists  extrapolate from historical trends to estimate future trends. The planet has been steadily warming for the last 100 years, which is one reason to expect it will continue to warm for the next few years, at least.
+Climate scientists extrapolate from historical trends to estimate future trends. The planet has been steadily warming for the last 100 years. That's one reason to expect it will continue to warm in the coming years.
 
-A fundamental principle of scientific inquiry thus seems to be something like: expect the unobserved to resemble the observed. Philosophers call this *the Principle of Induction*.
+A fundamental principle of scientific inquiry seems to be something like: expect the unobserved to resemble the observed. Philosophers call this *the Principle of Induction*.
 
 
 ## A Gruesome Concept
@@ -105,10 +105,10 @@ So we're left in the same spot. We need some way of showing that the "true" orde
 
 ## The Moral
 
-Though it might seem just cute, or a mere curiosity, Goodman's puzzle is actually profound. In fact, I see it as one of the deepest and most troubling problems we'll encounter in this book.
+Though it may seem just cute or merely a curiosity, Goodman's puzzle is actually profound. I see it as one of the deepest and most troubling problems we'll encounter in this book, in fact.
 
-The reason why will become clearer soon, especially when we discuss Bertrand's paradox in the next chapter. But to give you the gist of what we're dealing with, here is the lesson I (and many others) take from the grue paradox.
+The reason why will become clearer soon, especially in the next chapter. But to give you the gist of what we're dealing with, here is the lesson I (and many others) take from the grue paradox.
 
-Whatever the logic of science is, it cannot be written down or summarized in a few, simple principles. The Principle of Induction is barely even a schema, needing much filling in. And the real substance can't be filled in, at least not in any simple way with the tools we have like logic and probability.
+Whatever the logic of science is, it cannot be written down or summarized in a few, simple principles. The Principle of Induction is barely even a sketch waiting to be filled in. And it can't be filled in, at least not with the tools we presently have, like logic and probability.
 
-Which observed patterns should we expect to apply in general? Which ones should we tell the machines to extrapolate from, and which to ignore? We know intuitively how to answer this question in many cases. We know that green is legit, and grue is bogus. But we have no way of making this tacit knowledge explicit in general, so that we can program it all into a machine.
+Which observed patterns should we expect to apply in general? Which ones should we tell the machines to extrapolate from, and which to ignore? We know intuitively how to answer this question in many cases. We know that green is legit while grue is bogus. But we have no way of making this tacit knowledge explicit or general, so that it can be programmed into a machine.

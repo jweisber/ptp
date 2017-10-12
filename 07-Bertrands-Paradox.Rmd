@@ -1,0 +1,129 @@
+# Bertrand's Pardox
+
+
+Wait, wait, wait: what are statistics textbooks filled with then, if not principles of good scientific reasoning? Aren't there well established laws of probability? Can't scientists just follow those and not worry about all this gruesome nonsense?
+
+You would think so, but no.
+
+
+## The Cube Factory
+
+Consider this example from the influential philosopher of science Bas van Fraassen:
+
+> A factory makes cubes whose sides are always between 1 and 3 feet long. What is the probability the next cube they make will have sides between 1 and 2 feet long?
+
+The obvious answer is 1/2. The 1-to-2 range is half of the 1-to-3 range, so half the time you'd expect cubes whose sides are between 1 and 2 feet long, as opposed to between 2 and 3 feet long.
+
+But now consider this question: what's the probability the **volume** of the cube will be between 1 and 8 cubic feet? The answer is a bit less obvious now, but with just a little arithmetic we get 7/26. How?
+
+Well, the range of possible volumes in cubic feet is $1^3$ to $3^3$, which is $1$ to $27$. And we want the chance the actual volume will be between $1$ and $8$. So that's 7/26 of the total range: $(8-1)/(27-1) = 7/26$.
+
+But here's the kicker: these two questions are actually one and the same, yet we got two different answers.
+
+How are they the same? Because a cube having sides between 1 and 2 feet long is equivalent to having volume between 1 and 8 cubic feet. If the sides are 1 foot long, the volume is 1 cubic foot. If the sides are 2 feet long, the volume is 8 cubic feet. So sides 1-to-2 feet = volume 1-to-8 cubic feet.
+
+So we have two answers to the same question. What's the chance the next cube will be between 1 and 2 feet on a side? Put another way: that it will have volume between 1 and 8 cubic feet?  We got 1/2 on our first go, but only 7/26 on the second.
+
+Which answer is right?
+
+
+## The Principle of Indifference
+
+If you're thinking we must have screwed up our arithmetic somewhere, you can go back and check. But I promise you, that's not the cause of the problem.
+
+It's something else, a famous principle we relied on without mentioning explicitly:
+
+The Principle of Indifference
+
+:    If all you know is there are $n$ possibilities, each possibility has the same probability: $1/n$.
+
+If all you know is that a coin has two sides, each has probability 1/2. If all you know is a die has six sides, each has probability 1/6.
+
+When the range of possibilities lies on a continuum---like if the length of a cube's sides has to be somewhere between 1 and 3---there's an extension of this basic idea.
+
+The Principle of Indifference II
+
+:    If the range of possible outcomes is an interval of size $x$, and you have no information about where in that interval the truth lies, the probability of any subinterval of length $y$ is $y/x$.
+
+The cube factory example demonstrates a problem with this principle: it gives contradictory results depending how we frame the question. If we think about things in terms of the lengths of the sides, then $x = 2$ and $y = 1$, so the probability is $1/2$. But if we think in terms of volume instead, then $x = 26$ and $y = y$, so the probability is $7/26$.
+
+The problem isn't in the arithmetic. It comes from a curious---but uncontroversial!---mathematical fact. The same set of possibilities can be represented on different scales (side-length vs volume), and its relative size on each scale can be different.
+
+The volume scale is the cube of the side-length scale, and cubing numbers results in larger increases for larger numbers. So cubing the 1-to-2 range increases its length, but cubing the 2-to-3 range increases it even more.
+
+The Principle of Indifference says to use the size of a range of possibilities to determine its probabilities. But size on which scale? *That's* the problem.
+
+
+## How Widespread is the Problem?
+
+The cube factory example isn't just some rarified edge case, sadly. This problem shows up *everywhere*. There's always more than one way to frame these questions.
+
+Take a train trip, for example. Maybe all you know is that the trip is 60 miles long, and the train always arrives somewhere between 11:50 and 12:10. If you apply the Principle of Indifference to that 20 minute interval, you'll think it's fifty-fifty whether the train will arrive by noon. But if instead you apply the principle to the train's average speed, you'll get a different answer.
+
+Even simple seeming "finite" situations aren't immune to the problem. Suppose I tell you my friend is buying a car today, either a Honda or a Toyota. So it's 1/2 probability for each, right? Except that he's considering two models of Honda: Civic and Accord. Ok, so then it's 1/3 each. Or is it 1/4 for each model of Honda, and 1/2 for Toyota?
+
+And what about all the different colours he might buy? And the prices he might pay? And what time will the purchase be completed? We can keep dividing up the space of possibilities finer and finer, without limit. A finite number of possible outcomes can always be infinitely divided.
+
+So, at some point, we'll need to apply the Principle of Indifference to a continuous range of possibilities, to an interval of some length. And what length? Well, that will depend, once again, on how we frame the situation.
+
+
+## The Laws of Probability
+
+The Principle of Indifference goes back hundreds of years. The greats who created our modern theory of probability, like Thomas Bayes and Pierre-Simon Laplace, relied on it heavily.
+
+You won't find it in a modern math or stats textbook, though. Problems like the cube factory were well known by the late 1800's, thanks to the mathematician Pierre Bertrand (though he used different examples). So by the time the laws of probability were codified in the 1930's, the Principle of Indifference was on the outs.
+
+What will you find in a modern textbook then? Just three, simple rules.
+
+First, probabilities are always numbers between 0 and 1. This is barely even a rule, really more agreeing on a scale---like labeling a volume dial from 0 to 11. Except probabilities only go up to 1. (But [check this out](https://www.johndcook.com/blog/2008/03/11/how-loud-is-the-evidence/).)
+
+Second, if something *must* happen, then its probability is 1. If that sounds obvious, that's kind of the point. This second law just establishes 1 as the top of the scale. (You could actually do things upside down and make 0 the "top" of the probability scale! But it'd be really counterintuitive to work that way.)
+
+Third and finally, if two possibilities are mutually exclusive---if they can't both happen---then the chance one or the other will happen is the probability of the first plus the probability of the second. The chance a fair die will land either three or five is 1/6 + 1/6 = 2/6, for example.
+
+Amazingly, you can derive all kinds of interesting and sophisticated things about probability from just these three, simple rules. In fact, you can basically derive the whole mathematical theory! (You have to soup up the third law a bit for some of the more advanced results. It has to be extended to cases with infinite possibilities instead of just two. But it's really just the same idea applied to a larger number of things.)
+
+But just as important is what these laws *don't* say. For example, they don't say heads and tails are equally likely when you have no information about a coin flip. They say the chance of heads is *some* number between 0 and 1, just as the chance of tails is. They also say the chances of heads and tails have to add up to 1. But that doesn't mean they have to be equal. They could be 1/3 and 2/3, or 1/10 and 9/10, or even 0 and 1!
+
+Without the Principle of Indifference, the laws of probability are kind of empty. They tell you that *if* the chance of heads is 1/2, *then* the chance of tails has to be 1/2. But they don't tell you the chance of heads is 1/2. It could be anywhere from 0 to 1 for all the textbooks say. That's the price of abandoning the Principle of Indifference.
+
+
+## The Problem of Priors
+
+So what probabilities should we start with when doing a scientific study or statistical analysis? This is known as *the problem of priors*.
+
+Recall Bayes' theorem:
+
+$$ Pr(H \given E) = Pr(H) \frac{Pr(E \given H)}{Pr(E)}. $$
+
+The quantity $Pr(H)$ is called the *prior* probability of $H$, because it's the probability before we get information $E$. Whereas $Pr(H \given E)$ is called the *posterior* probability, the probability of $H$ after we get information $E$.
+
+To calculate $Pr(H \given E)$ using Bayes' theorem, you need prior probabilities like $Pr(H)$ (and also $Pr(E)$ and $Pr(E \given H)$). There was a time when mathematicians would have happily relied on the Principle of Indifference to settle those prior probabilities. But thanks to Bertrand's Paradox, the Principle of Indifference lost its respectability. And now there's no accepted recipe for settling prior probabilities.
+
+
+## Grue All Over Again
+
+Bertrand's paradox and the grue paradox from the previous chapter are suspiciously similar.
+
+For one thing, they are both problems of "language dependence". If you grew up speaking and thinking in terms of grue and bleen, you'd apply the Principle of Induction very differently from the way you actually do. You'd think all emeralds are grue. And you'd expect the first emeralds mined in the New Year to be a different colour (specifically, blue).
+
+Similarly, the probabilities we get from the Principle of Indifference depend on the language in which we frame a problem like the cube factory. If we think about the size of the next cube in terms of length, we get a probability of 1/2. But if we think in terms of volume we get 7/26.
+
+But also, both paradoxes are manifestations of the problem of priors. They both challenge us to say, in a principled way, how likely each possibility is to start with. In the case of the grue paradox, we need some principled reason for saying it's intrinsically more likely that all emeralds are green than that they're all grue.
+
+If we can't say why "all green" is inherently more plausible than "all grue", then it doesn't matter how many green emeralds we've observed up to now. Both hypothesis fit our observations perfectly: they both say all emeralds observed before 2018 will be green. To break the standoff, we need some criterion for favouring the green language over the grue one.
+
+
+## Where This Leaves Us
+
+Where does all this leave us? Not in a great place.
+
+The probabilities we start with determine the fate of science. If we start with sensible probabilities, we get sensible conclusions---like that all emeralds are green. Otherwise we get nonsense: all emeralds are grue.
+
+But Bertrand's paradox overturned what we thought was the sensible way of establishing prior probabilities. The Principle of Indifference was *supposed* to tell us what priors to start with, until it ran smack into contradictions  like the cube factory example.
+
+So the problem of priors is nasty indeed. And, I'm sorry to tell you, it has no accepted solution.
+
+There is a hacky sort of workaround, which is widely used across the sciences. And though it's taught to every aspiring young scientist as the accepted method, the fact that it's a hacky workaround is not usually mentioned. Probably because a lot of people don't see it that way.
+
+So let's see what the method is, and you can decide for yourself.
