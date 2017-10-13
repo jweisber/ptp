@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="hats-grasshoppers.html">
-<link rel="next" href="a-gruesome-concept.html">
+<link rel="prev" href="the-68-95-99-rule.html">
+<link rel="next" href="warning-danger-ahead.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -114,14 +114,17 @@
 </ul></li>
 <li class="chapter" data-level="8" data-path="lindleys-paradox.html"><a href="lindleys-paradox.html"><i class="fa fa-check"></i><b>8</b> Lindley’s Paradox</a><ul>
 <li class="chapter" data-level="8.1" data-path="coincidence.html"><a href="coincidence.html"><i class="fa fa-check"></i><b>8.1</b> Coincidence</a></li>
-<li class="chapter" data-level="8.2" data-path="example-whats-your-sign.html"><a href="example-whats-your-sign.html"><i class="fa fa-check"></i><b>8.2</b> Example: What’s Your Sign?</a></li>
+<li class="chapter" data-level="8.2" data-path="the-general-formula.html"><a href="the-general-formula.html"><i class="fa fa-check"></i><b>8.2</b> The General Formula</a></li>
 <li class="chapter" data-level="8.3" data-path="what-about-bayes.html"><a href="what-about-bayes.html"><i class="fa fa-check"></i><b>8.3</b> What About Bayes?</a></li>
 <li class="chapter" data-level="8.4" data-path="normal-approximations.html"><a href="normal-approximations.html"><i class="fa fa-check"></i><b>8.4</b> Normal Approximations</a></li>
 <li class="chapter" data-level="8.5" data-path="characterizing-a-bell-curve.html"><a href="characterizing-a-bell-curve.html"><i class="fa fa-check"></i><b>8.5</b> Characterizing a Bell Curve</a></li>
 <li class="chapter" data-level="8.6" data-path="the-68-95-99-rule.html"><a href="the-68-95-99-rule.html"><i class="fa fa-check"></i><b>8.6</b> The 68-95-99 Rule</a></li>
-<li class="chapter" data-level="8.7" data-path="summary.html"><a href="summary.html"><i class="fa fa-check"></i><b>8.7</b> Summary</a></li>
-<li class="chapter" data-level="8.8" data-path="practice-practice-practice.html"><a href="practice-practice-practice.html"><i class="fa fa-check"></i><b>8.8</b> Practice, Practice, Practice!</a></li>
-<li class="chapter" data-level="8.9" data-path="warning-danger-ahead.html"><a href="warning-danger-ahead.html"><i class="fa fa-check"></i><b>8.9</b> Warning: Danger Ahead</a></li>
+<li class="chapter" data-level="8.7" data-path="another-example.html"><a href="another-example.html"><i class="fa fa-check"></i><b>8.7</b> Another Example</a></li>
+<li class="chapter" data-level="8.8" data-path="warning-danger-ahead.html"><a href="warning-danger-ahead.html"><i class="fa fa-check"></i><b>8.8</b> Warning: Danger Ahead</a></li>
+<li class="chapter" data-level="8.9" data-path="significance-subjectivity.html"><a href="significance-subjectivity.html"><i class="fa fa-check"></i><b>8.9</b> Significance &amp; Subjectivity</a></li>
+<li class="chapter" data-level="8.10" data-path="lindleys-paradox-1.html"><a href="lindleys-paradox-1.html"><i class="fa fa-check"></i><b>8.10</b> Lindley’s Paradox</a></li>
+<li class="chapter" data-level="8.11" data-path="a-bayesian-analysis.html"><a href="a-bayesian-analysis.html"><i class="fa fa-check"></i><b>8.11</b> A Bayesian Analysis</a></li>
+<li class="chapter" data-level="8.12" data-path="the-standoff.html"><a href="the-standoff.html"><i class="fa fa-check"></i><b>8.12</b> The Standoff</a></li>
 </ul></li>
 </ul>
 
@@ -142,20 +145,27 @@
             <section class="normal" id="section-">
 $$\newcommand{\given}{\,|\,}$$
 $$\renewcommand{\neg}{\mathbin{\sim}}$$
-<div id="the-grue-paradox" class="section level1">
-<h1><span class="header-section-number">6</span> The Grue Paradox</h1>
-<p>A lot of science works by extrapolating from observed patterns.</p>
-<p>Pollsters survey a sample of voters to gauge the leaning of the electorate as a whole, for example. If 54% of respondents prefer Candidate X, they conclude that 54% of all voters (give or take) prefer X.</p>
-<p>Climate scientists extrapolate from historical trends to estimate future trends. The planet has been steadily warming for the last 100 years. That’s one reason to expect it will continue to warm in the coming years.</p>
-<p>A fundamental principle of scientific inquiry seems to be something like: expect the unobserved to resemble the observed. Philosophers call this <em>the Principle of Induction</em>.</p> 
+<div id="another-example" class="section level2">
+<h2><span class="header-section-number">8.7</span> Another Example</h2>
+<p>It takes practice to get the hang of all this, so let’s do another example. This one is from a book by Ian Hacking:</p>
+<blockquote>
+<p>VisioPerfect has a run of 2,400 light bulbs. According to the company’s publicity, 96% of the bulbs manufactured by its production process are long life…</p>
+<p>The monthly magazine <em>Consumers’ Advocate</em> asserts that it tested a run of 2,400 bulbs—400 six packs—from VisioPerfect. It found 133 short-life bulbs. (Hacking, p. 205)</p>
+</blockquote>
+<p>Is this a statistically significant result? Should we reject the claims of VisioPerfect’s publicists?</p>
+<p>To find out, we start by calculating <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\sigma\)</span>. And for that we need <span class="math inline">\(n\)</span> and <span class="math inline">\(p\)</span>.</p>
+<p>In this example <span class="math inline">\(n = 2,400\)</span>: that’s the size of our sample of bulbs. And <span class="math inline">\(p = .04\)</span>: that’s the chance of getting a short-life bulb according to the hypothesis we’re testing.</p>
+<p>So using the formula from earlier, <span class="math inline">\(\mu = np = 2,400 \times .04 = 96\)</span>. And <span class="math inline">\(\sigma = \sqrt{np(1-p)} = \sqrt{2,400 \times .04 \times .96} = 9.6\)</span>.</p>
+<p>Now, we observed 133 short-life bulbs. And according to the 68-95-99 rule, that’s a statistically significant result if 133 is more than two standard deviations away from the mean. In other words, if it’s outside the <span class="math inline">\(\mu \pm 2 \sigma\)</span> range. And in this case <span class="math inline">\(\mu + 2\sigma = 115.2 &lt; 133\)</span>, so the result is significant.</p>
+<p>According to the method of significance testing then, we should reject VisioPerfect’s advertised claim.</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="hats-grasshoppers.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="a-gruesome-concept.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="the-68-95-99-rule.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="warning-danger-ahead.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

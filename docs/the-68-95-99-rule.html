@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="hats-grasshoppers.html">
-<link rel="next" href="a-gruesome-concept.html">
+<link rel="prev" href="characterizing-a-bell-curve.html">
+<link rel="next" href="another-example.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -114,14 +114,17 @@
 </ul></li>
 <li class="chapter" data-level="8" data-path="lindleys-paradox.html"><a href="lindleys-paradox.html"><i class="fa fa-check"></i><b>8</b> Lindley’s Paradox</a><ul>
 <li class="chapter" data-level="8.1" data-path="coincidence.html"><a href="coincidence.html"><i class="fa fa-check"></i><b>8.1</b> Coincidence</a></li>
-<li class="chapter" data-level="8.2" data-path="example-whats-your-sign.html"><a href="example-whats-your-sign.html"><i class="fa fa-check"></i><b>8.2</b> Example: What’s Your Sign?</a></li>
+<li class="chapter" data-level="8.2" data-path="the-general-formula.html"><a href="the-general-formula.html"><i class="fa fa-check"></i><b>8.2</b> The General Formula</a></li>
 <li class="chapter" data-level="8.3" data-path="what-about-bayes.html"><a href="what-about-bayes.html"><i class="fa fa-check"></i><b>8.3</b> What About Bayes?</a></li>
 <li class="chapter" data-level="8.4" data-path="normal-approximations.html"><a href="normal-approximations.html"><i class="fa fa-check"></i><b>8.4</b> Normal Approximations</a></li>
 <li class="chapter" data-level="8.5" data-path="characterizing-a-bell-curve.html"><a href="characterizing-a-bell-curve.html"><i class="fa fa-check"></i><b>8.5</b> Characterizing a Bell Curve</a></li>
 <li class="chapter" data-level="8.6" data-path="the-68-95-99-rule.html"><a href="the-68-95-99-rule.html"><i class="fa fa-check"></i><b>8.6</b> The 68-95-99 Rule</a></li>
-<li class="chapter" data-level="8.7" data-path="summary.html"><a href="summary.html"><i class="fa fa-check"></i><b>8.7</b> Summary</a></li>
-<li class="chapter" data-level="8.8" data-path="practice-practice-practice.html"><a href="practice-practice-practice.html"><i class="fa fa-check"></i><b>8.8</b> Practice, Practice, Practice!</a></li>
-<li class="chapter" data-level="8.9" data-path="warning-danger-ahead.html"><a href="warning-danger-ahead.html"><i class="fa fa-check"></i><b>8.9</b> Warning: Danger Ahead</a></li>
+<li class="chapter" data-level="8.7" data-path="another-example.html"><a href="another-example.html"><i class="fa fa-check"></i><b>8.7</b> Another Example</a></li>
+<li class="chapter" data-level="8.8" data-path="warning-danger-ahead.html"><a href="warning-danger-ahead.html"><i class="fa fa-check"></i><b>8.8</b> Warning: Danger Ahead</a></li>
+<li class="chapter" data-level="8.9" data-path="significance-subjectivity.html"><a href="significance-subjectivity.html"><i class="fa fa-check"></i><b>8.9</b> Significance &amp; Subjectivity</a></li>
+<li class="chapter" data-level="8.10" data-path="lindleys-paradox-1.html"><a href="lindleys-paradox-1.html"><i class="fa fa-check"></i><b>8.10</b> Lindley’s Paradox</a></li>
+<li class="chapter" data-level="8.11" data-path="a-bayesian-analysis.html"><a href="a-bayesian-analysis.html"><i class="fa fa-check"></i><b>8.11</b> A Bayesian Analysis</a></li>
+<li class="chapter" data-level="8.12" data-path="the-standoff.html"><a href="the-standoff.html"><i class="fa fa-check"></i><b>8.12</b> The Standoff</a></li>
 </ul></li>
 </ul>
 
@@ -142,20 +145,20 @@
             <section class="normal" id="section-">
 $$\newcommand{\given}{\,|\,}$$
 $$\renewcommand{\neg}{\mathbin{\sim}}$$
-<div id="the-grue-paradox" class="section level1">
-<h1><span class="header-section-number">6</span> The Grue Paradox</h1>
-<p>A lot of science works by extrapolating from observed patterns.</p>
-<p>Pollsters survey a sample of voters to gauge the leaning of the electorate as a whole, for example. If 54% of respondents prefer Candidate X, they conclude that 54% of all voters (give or take) prefer X.</p>
-<p>Climate scientists extrapolate from historical trends to estimate future trends. The planet has been steadily warming for the last 100 years. That’s one reason to expect it will continue to warm in the coming years.</p>
-<p>A fundamental principle of scientific inquiry seems to be something like: expect the unobserved to resemble the observed. Philosophers call this <em>the Principle of Induction</em>.</p> 
+<div id="the-68-95-99-rule" class="section level2">
+<h2><span class="header-section-number">8.6</span> The 68-95-99 Rule</h2>
+<p>In general, the math of bell curves works like this. If we go 5 heads out from 50, the probability is less than 68%. That’s <em>one</em> “standard deviation”, or <span class="math inline">\(1 \times \sigma\)</span>. If we go 10 heads out, which is <em>two</em> standard deviations (<span class="math inline">\(2 \times \sigma\)</span>), the probability is less than 95%. And if we go 15 heads out, which is three standard deviations or <span class="math inline">\(3 \times \sigma\)</span>, the probability is less than 99%.</p>
+<p>So, in general, we can get a good sense of how surprising a result is by the following rule.</p>
+<p>If it falls within <span class="math inline">\(\sigma\)</span> of the mean <span class="math inline">\(\mu\)</span>, it’s not surprising; that’s what you’d expect most of the time, about 68%. If it falls outside that range, it’s a little surprising; you’d expect that to happen sometimes, about a third of the time (100% – 68% = 32%).</p>
+<p>But if it falls outside <em>that</em> range, then it’s quite surprising. You’d expect that to happen rarely, only about 5% of the time (100% – 95% = 5%). And if it falls outside even that range, then it’s <em>very</em> surprising. You’d expect that to happen very rarely, less than 1% of the time.</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="hats-grasshoppers.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="a-gruesome-concept.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="characterizing-a-bell-curve.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="another-example.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -1,4 +1,4 @@
-# Bertrand's Pardox
+# Bertrand's Paradox
 
 
 Wait, wait, wait: what are statistics textbooks filled with then, if not principles of good scientific reasoning? Aren't there well established laws of probability? Can't scientists just follow those and not worry about all this gruesome nonsense?

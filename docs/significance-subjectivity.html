@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="hats-grasshoppers.html">
-<link rel="next" href="a-gruesome-concept.html">
+<link rel="prev" href="warning-danger-ahead.html">
+<link rel="next" href="lindleys-paradox-1.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -114,14 +114,17 @@
 </ul></li>
 <li class="chapter" data-level="8" data-path="lindleys-paradox.html"><a href="lindleys-paradox.html"><i class="fa fa-check"></i><b>8</b> Lindley’s Paradox</a><ul>
 <li class="chapter" data-level="8.1" data-path="coincidence.html"><a href="coincidence.html"><i class="fa fa-check"></i><b>8.1</b> Coincidence</a></li>
-<li class="chapter" data-level="8.2" data-path="example-whats-your-sign.html"><a href="example-whats-your-sign.html"><i class="fa fa-check"></i><b>8.2</b> Example: What’s Your Sign?</a></li>
+<li class="chapter" data-level="8.2" data-path="the-general-formula.html"><a href="the-general-formula.html"><i class="fa fa-check"></i><b>8.2</b> The General Formula</a></li>
 <li class="chapter" data-level="8.3" data-path="what-about-bayes.html"><a href="what-about-bayes.html"><i class="fa fa-check"></i><b>8.3</b> What About Bayes?</a></li>
 <li class="chapter" data-level="8.4" data-path="normal-approximations.html"><a href="normal-approximations.html"><i class="fa fa-check"></i><b>8.4</b> Normal Approximations</a></li>
 <li class="chapter" data-level="8.5" data-path="characterizing-a-bell-curve.html"><a href="characterizing-a-bell-curve.html"><i class="fa fa-check"></i><b>8.5</b> Characterizing a Bell Curve</a></li>
 <li class="chapter" data-level="8.6" data-path="the-68-95-99-rule.html"><a href="the-68-95-99-rule.html"><i class="fa fa-check"></i><b>8.6</b> The 68-95-99 Rule</a></li>
-<li class="chapter" data-level="8.7" data-path="summary.html"><a href="summary.html"><i class="fa fa-check"></i><b>8.7</b> Summary</a></li>
-<li class="chapter" data-level="8.8" data-path="practice-practice-practice.html"><a href="practice-practice-practice.html"><i class="fa fa-check"></i><b>8.8</b> Practice, Practice, Practice!</a></li>
-<li class="chapter" data-level="8.9" data-path="warning-danger-ahead.html"><a href="warning-danger-ahead.html"><i class="fa fa-check"></i><b>8.9</b> Warning: Danger Ahead</a></li>
+<li class="chapter" data-level="8.7" data-path="another-example.html"><a href="another-example.html"><i class="fa fa-check"></i><b>8.7</b> Another Example</a></li>
+<li class="chapter" data-level="8.8" data-path="warning-danger-ahead.html"><a href="warning-danger-ahead.html"><i class="fa fa-check"></i><b>8.8</b> Warning: Danger Ahead</a></li>
+<li class="chapter" data-level="8.9" data-path="significance-subjectivity.html"><a href="significance-subjectivity.html"><i class="fa fa-check"></i><b>8.9</b> Significance &amp; Subjectivity</a></li>
+<li class="chapter" data-level="8.10" data-path="lindleys-paradox-1.html"><a href="lindleys-paradox-1.html"><i class="fa fa-check"></i><b>8.10</b> Lindley’s Paradox</a></li>
+<li class="chapter" data-level="8.11" data-path="a-bayesian-analysis.html"><a href="a-bayesian-analysis.html"><i class="fa fa-check"></i><b>8.11</b> A Bayesian Analysis</a></li>
+<li class="chapter" data-level="8.12" data-path="the-standoff.html"><a href="the-standoff.html"><i class="fa fa-check"></i><b>8.12</b> The Standoff</a></li>
 </ul></li>
 </ul>
 
@@ -142,20 +145,24 @@
             <section class="normal" id="section-">
 $$\newcommand{\given}{\,|\,}$$
 $$\renewcommand{\neg}{\mathbin{\sim}}$$
-<div id="the-grue-paradox" class="section level1">
-<h1><span class="header-section-number">6</span> The Grue Paradox</h1>
-<p>A lot of science works by extrapolating from observed patterns.</p>
-<p>Pollsters survey a sample of voters to gauge the leaning of the electorate as a whole, for example. If 54% of respondents prefer Candidate X, they conclude that 54% of all voters (give or take) prefer X.</p>
-<p>Climate scientists extrapolate from historical trends to estimate future trends. The planet has been steadily warming for the last 100 years. That’s one reason to expect it will continue to warm in the coming years.</p>
-<p>A fundamental principle of scientific inquiry seems to be something like: expect the unobserved to resemble the observed. Philosophers call this <em>the Principle of Induction</em>.</p> 
+<div id="significance-subjectivity" class="section level2">
+<h2><span class="header-section-number">8.9</span> Significance &amp; Subjectivity</h2>
+<p>Let’s tackle a big question we’ve been avoiding: why is the cutoff 5%? Nothing magical or special happens when a result crosses that line. It’s just easy to calculate using the bell curve trick we just learned.</p>
+<p>In fact, although 5% is the cutoff commonly used in social sciences like psychology and sociology, different areas of research have different customs. A cutoff of 1%, or even 0.1%, is common in some physical sciences.</p>
+<p>Come to think of it, does the idea of a fixed cut off make sense at all? Sometimes a result is really far out there—the kind of thing you’d happen to expect less than one time in a thousand—and yet the null hypothesis shouldn’t be rejected. If you’re playing poker at a major casino and you’re dealt a straight, that doesn’t mean the deck is stacked in your favour. You know casinos are tightly regulated; they use carefully calibrated automatic shufflers; and they want you to lose, not win!</p>
+<p>Some statisticians, called “Bayesians”, see the whole significance testing method as misguided. When we calculate significance levels, we’re basically calculating <span class="math inline">\(Pr(E \given H)\)</span>: the probability of the result if the hypothesis is true. But Bayes’ theorem tells us this is just part of the information we need to calculate what we really want, namely <span class="math inline">\(Pr(H \given E)\)</span>. We want to know how plausible the hypothesis is given our results. But for that, we need <span class="math inline">\(Pr(H)\)</span> and <span class="math inline">\(Pr(E)\)</span>:</p>
+<p><span class="math display">\[ Pr(H \given E) = Pr(H) \frac{Pr(E \given H)}{Pr(E)}. \]</span></p>
+<p>Take the casino example. The null hypothesis <span class="math inline">\(H\)</span> is that the cards are being dealt at random. In this kind of case, <span class="math inline">\(Pr(H)\)</span> is very high: major casinos use standard decks and automated shuffling machines, and they’re very tightly regulated. That’s why, even though <span class="math inline">\(Pr(E \given H)\)</span> is low—it’s very unlikely to get a straight when cards are being dealt at random—<span class="math inline">\(Pr(H \given E)\)</span> is still high. If you’re basically certain the dealing is fair, you’ll still be confident it’s fair even if you’re dealt a straight on your first hand.</p>
+<p>So Bayesian statisticians see significance testing as a crude way of approximating Bayes’ theorem. Significance testing only <em>looks</em> objective on the surface, they say, because we’re pretending <span class="math inline">\(Pr(E \given H)\)</span> is the only term in Bayes’ theorem that matters. But other terms like <span class="math inline">\(Pr(H)\)</span> do matter, as the casino example shows. So the choice of cutoff is subjective, based on a personal judgment about <span class="math inline">\(Pr(H)\)</span>.</p>
+<p>This criticism is sharpened by a famous problem known as <em>Lindley’s paradox</em>.</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="hats-grasshoppers.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="a-gruesome-concept.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="warning-danger-ahead.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="lindleys-paradox-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="hats-grasshoppers.html">
-<link rel="next" href="a-gruesome-concept.html">
+<link rel="prev" href="significance-subjectivity.html">
+<link rel="next" href="a-bayesian-analysis.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -114,14 +114,17 @@
 </ul></li>
 <li class="chapter" data-level="8" data-path="lindleys-paradox.html"><a href="lindleys-paradox.html"><i class="fa fa-check"></i><b>8</b> Lindley’s Paradox</a><ul>
 <li class="chapter" data-level="8.1" data-path="coincidence.html"><a href="coincidence.html"><i class="fa fa-check"></i><b>8.1</b> Coincidence</a></li>
-<li class="chapter" data-level="8.2" data-path="example-whats-your-sign.html"><a href="example-whats-your-sign.html"><i class="fa fa-check"></i><b>8.2</b> Example: What’s Your Sign?</a></li>
+<li class="chapter" data-level="8.2" data-path="the-general-formula.html"><a href="the-general-formula.html"><i class="fa fa-check"></i><b>8.2</b> The General Formula</a></li>
 <li class="chapter" data-level="8.3" data-path="what-about-bayes.html"><a href="what-about-bayes.html"><i class="fa fa-check"></i><b>8.3</b> What About Bayes?</a></li>
 <li class="chapter" data-level="8.4" data-path="normal-approximations.html"><a href="normal-approximations.html"><i class="fa fa-check"></i><b>8.4</b> Normal Approximations</a></li>
 <li class="chapter" data-level="8.5" data-path="characterizing-a-bell-curve.html"><a href="characterizing-a-bell-curve.html"><i class="fa fa-check"></i><b>8.5</b> Characterizing a Bell Curve</a></li>
 <li class="chapter" data-level="8.6" data-path="the-68-95-99-rule.html"><a href="the-68-95-99-rule.html"><i class="fa fa-check"></i><b>8.6</b> The 68-95-99 Rule</a></li>
-<li class="chapter" data-level="8.7" data-path="summary.html"><a href="summary.html"><i class="fa fa-check"></i><b>8.7</b> Summary</a></li>
-<li class="chapter" data-level="8.8" data-path="practice-practice-practice.html"><a href="practice-practice-practice.html"><i class="fa fa-check"></i><b>8.8</b> Practice, Practice, Practice!</a></li>
-<li class="chapter" data-level="8.9" data-path="warning-danger-ahead.html"><a href="warning-danger-ahead.html"><i class="fa fa-check"></i><b>8.9</b> Warning: Danger Ahead</a></li>
+<li class="chapter" data-level="8.7" data-path="another-example.html"><a href="another-example.html"><i class="fa fa-check"></i><b>8.7</b> Another Example</a></li>
+<li class="chapter" data-level="8.8" data-path="warning-danger-ahead.html"><a href="warning-danger-ahead.html"><i class="fa fa-check"></i><b>8.8</b> Warning: Danger Ahead</a></li>
+<li class="chapter" data-level="8.9" data-path="significance-subjectivity.html"><a href="significance-subjectivity.html"><i class="fa fa-check"></i><b>8.9</b> Significance &amp; Subjectivity</a></li>
+<li class="chapter" data-level="8.10" data-path="lindleys-paradox-1.html"><a href="lindleys-paradox-1.html"><i class="fa fa-check"></i><b>8.10</b> Lindley’s Paradox</a></li>
+<li class="chapter" data-level="8.11" data-path="a-bayesian-analysis.html"><a href="a-bayesian-analysis.html"><i class="fa fa-check"></i><b>8.11</b> A Bayesian Analysis</a></li>
+<li class="chapter" data-level="8.12" data-path="the-standoff.html"><a href="the-standoff.html"><i class="fa fa-check"></i><b>8.12</b> The Standoff</a></li>
 </ul></li>
 </ul>
 
@@ -142,20 +145,32 @@
             <section class="normal" id="section-">
 $$\newcommand{\given}{\,|\,}$$
 $$\renewcommand{\neg}{\mathbin{\sim}}$$
-<div id="the-grue-paradox" class="section level1">
-<h1><span class="header-section-number">6</span> The Grue Paradox</h1>
-<p>A lot of science works by extrapolating from observed patterns.</p>
-<p>Pollsters survey a sample of voters to gauge the leaning of the electorate as a whole, for example. If 54% of respondents prefer Candidate X, they conclude that 54% of all voters (give or take) prefer X.</p>
-<p>Climate scientists extrapolate from historical trends to estimate future trends. The planet has been steadily warming for the last 100 years. That’s one reason to expect it will continue to warm in the coming years.</p>
-<p>A fundamental principle of scientific inquiry seems to be something like: expect the unobserved to resemble the observed. Philosophers call this <em>the Principle of Induction</em>.</p> 
+<div id="lindleys-paradox-1" class="section level2">
+<h2><span class="header-section-number">8.10</span> Lindley’s Paradox</h2>
+<p>Imagine you run a flower store, and you receive a large shipment of tulip bulbs. The supplier only sends two kinds of shipments:</p>
+<ul>
+<li>Type A: 25% of the bulbs grow red tulips, 75% yellow.</li>
+<li>Type B: 50% of the bulbs grow red tulips, 50% yellow.</li>
+</ul>
+<p>But the label on this shipment has been scratched off. So, to determine which type it is, you select 48 random bulbs and plant them to see what colour they grow. 36 grow red, 12 yellow.</p>
+<p>If it were me, I’d think this clearly shows the shipment is Type B, with 50% red bulbs. Even though your sample grew more than 50% red tulips, this would be even less likely if the shipment were Type A, with only 25% red bulbs. So the results of your experiment fit the Type B hypothesis much better than the Type A hypothesis.</p>
+<p>What happens if we apply significance testing, though? We’ll end up rejecting <em>both</em> hypotheses! Because the results don’t fit either hypothesis particularly well, even though they fit the Type B hypothesis better than Type A.</p>
+<p>Let’s test the Type B hypothesis to see how this works out. You sampled 48 bulbs, so <span class="math inline">\(n = 48\)</span>. And according to the Type B hypothesis, each bulb has a 50% chance of growing red, so <span class="math inline">\(p = .5\)</span>. Applying our formulas for <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\sigma\)</span> from earlier, we get: <span class="math display">\[
+    \begin{aligned}
+      \mu &amp;= 25,\\
+      \sigma &amp;\approx 3.5.
+    \end{aligned}
+  \]</span> So, according to the Type B hypothesis, 95% of the time we’d expect the number of red tulips in a sample of 48 to be between 18 and 32 (that’s <span class="math inline">\(25 \pm 2 \times 3.5\)</span>). Yet our actual result was 36, which is outside that range. (In fact it’s even outside the 99% range.)</p>
+<p>If you do the calculations for the Type A hypothesis, you’ll find a parallel result. The observed 36 red tulips is statistically significant, so we should reject that hypothesis too.</p>
+<p>But that means we would reject both hypotheses. Yet we know they’re the only two possibilities! Something seems to have gone wrong.</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="hats-grasshoppers.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="a-gruesome-concept.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="significance-subjectivity.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="a-bayesian-analysis.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
