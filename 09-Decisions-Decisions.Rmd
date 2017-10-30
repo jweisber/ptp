@@ -1,0 +1,116 @@
+# Decisions, Decisions
+
+We've been talking a lot about what to believe, not so much what to do. But "probability is the very guide of life", as Bishop Butler famously wrote in 1736.
+
+What career should you pursue? Which people should you befriend and which should you avoid? Which foods should you eat? Such questions depend on the likely outcomes of your choice.
+
+But depend how? Is there a simple formula for making decisions?
+
+There is. It was discovered over 350 years ago, by a French mathematician and philosopher named Blaise Pascal, in order to help his friend with a gambling problem.
+
+
+## Goods and Odds
+
+Imagine you're at a casino and you've been given a voucher for one free game of dice. The game is simple. The house will roll a six-sided die once, and you must choose one of the following bets:
+
+- Bet A: if the die lands on an even number you win $2.
+- Bet B: if the die lands on a high number (5 or 6) you win $3.
+
+Which bet should you choose? The first has better odds, a one-half chance of winning compared to one-in-three. But the second has better rewards: $3 rather than $2. How to weigh these considerations against one another?
+
+That's the question decision theory tries to answer. A choice can be better or worse in two ways. It can have better odds, or it can have better "goods"---better payouts in our casino example. Our goal is to find a formula that combines odds and goods to reach a decision.
+
+
+## The Long Run
+
+Well, consider what would happen if you were to play all night, choosing the same bet over and over again.
+
+If you chose Bet A, you'd win $2 half the time. If you played a thousand games, you'd expect to win about 500 of them. At $2 a pop, that's $1,000 over 1,000 games, an average of $1 per game.
+
+This is called the *expected monetary value* of the bet. It's not the amount you'd expect to win playing just once, notice. You'll either win $2 or $0. But in the *long run*, you'd expect to win $1 *on average*.
+
+In decision theory we write $EMV(A) = \$1$: the expected monetary value of Bet A is \$1.
+
+What about Bet B? If you chose it over and over again, you'd win $3 a third of the time. If you played 900 games, you'd expect to win about 300 of them. At $3 a pop, that's $900 over 900 games, an average of $1 per game again.
+
+So $EMV(B) = \$1$, the same as Bet A! If EMV is our guide to the best choice, then these two bets are equally good. Either one would be rational choice.
+
+But what's the underlying formula here? Let's make it explicit.
+
+
+## The EMV Formula
+
+Each choice has multiple possible outcomes. If you take Bet A for example, you could win $2 or you could win nothing. What we did in thinking about the long run was essentially to multiply the probability of each outcome against the payout.
+
+Half the time you'll win $2 in the long run, so we multiply $1/2 \times \$2$. And half the time you'll win $0, so we multiply $1/2 \times \$0$. Then we combine those products by adding them together:
+$$
+  \begin{aligned}
+    EMV(A) &= 1/2 \times \$2 + 1/2 \times \$0\\
+           &= \$1.
+  \end{aligned}
+$$
+Likewise for Bet B: a third of the time you'll win $3, so we multiply $1/3 \times \$3$. And two thirds of the time you'll win nothing so we multiply $2/3 \times \$0$. Then we add up:
+$$
+  \begin{aligned}
+    EMV(B) &= 1/3 \times \$3 + 2/3 \times \$0\\
+           &= \$1.
+  \end{aligned}
+$$
+
+There won't always be just two possible outcomes, of course. Sometimes a choice will have three, or four, or any number of possible outcomes $n$.
+
+The general formula labels the possible outcomes $O_1, O_2, \ldots, O_n$, and calculates the *EMV* of a choice *C* thus:
+$$ EMV(C) = Pr(O_1) \times \$O_1 + Pr(O_2) \times \$O_2 + \ldots + Pr(O_n) \times \$O_n. $$
+
+
+## Utility
+
+Now, a lot of people would choose Bet A over Bet B, I suspect. I know I would. Because I don't much care whether I win $2 or $3, I care more about the thrill of winning anything at all. (Why else would I bet at a casino? Not to make money, that's for sure!)
+
+So money isn't everything, there's also the fun of winning a game. And of course there are more needs too, like food, sleep, love, friendship, and (at least for me) Wi-Fi. And then there are the less fundamental goods we value, like creature comforts, cushy vacations, gadgets and conveniences, and so on.
+
+To extend our decision formula to cover all these variegated goods, we need to place them all on a single, numerical scale. This scale is called *utility*. It's a numerical measure of how valuable or desirable an outcome is to the person making the decision.
+
+In one way, utility is extremely subjective. Tastes differ, so what has high utility and what has low utility differs from person to person. A trip to New York City has high utility for many people, but not for me (too crowded!).
+
+In another way though, utility is an objective matter. It is an objective fact about me that a trip to New York City has low utility for me, indeed, it's an objective fact you can easily know. You can take my word for it, for example. But even if you were still skeptical, you could offer me a trip to New York and see how much I'd be willing to pay for it. (Answer: you'd have to pay me. A lot.)
+
+
+## Quantifying Utility
+
+Still, you're probably wondering how we can *quantify* people's personal priorities and tastes. How can we pin a number on the degree to which someone likes or dislikes a trip to New York? We need actual numbers if we're going to replace the dollar amounts in the EMV formula with utilities!
+
+The trick to conjuring up these numbers was first discovered by the philosopher Frank Ramsey in the 1920's. Sadly, Ramsey died unexpectedly at the age of 26, and the idea was lost until the 1940's when it was rediscovered independently. The polymath John von Neumann (also a godfather of computer science) and economist Oskar Morgenstern published a classic book in 1944, *Theory of Games and Economic Behavior*, which still defines the fields of economics and decision theory to this day.
+
+So what's the big idea? The core of it is just this: the more utility an outcome has for you, the less risk you'll be willing to accept in trading it for a shot at something better.
+
+Imagine your top choice for a vacation spot is Barcelona, and your bottom choice is Kiev. New York is somewhere in between. Now imagine further that you're holding a ticket to New York, and I hold one ticket to Barcelona and one to Kiev. I offer to gamble in exchange for your New York ticket: we'll roll a six-sided die, and if it lands either 4, 5, or 6, you get my Barcelona ticket. Otherwise you get the Kiev ticket.
+
+Would you take this deal? What if you had to roll a 5 or higher to get the Barcelona ticket? What if you had to roll a 6??
+
+Suppose you're only willing to trade your New York ticket for this gamble if a 4 or better wins the Barcelona ticket. Then you must place a good amount of value on that New York ticket. You're not willing to part with it unless you have a decent shot at Barcelona over Kiev.
+
+But if you're even willing to make the trade when a roll of 6 is required to win the Barcelona ticket, then you must not like New York that much. You're willing to part with it in exchange for a long shot at Barcelona, even though you'll probably end up going to Kiev. In that case, a trip to New York can't be all that much better than a trip to Kiev in your eyes.
+
+Using this basic idea, we can actually place a precise number on the utility a trip to New York has for you.
+
+Since Barcelona is your top choice, we'll say it has utility 1. (Just like with probability, we use 1 as the top of the scale for simplicity. We could use a different number without changing anything of importance.) And since Kiev is your bottom choice, we'll stipulate it has utility 0.
+
+On this 0-to-1 utility scale, where does New York place? If you aren't willing to trade your New York ticket for the Barcelona/Kiev gamble unless the chance of winning is at least 1/2, then it's half way up that scale. A trip to New York has utility 1/2 for you.
+
+But if you'd be willing to make the trade when the chances are as low as 1/3, then it's only a third of the way up that scale. The utility of a trip to New York is 1/3 for you then.
+
+The general recipe is this. To locate outcome $O$ on a scale from the best option $B$ to the worst option $W$, we set $U(B) = 1$ and $U(W) = 0$. Then we offer to trade $O$ for a gamble with probability $p$ of outcome $W$, and probability $1-p$ of outcome $B$. The lowest value $p$ can take, with you still willing to make the trade, gives us is the utility of $O$: $U(O)$.
+
+
+## Expected Utility
+
+With utilities precisely quantified, we can extend our decision formula to non-monetary decisions. Recall, the EMV of a choice $C$ was:
+$$ EMV(C) = Pr(O_1) \times \$O_1 + Pr(O_2) \times \$O_2 + \ldots + Pr(O_n) \times \$O_n. $$
+So we just replace dollars with "utiles" to define *expected utility*, or $EU$:
+$$ EU(C) = Pr(O_1) \times U(O_1) + Pr(O_2) \times U(O_2) + \ldots + Pr(O_n) \times U(O_n). $$
+The fundamental rule of decision theory is to choose the option with the highest expected utility. (If multiple options have maximal expected utility, then any one of them is a reasonable choice.)
+
+But why this formula? Why should we choose options that maximize expected utility, instead of some other formula?
+
+It's a good question. Following this rule looks pretty sensible in a wide variety of circumstances, and so it's by far the most widely endorsed rule. But sometimes it gives strange advice, and so some people think it should be revised. That's part of what we'll be looking at in the next few chapters.
