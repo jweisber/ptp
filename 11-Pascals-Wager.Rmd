@@ -1,0 +1,137 @@
+---
+epitaph: "I'm afraid it was the Mormons... yes, the Mormons were the correct answer."
+---
+
+# You Bet Your Afterlife
+
+The modern theories of probability and decision were born to solve gambling problems.
+
+A prominent gambler in 17th Century France, the Chevalier de Méré was also an amateur mathematician, and friend to one of the great mathematicians of his time, Blaise Pascal. The Chevalier's interest in gambling prompted Pascal to develop the fundamentals of probability and expected utility (with the help of another great mathematician of the time, Pierre de Fermat).
+
+But Pascal himself was a deeply religious Catholic. For him, the most interesting gamble didn't involve money, but something more ultimate: the afterlife.
+
+
+## Pascal's Wager
+
+According to Catholicism, God punishes nonbelievers with an eternity of damnation. But believers spend eternity in paradise. So, Pascal reckoned, the smart bet is to believe in God.
+
+If you're a nonbeliever, you probably aren't impressed by Pascal's reasoning thus far. You've probably considered it before in fact, and dismissed it as incomplete.
+
+After all, there are benefits to being a nonbeliever, like sleeping in on Sundays. Plus there's the intellectual good of having truth on your side. If you're right that there is no God, well, then it's better to remain skeptical than to be taken in.
+
+Maybe you also count *reason* on your side. The evidence and arguments favour skepticism about God, according to nonbelievers. And isn't it better to be rational and believe only what the evidence supports?
+
+Come to think of it, if the evidence and arguments against God's existence weigh heavily enough, you're much more likely to live a well-rested life of truth and reason than to end up in hell. And isn't the whole idea of expected utility that we should weigh potential consequences according to their chances of actually occurring?
+
+This is where the sophistication of Pascal's analysis takes hold. There is a crucial difference in the rewards facing believers and nonbelievers. If the believers are right, their reward is infinitely good, an eternity in paradise. Whereas if the nonbelievers are right, the rewards are finite---a bit of extra sleep and some intellectual bragging rights.
+
+So the true decision table looks like this, according to Pascal:
+
++---------------+-----+--------+
+|               | God | No God |
++==============:+:===:+:======:+
+| Believe       | ∞   | –100   |
++---------------+-----+--------+
+| Don't Believe | –∞  |  100   |
++---------------+-----+--------+
+
+Where did I get 100 from? I made it up. Because, it turns out, it doesn't matter how big the finite rewards are when weighed against infinite ones.
+
+To see why, let's calculate the expected utilities of your two options:
+$$
+  \begin{aligned}
+    EU(\mbox{Believe}) &= Pr(\mbox{God}) \cdot \infty +
+                            Pr(\mbox{No God}) \cdot -100\\
+                       &= \infty - \mbox{something finite}\\
+                       &= \infty.\\
+    EU(\mbox{Don't Believe}) &= Pr(G) \cdot -\infty + Pr(\neg G) \cdot 100\\
+                                &= -\infty + \mbox{something finite}\\
+                                &= -\infty.
+  \end{aligned}
+$$
+If this calculation is right, then believing isn't just the smart bet. It's actually infinitely better than non-believing!
+
+
+## Infinite Arithmetic
+
+But is the calculation right? Some of the steps are mysterious since we don't usually do multiplication and addition/subtraction with infinite quantities. Two special features of infinity lie behind these steps, so let's think them through.
+
+First, infinity times any positive number is infinity. That's why $Pr(\mbox{God}) \cdot \infty = \infty$, for example.
+
+But why? Because if you keep adding a positive number to itself, there's no limit to how big the result can get. If you add 1/10 + 1/10 + 1/10 + ..., you'll eventually pass 1, and then 2, and then 3, and eventually every finite number. Likewise if you add 1/100 to itself infinitely many times. Or any positive number, no matter how small.
+
+Second, infinity minus any finite number is always infinite. That's why $\infty - \mbox{something finite} = \infty$.
+
+Why? Because if you start with an infinite set of objects and remove finitely many of them, you'll always have an infinite number of objects remaining. Imagine you have an infinite stack of \$5 bills, for example, with serial numbers #1, #2, #3, etc. If I take the first ten bills, you still have an infinite fortune left over: bills #11, #12, #13, etc. In fact, no matter how many bills I take from your stack, as long as it's a finite number, you'll have an infinite fortune remaining. Whatever the highest numbered bill I take---let's call it bill #$n$---you still have bills #($n+1$), #($n+2$), #($n+3$), etc.
+
+
+## Choosing What You Believe
+
+If I offered you a hundred dollars to believe you're standing on the surface of the sun right now, you couldn't do it. You might try hard. You might even put on a good show in the hopes of convincing me you've earned the money. But you couldn't really believe you're standing on the sun. The evidence of your eyes---of *all* your sensory organs---just won't let you.
+
+And isn't the nonbeliever in the same position? Even if Pascal is right that believing in God is the smart bet, the evidence and arguments still make plain that God does not exist. At least, that's how nonbelievers see it. God's absence is apparent everywhere, evident in every imperfection of our world---in the needless suffering of starving children, the torment of factory farmed animals, etc.
+
+Pascal understood that believing isn't something we just decide to do. But, he pointed out, we do many things that influence what we will believe down the line. If you choose to spend your time with religious people, reading religious books, and attending religious services, then you are apt to wind up a believer.
+
+At the very least, you are more likely to be receptive to religious arguments and evidence if you immerse yourself in a religious lifestyle. And with all that's at stake, shouldn't you do whatever you can to increase your chances of redemption?
+
+
+## The Many Gods Problem
+
+One thing Pascal doesn't seem to have accounted for, however, is the variety of religions in the world. Besides the God of Catholicism there is also the God of Islam, of Judaism, of Sikhism, of Zoroastrianism, etc. Not to mention the many polytheistic religions!
+
+Each religion has its own theory of the afterlife, and its own scheme of rewards for believers, and punishments for nonbelievers.
+
+But the true God might even be none of these. Maybe the true God is bashful, and rewards atheists with eternity in paradise while punishing believers, of *all* creeds, with eternity in hell!
+
+Such possibilities may be farfetched, but Pascal's whole argument hinges on the fact that it doesn't matter how unlikely God's existence is. The whole point was that it doesn't matter how small $Pr(\mbox{God})$ is. As long as it's not zero, it becomes infinite when weighed against the infinite reward of heaven.
+
+So we have to take all possible Gods into account. How? By expanding our table.
+
+We need a column for each possible religion/god. And we need a row for each faith we might adopt:
+
++---------------------+-------------+---------+-------+-----+---------+-------+
+|                     | Catholicism | Judaism | Islam | ... | Bashful | No God|
++====================:+:===========:+:=======:+:=====:+:===:+:=======:+:=====:+
+| Believe Catholicism |      ∞      |   –∞    |  –∞   | ... |   –∞    | –100  |
++---------------------+-------------+---------+-------+-----+---------+-------+
+| Believe Judaism     |     –∞      |    ∞    |  –∞   | ... |   –∞    | –100  |
++---------------------+-------------+---------+-------+-----+---------+-------+
+| Believe Islam       |     –∞      |    ∞    |  –∞   | ... |   –∞    | –100  |
++---------------------+-------------+---------+-------+-----+---------+-------+
+| ⋮                   |             |         |       |     |         |       |
++---------------------+-------------+---------+-------+-----+---------+-------+
+| Don't Believe       |     –∞      |    –∞   |  –∞   | ... |    ∞    |  100  |
++---------------------+-------------+---------+-------+-----+---------+-------+
+
+We could quibble about certain details here. For example, Judaism's conception of the afterlife is pretty different from Catholicism's. There's actually a maximum eleven-month sentence for the damned, according to one tradition! So Catholics may not face a consequence of –∞ under the Judaism column.
+
+But let's skip straight to the punch line: regardless of these details, there's no way to decide now using expected utility. Because the calculation requires subtracting infinity from infinity, and no such mathematical operation is well-defined.
+
+Suppose we try to calculate the expected utility of believing in Catholicism, for example. We're going to have $Pr(\mbox{Catholicism}) \times \infty$ in the mix, which is equal to $\infty$ as we saw earlier. But we're also going to have $Pr(\mbox{Bashful}) \times -\infty$ in there, which equals $-\infty$. So at some point we're going to have to deal with $\infty - \infty$.
+
+But why is that a problem?
+
+
+## Infinite Differences
+
+Why is $\infty - \infty$ not a well-defined mathematical expression? Because there's no unique answer to the question: how many things are left over when you remove infinitely many objects from an infinite set.
+
+Recall our infinite stack of bills, #1, #2, #3, etc. Now suppose I take away all of them, an infinite quantity. How many are left over? Well, none, obviously: I took them all away. So $\infty - \infty = 0$, right?
+
+Not so fast. Imagine instead I take away *just the even-numbered bills*: #2, #4, #6, etc. That's an infinite quantity of bills, too. But now you have an infinite number of bills remaining! You have all the odd-numbered bills: #1, #3, #5, and so on forever. So... maybe $\infty - \infty = \infty$?
+
+In fact, we can make $\infty - \infty$ equal any number. Suppose I take away every bill numbered #2 and higher. Then you have one bill left, #1. Or I could take away every bill numbered #3 and higher, so you'd have two bills left, #1 and #2. And so on.
+
+So there's no unique answer to the question: how many things are left behind when you remove an infinite number of objects from an infinite set? And so there's no well-defined operation $\infty - \infty$.
+
+
+## Conclusion
+
+Where does all this leave us? Pascal's argument depended on God dolling out infinite rewards. Otherwise the probability of God's existence might be low enough that the benefits of a nonreligious life outweigh the threat of damnation.
+
+But once we account for the many Gods there might be, the infinite rewards and punishments render the whole idea of expected utility useless. So maybe it was a mistake to treat heaven an hell as infinitely good/bad outcomes?
+
+Maybe. But then we can't evaluate Pascal's Wager without pinning down just how good/bad the consequences of belief nonbelief are. And how likely/unlikely the existence of each kind of god is.
+
+Apparently there is no shortcut around the hard work of assessing the case for  God's existence---or the Gods' existence.

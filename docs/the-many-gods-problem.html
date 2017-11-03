@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="index.html">
-<link rel="next" href="ask-marilyn.html">
+<link rel="prev" href="choosing-what-you-believe.html">
+<link rel="next" href="infinite-differences.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -139,7 +139,14 @@
 <li class="chapter" data-level="10.2" data-path="st-petersburgs-revenge.html"><a href="st-petersburgs-revenge.html"><i class="fa fa-check"></i><b>10.2</b> St. Petersburg’s Revenge</a></li>
 <li class="chapter" data-level="10.3" data-path="god-comes-to-st-petersburg.html"><a href="god-comes-to-st-petersburg.html"><i class="fa fa-check"></i><b>10.3</b> God Comes to St. Petersburg</a></li>
 </ul></li>
-<li class="chapter" data-level="11" data-path="you-bet-your-afterlife.html"><a href="you-bet-your-afterlife.html"><i class="fa fa-check"></i><b>11</b> You Bet Your Afterlife</a></li>
+<li class="chapter" data-level="11" data-path="you-bet-your-afterlife.html"><a href="you-bet-your-afterlife.html"><i class="fa fa-check"></i><b>11</b> You Bet Your Afterlife</a><ul>
+<li class="chapter" data-level="11.1" data-path="pascals-wager.html"><a href="pascals-wager.html"><i class="fa fa-check"></i><b>11.1</b> Pascal’s Wager</a></li>
+<li class="chapter" data-level="11.2" data-path="infinite-arithmetic.html"><a href="infinite-arithmetic.html"><i class="fa fa-check"></i><b>11.2</b> Infinite Arithmetic</a></li>
+<li class="chapter" data-level="11.3" data-path="choosing-what-you-believe.html"><a href="choosing-what-you-believe.html"><i class="fa fa-check"></i><b>11.3</b> Choosing What You Believe</a></li>
+<li class="chapter" data-level="11.4" data-path="the-many-gods-problem.html"><a href="the-many-gods-problem.html"><i class="fa fa-check"></i><b>11.4</b> The Many Gods Problem</a></li>
+<li class="chapter" data-level="11.5" data-path="infinite-differences.html"><a href="infinite-differences.html"><i class="fa fa-check"></i><b>11.5</b> Infinite Differences</a></li>
+<li class="chapter" data-level="11.6" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>11.6</b> Conclusion</a></li>
+</ul></li>
 </ul>
 
       </nav>
@@ -159,17 +166,95 @@
             <section class="normal" id="section-">
 $$\newcommand{\given}{\,|\,}$$
 $$\renewcommand{\neg}{\mathbin{\sim}}$$
-<div id="the-monty-hall-problem" class="section level1">
-<h1><span class="header-section-number">1</span> The Monty Hall Problem</h1>
-<p>Let’s start with a puzzle so famous it’s <a href="https://www.youtube.com/watch?v=Zr_xWfThjJ0">appeared in Hollywood movies</a>: the Monty Hall problem.</p> 
+<div id="the-many-gods-problem" class="section level2">
+<h2><span class="header-section-number">11.4</span> The Many Gods Problem</h2>
+<p>One thing Pascal doesn’t seem to have accounted for, however, is the variety of religions in the world. Besides the God of Catholicism there is also the God of Islam, of Judaism, of Sikhism, of Zoroastrianism, etc. Not to mention the many polytheistic religions!</p>
+<p>Each religion has its own theory of the afterlife, and its own scheme of rewards for believers, and punishments for nonbelievers.</p>
+<p>But the true God might even be none of these. Maybe the true God is bashful, and rewards atheists with eternity in paradise while punishing believers, of <em>all</em> creeds, with eternity in hell!</p>
+<p>Such possibilities may be farfetched, but Pascal’s whole argument hinges on the fact that it doesn’t matter how unlikely God’s existence is. The whole point was that it doesn’t matter how small <span class="math inline">\(Pr(\mbox{God})\)</span> is. As long as it’s not zero, it becomes infinite when weighed against the infinite reward of heaven.</p>
+<p>So we have to take all possible Gods into account. How? By expanding our table.</p>
+<p>We need a column for each possible religion/god. And we need a row for each faith we might adopt:</p>
+<table style="width:100%;">
+<colgroup>
+<col width="27%" />
+<col width="17%" />
+<col width="12%" />
+<col width="10%" />
+<col width="7%" />
+<col width="12%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right"></th>
+<th align="center">Catholicism</th>
+<th align="center">Judaism</th>
+<th align="center">Islam</th>
+<th align="center">…</th>
+<th align="center">Bashful</th>
+<th align="center">No God</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right"><p>Believe Catholicism</p></td>
+<td align="center"><pre><code> ∞</code></pre></td>
+<td align="center"><p>–∞</p></td>
+<td align="center"><p>–∞</p></td>
+<td align="center"><p>…</p></td>
+<td align="center"><p>–∞</p></td>
+<td align="center"><p>–100</p></td>
+</tr>
+<tr class="even">
+<td align="right"><p>Believe Judaism</p></td>
+<td align="center"><pre><code>–∞</code></pre></td>
+<td align="center"><p>∞</p></td>
+<td align="center"><p>–∞</p></td>
+<td align="center"><p>…</p></td>
+<td align="center"><p>–∞</p></td>
+<td align="center"><p>–100</p></td>
+</tr>
+<tr class="odd">
+<td align="right"><p>Believe Islam</p></td>
+<td align="center"><pre><code>–∞</code></pre></td>
+<td align="center"><p>∞</p></td>
+<td align="center"><p>–∞</p></td>
+<td align="center"><p>…</p></td>
+<td align="center"><p>–∞</p></td>
+<td align="center"><p>–100</p></td>
+</tr>
+<tr class="even">
+<td align="right"><p>⋮</p></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+<tr class="odd">
+<td align="right"><p>Don’t Believe</p></td>
+<td align="center"><pre><code>–∞</code></pre></td>
+<td align="center"><p>–∞</p></td>
+<td align="center"><p>–∞</p></td>
+<td align="center"><p>…</p></td>
+<td align="center"><p>∞</p></td>
+<td align="center"><p>100</p></td>
+</tr>
+</tbody>
+</table>
+<p>We could quibble about certain details here. For example, Judaism’s conception of the afterlife is pretty different from Catholicism’s. There’s actually a maximum eleven-month sentence for the damned, according to one tradition! So Catholics may not face a consequence of –∞ under the Judaism column.</p>
+<p>But let’s skip straight to the punch line: regardless of these details, there’s no way to decide now using expected utility. Because the calculation requires subtracting infinity from infinity, and no such mathematical operation is well-defined.</p>
+<p>Suppose we try to calculate the expected utility of believing in Catholicism, for example. We’re going to have <span class="math inline">\(Pr(\mbox{Catholicism}) \times \infty\)</span> in the mix, which is equal to <span class="math inline">\(\infty\)</span> as we saw earlier. But we’re also going to have <span class="math inline">\(Pr(\mbox{Bashful}) \times -\infty\)</span> in there, which equals <span class="math inline">\(-\infty\)</span>. So at some point we’re going to have to deal with <span class="math inline">\(\infty - \infty\)</span>.</p>
+<p>But why is that a problem?</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="ask-marilyn.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="choosing-what-you-believe.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="infinite-differences.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -222,4 +307,4 @@ gitbook.start({
 </script>
 </body>
 
-</html>
+<!-- </html> -->

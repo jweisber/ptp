@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="index.html">
-<link rel="next" href="ask-marilyn.html">
+<link rel="prev" href="you-bet-your-afterlife.html">
+<link rel="next" href="infinite-arithmetic.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -139,7 +139,14 @@
 <li class="chapter" data-level="10.2" data-path="st-petersburgs-revenge.html"><a href="st-petersburgs-revenge.html"><i class="fa fa-check"></i><b>10.2</b> St. Petersburg’s Revenge</a></li>
 <li class="chapter" data-level="10.3" data-path="god-comes-to-st-petersburg.html"><a href="god-comes-to-st-petersburg.html"><i class="fa fa-check"></i><b>10.3</b> God Comes to St. Petersburg</a></li>
 </ul></li>
-<li class="chapter" data-level="11" data-path="you-bet-your-afterlife.html"><a href="you-bet-your-afterlife.html"><i class="fa fa-check"></i><b>11</b> You Bet Your Afterlife</a></li>
+<li class="chapter" data-level="11" data-path="you-bet-your-afterlife.html"><a href="you-bet-your-afterlife.html"><i class="fa fa-check"></i><b>11</b> You Bet Your Afterlife</a><ul>
+<li class="chapter" data-level="11.1" data-path="pascals-wager.html"><a href="pascals-wager.html"><i class="fa fa-check"></i><b>11.1</b> Pascal’s Wager</a></li>
+<li class="chapter" data-level="11.2" data-path="infinite-arithmetic.html"><a href="infinite-arithmetic.html"><i class="fa fa-check"></i><b>11.2</b> Infinite Arithmetic</a></li>
+<li class="chapter" data-level="11.3" data-path="choosing-what-you-believe.html"><a href="choosing-what-you-believe.html"><i class="fa fa-check"></i><b>11.3</b> Choosing What You Believe</a></li>
+<li class="chapter" data-level="11.4" data-path="the-many-gods-problem.html"><a href="the-many-gods-problem.html"><i class="fa fa-check"></i><b>11.4</b> The Many Gods Problem</a></li>
+<li class="chapter" data-level="11.5" data-path="infinite-differences.html"><a href="infinite-differences.html"><i class="fa fa-check"></i><b>11.5</b> Infinite Differences</a></li>
+<li class="chapter" data-level="11.6" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>11.6</b> Conclusion</a></li>
+</ul></li>
 </ul>
 
       </nav>
@@ -159,17 +166,61 @@
             <section class="normal" id="section-">
 $$\newcommand{\given}{\,|\,}$$
 $$\renewcommand{\neg}{\mathbin{\sim}}$$
-<div id="the-monty-hall-problem" class="section level1">
-<h1><span class="header-section-number">1</span> The Monty Hall Problem</h1>
-<p>Let’s start with a puzzle so famous it’s <a href="https://www.youtube.com/watch?v=Zr_xWfThjJ0">appeared in Hollywood movies</a>: the Monty Hall problem.</p> 
+<div id="pascals-wager" class="section level2">
+<h2><span class="header-section-number">11.1</span> Pascal’s Wager</h2>
+<p>According to Catholicism, God punishes nonbelievers with an eternity of damnation. But believers spend eternity in paradise. So, Pascal reckoned, the smart bet is to believe in God.</p>
+<p>If you’re a nonbeliever, you probably aren’t impressed by Pascal’s reasoning thus far. You’ve probably considered it before in fact, and dismissed it as incomplete.</p>
+<p>After all, there are benefits to being a nonbeliever, like sleeping in on Sundays. Plus there’s the intellectual good of having truth on your side. If you’re right that there is no God, well, then it’s better to remain skeptical than to be taken in.</p>
+<p>Maybe you also count <em>reason</em> on your side. The evidence and arguments favour skepticism about God, according to nonbelievers. And isn’t it better to be rational and believe only what the evidence supports?</p>
+<p>Come to think of it, if the evidence and arguments against God’s existence weigh heavily enough, you’re much more likely to live a well-rested life of truth and reason than to end up in hell. And isn’t the whole idea of expected utility that we should weigh potential consequences according to their chances of actually occurring?</p>
+<p>This is where the sophistication of Pascal’s analysis takes hold. There is a crucial difference in the rewards facing believers and nonbelievers. If the believers are right, their reward is infinitely good, an eternity in paradise. Whereas if the nonbelievers are right, the rewards are finite—a bit of extra sleep and some intellectual bragging rights.</p>
+<p>So the true decision table looks like this, according to Pascal:</p>
+<table style="width:43%;">
+<colgroup>
+<col width="22%" />
+<col width="8%" />
+<col width="12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="right"></th>
+<th align="center">God</th>
+<th align="center">No God</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right"><p>Believe</p></td>
+<td align="center"><p>∞</p></td>
+<td align="center"><p>–100</p></td>
+</tr>
+<tr class="even">
+<td align="right"><p>Don’t Believe</p></td>
+<td align="center"><p>–∞</p></td>
+<td align="center"><p>100</p></td>
+</tr>
+</tbody>
+</table>
+<p>Where did I get 100 from? I made it up. Because, it turns out, it doesn’t matter how big the finite rewards are when weighed against infinite ones.</p>
+<p>To see why, let’s calculate the expected utilities of your two options: <span class="math display">\[
+  \begin{aligned}
+    EU(\mbox{Believe}) &amp;= Pr(\mbox{God}) \cdot \infty +
+                            Pr(\mbox{No God}) \cdot -100\\
+                       &amp;= \infty - \mbox{something finite}\\
+                       &amp;= \infty.\\
+    EU(\mbox{Don&#39;t Believe}) &amp;= Pr(G) \cdot -\infty + Pr(\neg G) \cdot 100\\
+                                &amp;= -\infty + \mbox{something finite}\\
+                                &amp;= -\infty.
+  \end{aligned}
+\]</span> If this calculation is right, then believing isn’t just the smart bet. It’s actually infinitely better than non-believing!</p>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="ask-marilyn.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="you-bet-your-afterlife.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="infinite-arithmetic.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -222,4 +273,4 @@ gitbook.start({
 </script>
 </body>
 
-</html>
+<!-- </html> -->
