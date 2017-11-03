@@ -6,7 +6,7 @@ epitaph: "I'm afraid it was the Mormons... yes, the Mormons were the correct ans
 
 The modern theories of probability and decision were born to solve gambling problems.
 
-A prominent gambler in 17th Century France, the Chevalier de Méré was also an amateur mathematician, and friend to one of the great mathematicians of his time, Blaise Pascal. The Chevalier's interest in gambling prompted Pascal to develop the fundamentals of probability and expected utility (with the help of another great mathematician of the time, Pierre de Fermat).
+A prominent gambler in 17th Century France, the Chevalier de Méré was also an amateur mathematician, and friend to one of the great mathematicians of his time, Blaise Pascal. The Chevalier's interest in gambling prompted Pascal to develop the fundamentals of probability and expected utility (with the help of another great mathematician, Pierre de Fermat).
 
 But Pascal himself was a deeply religious Catholic. For him, the most interesting gamble didn't involve money, but something more ultimate: the afterlife.
 
@@ -108,7 +108,7 @@ We could quibble about certain details here. For example, Judaism's conception o
 
 But let's skip straight to the punch line: regardless of these details, there's no way to decide now using expected utility. Because the calculation requires subtracting infinity from infinity, and no such mathematical operation is well-defined.
 
-Suppose we try to calculate the expected utility of believing in Catholicism, for example. We're going to have $Pr(\mbox{Catholicism}) \times \infty$ in the mix, which is equal to $\infty$ as we saw earlier. But we're also going to have $Pr(\mbox{Bashful}) \times -\infty$ in there, which equals $-\infty$. So at some point we're going to have to deal with $\infty - \infty$.
+Suppose we try to calculate the expected utility of believing in Catholicism, for example. We're going to have $Pr(\mbox{Catholicism}) \cdot \infty$ in the mix, which is equal to $\infty$ as we saw earlier. But we're also going to have $Pr(\mbox{Bashful}) \cdot -\infty$ in there, which equals $-\infty$. So at some point we're going to have to deal with $\infty - \infty$.
 
 But why is that a problem?
 
