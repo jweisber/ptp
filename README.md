@@ -1,6 +1,6 @@
 # Probability Through Paradox
 
-This is the source (in `bookdown`) for [a book in progress](https://jonathanweisberg.org/ptp). It does pretty much what it says on the tin: introduces probability by way of the many paradoxes and puzzles that make probability so much fun.
+This is the source (in `bookdown`) for [a book in progress](http://jonathanweisberg.org/ptp). It does pretty much what it says on the tin: introduces probability by way of the many paradoxes and puzzles that make probability so much fun.
 
 The book's emphasis is philosophical. But one of the book's chief aims is to understand the way probability is used across the board, from every day decision making to specialized scientific research.
 
