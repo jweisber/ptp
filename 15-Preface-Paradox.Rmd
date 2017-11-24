@@ -1,0 +1,59 @@
+# The Preface Paradox
+
+Our next paradox emerged around the same time as the lottery paradox:
+
+> Imagine you've written a non-fiction book, a grade four history textbook let's say. You did your research carefully and thoroughly, and two experts independently checked the manuscript for errors. After correcting the errors they found, you thank them for their help in the book's preface. You then write: "I take full responsibility for the errors that must inevitably remain."
+
+Apparently you believe your book contains some falsehoods. That's what you're taking responsibility for, after all. But you also believe each statement made in the body of the book, otherwise you wouldn't have written what you did.
+
+So your beliefs are logically inconsistent. You believe there is at least one falsehood. But you also believe the first sentence is true, and the second, the third, etc.
+
+How might you resolve this inconsistency?
+
+Suppose you retract your admission in the preface, you suspend judgment about whether any errors remain. That would be absurdly immodest! It's incredibly unlikely you've written the first error-free textbook in history.
+
+Maybe you could retract some of the claims in the main body of the book instead? But you've checked them all carefully. Which ones should you retract?
+Beside, you'd have to retract *a lot* of them. Even a single chapter is almost certain to contain some falsehoods, so you'd have to pare the book down so much there'd barely be anything left.
+
+Apparently, there is no good way to make your beliefs consistent here.
+
+
+## Everyone's Problem
+
+This problem affects everyone, not just the authors of textbooks.
+
+Imagine we wrote down everything you believe as a book, even the mundane stuff like $2 + 3 = 5$, or snow is white. It may not be a best seller, but it is philosophically interesting in another way.
+
+For consider: are any of the statements in this book false? Almost certainly. Everybody makes mistakes, in fact you know you've made mistakes before. But that means we have to include that in the preface of your "belief book". The preface should say: some of the statements in this book are false.
+
+So you're in the same position as the author of our history textbook: your beliefs are inconsistent. You believe each statement in the body of the book, but you also believe some of those statements must be false.
+
+Now, sometimes we believe things we shouldn't. We jump to conclusions, or fall prey to wishful thinking, or fail to respect the available evidence for any number of other reasons.
+
+But notice, even if you were perfectly rational, you'd still be in the same dilemma. Even if we only ever believed what our evidence warranted, we'd still have some false beliefs. Because even beliefs based entirely in strong evidence have some small chance of being wrong. And if you believe enough things, these slivers of error pile up.
+
+
+## Comparison with the Lottery Paradox
+
+The preface paradox is strongly reminiscent of the lottery paradox. Both involve a large collection of beliefs, each of which is highly probable individually. But taken all together, they are inconsistent.
+
+There is one major difference, though. The individual beliefs in the preface paradox are not based on "purely statistical" evidence. They are based on research that draws on the testimony of historical records, direct observations of physical evidence, and so on.
+
+That means we can't escape the paradox by blaming The Threshold Principle. We can't say, á la Nelkin, that the source of the problem is believing things solely on the basis of high statistical probability. Because now we're considering ordinary beliefs, based on sources like visual observation and testimony. And if these beliefs aren't warranted, then none of our beliefs are!
+
+If we're to avoid widespread skepticism then, we have to solve the paradox in some way that preserves our ordinary, mundane beliefs.
+
+So it's natural to view the preface paradox as a repudiation of The Conjunction Principle. Imagine what would happen if you conjoined your belief in the book's first statement with the second, and the third, and so on all the way up to the very last sentence. You'd conclude that the whole book was true through and through, and thus there are no errors anywhere! But that would be absurdly immodest.
+
+Can we just abandon The Conjunction Principle and be done with both paradoxes then, the lottery and the preface?
+
+
+## Two Worries
+
+It's not so easy (you'll be shocked to learn).
+
+For one thing, abandoning The Conjunction Principle leaves us with the same problem that faced Kyburg. It makes belief pointless. What's the point of believing something if you can't use it as a basis upon which to form further beliefs?
+
+But also, we might still have to reject The Threshold Principle anyway! As we noted in the last chapter, there's something fishy about believing (say) ticket #42 will lose. If the day of the drawing comes and #67 is selected as the winner, could claim that they knew #42 would lose all along? It seems not. How could they have known if they had identical reasons to think ticket #67 would lose, when it actually won?
+
+So there's still much we don't understand. And indeed, the unknowability of such "lottery propositions" takes us directly to our next puzzle.
