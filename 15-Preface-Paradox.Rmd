@@ -52,8 +52,8 @@ Can we just abandon The Conjunction Principle and be done with both paradoxes th
 
 It's not so easy (you'll be shocked to learn).
 
-For one thing, abandoning The Conjunction Principle leaves us with the same problem that faced Kyburg. It makes belief pointless. What's the point of believing something if you can't use it as a basis upon which to form further beliefs?
+For one thing, abandoning The Conjunction Principle leaves us with the same problem that faced Kyburg. It seems to make belief pointless. What's the point of believing something if you can't use it as a basis upon which to form further beliefs?
 
-But also, we might still have to reject The Threshold Principle anyway! As we noted in the last chapter, there's something fishy about believing (say) ticket #42 will lose. If the day of the drawing comes and #67 is selected as the winner, could claim that they knew #42 would lose all along? It seems not. How could they have known if they had identical reasons to think ticket #67 would lose, when it actually won?
+But also, we might still have to reject The Threshold Principle anyway! As we noted in the last chapter, there's something fishy about believing (say) ticket #42 will lose. When the day of the drawing comes, and ticket #67 is selected as the winner, could you claim to have known #42 would lose all along? It seems not. How could you know when you had identical reasons to think ticket #67 would lose, and it actually won?
 
-So there's still much we don't understand. And indeed, the unknowability of such "lottery propositions" takes us directly to our next puzzle.
+So there's still much we don't understand. And indeed, this second problem---the unknowability of "lottery propositions"---takes us directly to our next puzzle.
