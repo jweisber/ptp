@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Probability Through Paradox</title>
+  <meta name="description" content="Probability Through Paradox">
+  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Probability Through Paradox" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Probability Through Paradox" />
+  
+  
+  
+
+<meta name="author" content="Jonathan Weisberg">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="conjunctivitis.html">
+<link rel="next" href="nelkins-solution.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="custom.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
+<li class="chapter" data-level="1" data-path="the-monty-hall-problem.html"><a href="the-monty-hall-problem.html"><i class="fa fa-check"></i><b>1</b> The Monty Hall Problem</a><ul>
+<li class="chapter" data-level="1.1" data-path="ask-marilyn.html"><a href="ask-marilyn.html"><i class="fa fa-check"></i><b>1.1</b> Ask Marilyn</a></li>
+<li class="chapter" data-level="1.2" data-path="three-prisoners.html"><a href="three-prisoners.html"><i class="fa fa-check"></i><b>1.2</b> Three Prisoners</a></li>
+<li class="chapter" data-level="1.3" data-path="monty-hall-again.html"><a href="monty-hall-again.html"><i class="fa fa-check"></i><b>1.3</b> Monty Hall Again</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="the-gamblers-fallacy.html"><a href="the-gamblers-fallacy.html"><i class="fa fa-check"></i><b>2</b> The Gambler’s Fallacy</a><ul>
+<li class="chapter" data-level="2.1" data-path="independence.html"><a href="independence.html"><i class="fa fa-check"></i><b>2.1</b> Independence</a></li>
+<li class="chapter" data-level="2.2" data-path="bias.html"><a href="bias.html"><i class="fa fa-check"></i><b>2.2</b> Bias</a></li>
+<li class="chapter" data-level="2.3" data-path="fairness.html"><a href="fairness.html"><i class="fa fa-check"></i><b>2.3</b> Fairness</a></li>
+<li class="chapter" data-level="2.4" data-path="the-gamblers-fallacy-1.html"><a href="the-gamblers-fallacy-1.html"><i class="fa fa-check"></i><b>2.4</b> The Gambler’s Fallacy</a></li>
+<li class="chapter" data-level="2.5" data-path="fallacies-vs-misfortunes.html"><a href="fallacies-vs-misfortunes.html"><i class="fa fa-check"></i><b>2.5</b> Fallacies vs. Misfortunes</a></li>
+<li class="chapter" data-level="2.6" data-path="the-hot-hand.html"><a href="the-hot-hand.html"><i class="fa fa-check"></i><b>2.6</b> The Hot Hand</a></li>
+<li class="chapter" data-level="2.7" data-path="girls-revisited.html"><a href="girls-revisited.html"><i class="fa fa-check"></i><b>2.7</b> Girls Revisited</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="the-taxicab-problem.html"><a href="the-taxicab-problem.html"><i class="fa fa-check"></i><b>3</b> The Taxicab Problem</a><ul>
+<li class="chapter" data-level="3.1" data-path="conditional-probabilities.html"><a href="conditional-probabilities.html"><i class="fa fa-check"></i><b>3.1</b> Conditional Probabilities</a></li>
+<li class="chapter" data-level="3.2" data-path="doctors-without-base-rates.html"><a href="doctors-without-base-rates.html"><i class="fa fa-check"></i><b>3.2</b> Doctors Without Base Rates</a></li>
+<li class="chapter" data-level="3.3" data-path="bayes-theorem.html"><a href="bayes-theorem.html"><i class="fa fa-check"></i><b>3.3</b> Bayes’ Theorem</a></li>
+<li class="chapter" data-level="3.4" data-path="heuristics-biases.html"><a href="heuristics-biases.html"><i class="fa fa-check"></i><b>3.4</b> Heuristics &amp; Biases</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="heuristics-biases.html"><a href="heuristics-biases.html#the-bank-teller-fallacy"><i class="fa fa-check"></i><b>3.4.1</b> The Bank Teller Fallacy</a></li>
+<li class="chapter" data-level="3.4.2" data-path="heuristics-biases.html"><a href="heuristics-biases.html#r-is-for-terror"><i class="fa fa-check"></i><b>3.4.2</b> R is for Terror</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="social-distortions.html"><a href="social-distortions.html"><i class="fa fa-check"></i><b>3.5</b> Social Distortions</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="simpsons-paradox.html"><a href="simpsons-paradox.html"><i class="fa fa-check"></i><b>4</b> Simpson’s Paradox</a><ul>
+<li class="chapter" data-level="4.1" data-path="the-law-of-total-probability.html"><a href="the-law-of-total-probability.html"><i class="fa fa-check"></i><b>4.1</b> The Law of Total Probability</a></li>
+<li class="chapter" data-level="4.2" data-path="bayes-ltp-awesome.html"><a href="bayes-ltp-awesome.html"><i class="fa fa-check"></i><b>4.2</b> Bayes + LTP = Awesome</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="the-raven-paradox.html"><a href="the-raven-paradox.html"><i class="fa fa-check"></i><b>5</b> The Raven Paradox</a><ul>
+<li class="chapter" data-level="5.1" data-path="the-raven-paradox-1.html"><a href="the-raven-paradox-1.html"><i class="fa fa-check"></i><b>5.1</b> The Raven Paradox</a></li>
+<li class="chapter" data-level="5.2" data-path="the-hosiasson-lindenbaum-solution.html"><a href="the-hosiasson-lindenbaum-solution.html"><i class="fa fa-check"></i><b>5.2</b> The Hosiasson-Lindenbaum Solution</a></li>
+<li class="chapter" data-level="5.3" data-path="hats-grasshoppers.html"><a href="hats-grasshoppers.html"><i class="fa fa-check"></i><b>5.3</b> Hats &amp; Grasshoppers</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="the-grue-paradox.html"><a href="the-grue-paradox.html"><i class="fa fa-check"></i><b>6</b> The Grue Paradox</a><ul>
+<li class="chapter" data-level="6.1" data-path="a-gruesome-concept.html"><a href="a-gruesome-concept.html"><i class="fa fa-check"></i><b>6.1</b> A Gruesome Concept</a></li>
+<li class="chapter" data-level="6.2" data-path="the-paradox.html"><a href="the-paradox.html"><i class="fa fa-check"></i><b>6.2</b> The Paradox</a></li>
+<li class="chapter" data-level="6.3" data-path="disjunctivitis.html"><a href="disjunctivitis.html"><i class="fa fa-check"></i><b>6.3</b> Disjunctivitis</a></li>
+<li class="chapter" data-level="6.4" data-path="time-dependence.html"><a href="time-dependence.html"><i class="fa fa-check"></i><b>6.4</b> Time Dependence</a></li>
+<li class="chapter" data-level="6.5" data-path="the-moral.html"><a href="the-moral.html"><i class="fa fa-check"></i><b>6.5</b> The Moral</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="bertrands-paradox.html"><a href="bertrands-paradox.html"><i class="fa fa-check"></i><b>7</b> Bertrand’s Paradox</a><ul>
+<li class="chapter" data-level="7.1" data-path="the-cube-factory.html"><a href="the-cube-factory.html"><i class="fa fa-check"></i><b>7.1</b> The Cube Factory</a></li>
+<li class="chapter" data-level="7.2" data-path="the-principle-of-indifference.html"><a href="the-principle-of-indifference.html"><i class="fa fa-check"></i><b>7.2</b> The Principle of Indifference</a></li>
+<li class="chapter" data-level="7.3" data-path="how-widespread-is-the-problem.html"><a href="how-widespread-is-the-problem.html"><i class="fa fa-check"></i><b>7.3</b> How Widespread is the Problem?</a></li>
+<li class="chapter" data-level="7.4" data-path="the-laws-of-probability.html"><a href="the-laws-of-probability.html"><i class="fa fa-check"></i><b>7.4</b> The Laws of Probability</a></li>
+<li class="chapter" data-level="7.5" data-path="the-problem-of-priors.html"><a href="the-problem-of-priors.html"><i class="fa fa-check"></i><b>7.5</b> The Problem of Priors</a></li>
+<li class="chapter" data-level="7.6" data-path="grue-all-over-again.html"><a href="grue-all-over-again.html"><i class="fa fa-check"></i><b>7.6</b> Grue All Over Again</a></li>
+<li class="chapter" data-level="7.7" data-path="where-this-leaves-us.html"><a href="where-this-leaves-us.html"><i class="fa fa-check"></i><b>7.7</b> Where This Leaves Us</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="lindleys-paradox.html"><a href="lindleys-paradox.html"><i class="fa fa-check"></i><b>8</b> Lindley’s Paradox</a><ul>
+<li class="chapter" data-level="8.1" data-path="coincidence.html"><a href="coincidence.html"><i class="fa fa-check"></i><b>8.1</b> Coincidence</a></li>
+<li class="chapter" data-level="8.2" data-path="the-general-formula.html"><a href="the-general-formula.html"><i class="fa fa-check"></i><b>8.2</b> The General Formula</a></li>
+<li class="chapter" data-level="8.3" data-path="what-about-bayes.html"><a href="what-about-bayes.html"><i class="fa fa-check"></i><b>8.3</b> What About Bayes?</a></li>
+<li class="chapter" data-level="8.4" data-path="normal-approximations.html"><a href="normal-approximations.html"><i class="fa fa-check"></i><b>8.4</b> Normal Approximations</a></li>
+<li class="chapter" data-level="8.5" data-path="characterizing-a-bell-curve.html"><a href="characterizing-a-bell-curve.html"><i class="fa fa-check"></i><b>8.5</b> Characterizing a Bell Curve</a></li>
+<li class="chapter" data-level="8.6" data-path="the-68-95-99-rule.html"><a href="the-68-95-99-rule.html"><i class="fa fa-check"></i><b>8.6</b> The 68-95-99 Rule</a></li>
+<li class="chapter" data-level="8.7" data-path="another-example.html"><a href="another-example.html"><i class="fa fa-check"></i><b>8.7</b> Another Example</a></li>
+<li class="chapter" data-level="8.8" data-path="warning-danger-ahead.html"><a href="warning-danger-ahead.html"><i class="fa fa-check"></i><b>8.8</b> Warning: Danger Ahead</a></li>
+<li class="chapter" data-level="8.9" data-path="significance-subjectivity.html"><a href="significance-subjectivity.html"><i class="fa fa-check"></i><b>8.9</b> Significance &amp; Subjectivity</a></li>
+<li class="chapter" data-level="8.10" data-path="lindleys-paradox-1.html"><a href="lindleys-paradox-1.html"><i class="fa fa-check"></i><b>8.10</b> Lindley’s Paradox</a></li>
+<li class="chapter" data-level="8.11" data-path="a-bayesian-analysis.html"><a href="a-bayesian-analysis.html"><i class="fa fa-check"></i><b>8.11</b> A Bayesian Analysis</a></li>
+<li class="chapter" data-level="8.12" data-path="the-standoff.html"><a href="the-standoff.html"><i class="fa fa-check"></i><b>8.12</b> The Standoff</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="decisions-decisions.html"><a href="decisions-decisions.html"><i class="fa fa-check"></i><b>9</b> Decisions, Decisions</a><ul>
+<li class="chapter" data-level="9.1" data-path="goods-and-odds.html"><a href="goods-and-odds.html"><i class="fa fa-check"></i><b>9.1</b> Goods and Odds</a></li>
+<li class="chapter" data-level="9.2" data-path="the-long-run.html"><a href="the-long-run.html"><i class="fa fa-check"></i><b>9.2</b> The Long Run</a></li>
+<li class="chapter" data-level="9.3" data-path="the-emv-formula.html"><a href="the-emv-formula.html"><i class="fa fa-check"></i><b>9.3</b> The EMV Formula</a></li>
+<li class="chapter" data-level="9.4" data-path="utility.html"><a href="utility.html"><i class="fa fa-check"></i><b>9.4</b> Utility</a></li>
+<li class="chapter" data-level="9.5" data-path="quantifying-utility.html"><a href="quantifying-utility.html"><i class="fa fa-check"></i><b>9.5</b> Quantifying Utility</a></li>
+<li class="chapter" data-level="9.6" data-path="expected-utility.html"><a href="expected-utility.html"><i class="fa fa-check"></i><b>9.6</b> Expected Utility</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="the-st-petersburg-paradox.html"><a href="the-st-petersburg-paradox.html"><i class="fa fa-check"></i><b>10</b> The St. Petersburg Paradox</a><ul>
+<li class="chapter" data-level="10.1" data-path="bernoullis-solution.html"><a href="bernoullis-solution.html"><i class="fa fa-check"></i><b>10.1</b> Bernoulli’s Solution</a></li>
+<li class="chapter" data-level="10.2" data-path="st-petersburgs-revenge.html"><a href="st-petersburgs-revenge.html"><i class="fa fa-check"></i><b>10.2</b> St. Petersburg’s Revenge</a></li>
+<li class="chapter" data-level="10.3" data-path="god-comes-to-st-petersburg.html"><a href="god-comes-to-st-petersburg.html"><i class="fa fa-check"></i><b>10.3</b> God Comes to St. Petersburg</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="you-bet-your-afterlife.html"><a href="you-bet-your-afterlife.html"><i class="fa fa-check"></i><b>11</b> You Bet Your Afterlife</a><ul>
+<li class="chapter" data-level="11.1" data-path="pascals-wager.html"><a href="pascals-wager.html"><i class="fa fa-check"></i><b>11.1</b> Pascal’s Wager</a></li>
+<li class="chapter" data-level="11.2" data-path="infinite-arithmetic.html"><a href="infinite-arithmetic.html"><i class="fa fa-check"></i><b>11.2</b> Infinite Arithmetic</a></li>
+<li class="chapter" data-level="11.3" data-path="choosing-what-you-believe.html"><a href="choosing-what-you-believe.html"><i class="fa fa-check"></i><b>11.3</b> Choosing What You Believe</a></li>
+<li class="chapter" data-level="11.4" data-path="the-many-gods-problem.html"><a href="the-many-gods-problem.html"><i class="fa fa-check"></i><b>11.4</b> The Many Gods Problem</a></li>
+<li class="chapter" data-level="11.5" data-path="infinite-differences.html"><a href="infinite-differences.html"><i class="fa fa-check"></i><b>11.5</b> Infinite Differences</a></li>
+<li class="chapter" data-level="11.6" data-path="conclusion.html"><a href="conclusion.html"><i class="fa fa-check"></i><b>11.6</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="the-human-element.html"><a href="the-human-element.html"><i class="fa fa-check"></i><b>12</b> The Human Element</a><ul>
+<li class="chapter" data-level="12.1" data-path="the-allais-paradox.html"><a href="the-allais-paradox.html"><i class="fa fa-check"></i><b>12.1</b> The Allais Paradox</a></li>
+<li class="chapter" data-level="12.2" data-path="allais-eu-and-you.html"><a href="allais-eu-and-you.html"><i class="fa fa-check"></i><b>12.2</b> Allais, EU, and You</a></li>
+<li class="chapter" data-level="12.3" data-path="savages-response.html"><a href="savages-response.html"><i class="fa fa-check"></i><b>12.3</b> Savage’s Response</a></li>
+<li class="chapter" data-level="12.4" data-path="dr-savages-prescription.html"><a href="dr-savages-prescription.html"><i class="fa fa-check"></i><b>12.4</b> Dr. Savage’s Prescription</a></li>
+<li class="chapter" data-level="12.5" data-path="the-ellsberg-paradox.html"><a href="the-ellsberg-paradox.html"><i class="fa fa-check"></i><b>12.5</b> The Ellsberg Paradox</a></li>
+<li class="chapter" data-level="12.6" data-path="ellsberg-allais.html"><a href="ellsberg-allais.html"><i class="fa fa-check"></i><b>12.6</b> Ellsberg &amp; Allais</a></li>
+<li class="chapter" data-level="12.7" data-path="conclusion-1.html"><a href="conclusion-1.html"><i class="fa fa-check"></i><b>12.7</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="a-missing-ingredient.html"><a href="a-missing-ingredient.html"><i class="fa fa-check"></i><b>13</b> A Missing Ingredient?</a><ul>
+<li class="chapter" data-level="13.1" data-path="the-self-torturer.html"><a href="the-self-torturer.html"><i class="fa fa-check"></i><b>13.1</b> The Self-Torturer</a></li>
+<li class="chapter" data-level="13.2" data-path="the-ice-cream-conundrum.html"><a href="the-ice-cream-conundrum.html"><i class="fa fa-check"></i><b>13.2</b> The Ice Cream Conundrum</a></li>
+<li class="chapter" data-level="13.3" data-path="the-moral-1.html"><a href="the-moral-1.html"><i class="fa fa-check"></i><b>13.3</b> The Moral</a></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="the-lottery-paradox.html"><a href="the-lottery-paradox.html"><i class="fa fa-check"></i><b>14</b> The Lottery Paradox</a><ul>
+<li class="chapter" data-level="14.1" data-path="three-principles.html"><a href="three-principles.html"><i class="fa fa-check"></i><b>14.1</b> Three Principles</a></li>
+<li class="chapter" data-level="14.2" data-path="a-practical-dimension.html"><a href="a-practical-dimension.html"><i class="fa fa-check"></i><b>14.2</b> A Practical Dimension?</a></li>
+<li class="chapter" data-level="14.3" data-path="conjunctivitis.html"><a href="conjunctivitis.html"><i class="fa fa-check"></i><b>14.3</b> Conjunctivitis</a></li>
+<li class="chapter" data-level="14.4" data-path="jeffreys-solution.html"><a href="jeffreys-solution.html"><i class="fa fa-check"></i><b>14.4</b> Jeffrey’s Solution</a></li>
+<li class="chapter" data-level="14.5" data-path="nelkins-solution.html"><a href="nelkins-solution.html"><i class="fa fa-check"></i><b>14.5</b> Nelkin’s Solution</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Probability Through Paradox</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+$$\newcommand{\given}{\,|\,}$$
+$$\renewcommand{\neg}{\mathbin{\sim}}$$
+<div id="jeffreys-solution" class="section level2">
+<h2><span class="header-section-number">14.4</span> Jeffrey’s Solution</h2>
+<p>In the 1960s and ’70s, Richard Jeffrey embraced this line of thinking and followed all the way it to its logical conclusion. The whole idea of belief <em>is</em> pointless, he thought, at least the way it’s traditionally conceived. Probability really is the ultimate arbiter of what to think and do, so that must be all there is to belief.</p>
+<p>We may be used to thinking and talking about beliefs in on/off terms. But really, belief comes in degrees. We might say that you believe <span class="math inline">\(2+2 = 4\)</span>, and that Bill Gates is the richest person alive. But one of these beliefs is much stronger than the other. You are more confident that <span class="math inline">\(2+2=4\)</span> than that Bill Gates is the richest living person.</p>
+<p>So we should replace the concept of “belief” with “degrees of belief”. The idea that belief is a discrete, yes/no thing is just a naive bit of outmoded psychology, Jeffrey said. Instead, belief comes on a continuum from no belief at all (0) to perfect certainty (1).</p>
+<p>The fundamental requirement of consistent belief isn’t avoiding contradictions, on this view. It’s having degrees of belief that obey the laws of probability. If you’re 70% confident it will rain today, you should be 30% confident it won’t.</p>
+<p>And in the lottery paradox, your degrees of belief do obey the laws of probability. You are 99% certain that ticket #1 will lose, and likewise for ticket #2, or any other ticket. And this is perfectly consistent with the laws of probability. After all, if we repeated this lottery over and over again every day for many years, each ticket would lose 99% of the time.</p>
+<p>A concern for Jeffrey’s view is whether it is psychologically realistic. Is it really true that humans never take a conclusion as a flat given. Are we really always hedging under the hood, working with the high probability that something is true rather than just the flat assumption that it is true?</p>
+<p>For my part, I’m skeptical. It’s not just that it doesn’t <em>feel</em> like I’m working probabilistically when I look up and see that the sun is out. Introspection about the workings of the mind is a notoriously unreliable way of doing serious psychology, after all.</p>
+<p>It’s also that I see disproof of Jeffrey’s view of belief when I look at the models psychologists have actually developed of human reasoning. These models often seem to include reasoning process based on yes/no assumptions, in addition to graded judgments or probabilities.</p>
+<p>But this is a live controversy, and the psychology of human reasoning is still in its early stages. So, skeptical as I am, I think it’s still too early to say categorically that Jeffrey was wrong. (An irony I suspect he would have appreciated.)</p>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="conjunctivitis.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="nelkins-solution.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "night",
+"family": "serif",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+<!-- </html> -->
