@@ -1,10 +1,14 @@
 # The Lottery Paradox
 
-Oliver: hats
+In [a recent segment on climate change](https://www.youtube.com/watch?v=UkBvsCMxrNU), John Oliver mocked people who debate the existence of climate change,  comparing it to questions like *Do owls exist?*, or *Are there hats?*.
 
-How certain does something have to be for you to believe it, 90%? Maybe 95%, or even 99%?
+Citing the "mountain of research" proving the existence of climate change, he quipped: "The debate on climate change should not be whether it exists," he said, "it's what we should do about it."
 
-Let's play it safe: suppose the threshold is 99%. Now consider this scenario:
+Sometimes, the answer to a question becomes so clear, that we stop considering it. We accept the established answer as correct and proceed accordingly.
+
+But how certain does something have to be before we accept it as the correct answer? Is 90% certainty enough? Or should we put the cutoff at 95%, or maybe even 99%?
+
+Suppose we play it safe, setting the threshold at 99%. And consider this scenario:
 
 > You hold one of a hundred lottery tickets. A single winner will be selected at random. Since your ticket's chance of winning is 99%, you conclude it will lose. The other tickets have the same chance though, so you conclude they will lose too. But that means no ticket will win, which you know is not the case.
 
@@ -33,33 +37,33 @@ The Conjunction Principle
 
 In the lottery paradox this leads you to conclude that both tickets #1 and #2 will lose, and #3, and so on up through ticket #100. In other words, all the tickets will lose, even though one must win.
 
-Here we meet our last principle, which forbids believing anything that is outright contradictory:
+Here we meet our last principle, which forbids believing anything outright contradictory:
 
 No Contradictions
 
 :    It is never rational to believe an outright contradiction, a statement of the form $A \,\&\, \neg A$.
 
-Yet this is precisely where the Threshold and Conjunction Principles have taken us, to the belief that no ticket will win and yet one will.
+Yet this is precisely where the Threshold and Conjunction Principles have taken us: to the belief that no ticket will win and yet one will.
 
 
 ## A Practical Dimension?
 
-Shouldn't the certainty needed for belief depend on the context? The more is at stake, the more confidence we'll demand before accepting a conclusion.
+Shouldn't the certainty needed for belief depend on the context, though? The more is at stake, the more confidence we'll demand before accepting a conclusion.
 
 Yet the Threshold Principle makes no mention of a contextual element. There's no allowance that $t$ might vary depending on what's at stake. Could that be what's missing from our analysis?
 
-No, as we can see a few different ways. One is to imagine the lottery having extremely low stakes. Maybe the prize is a paltry $1. Or maybe you don't hold one of the tickets yourself, you're just idly speculating about a lottery others are participating in.
+No, and we can see this a few different ways. One is to imagine the lottery having extremely low stakes. Maybe the prize is a paltry $1. Or maybe you don't hold one of the tickets yourself, you're just idly speculating about a lottery others are participating in.
 
-There may well be a pragmatic element to acceptance. But this doesn't help us solve the lottery paradox. Wherever the context fixes the threshold, a large enough lottery will put each ticket's chances of losing above that contextually determined threshold.
+There may well be a pragmatic element to acceptance. But this doesn't help us solve the lottery paradox. Wherever the context fixes the threshold, a large enough lottery will then put each ticket's chances of losing above that (contextually determined) threshold.
 
 
 ## Conjunctivitis
 
 Henry Kyburg, who made the lottery paradox famous in the 1960s, blamed the Conjunction Principle.
 
-You should believe of each individual ticket that it will lose, said Kyburg. But you can't conclude further that they'll *all* lose, considered as a unit. Although the Conjunction Principle may seem tempting, the lottery example shows it to be pathological---the temptation to embrace it is an illness we must combat, "conjunctivitis".
+You should believe of each ticket individually that it will lose, said Kyburg. But you can't conclude from there that they'll *all* lose. Although the Conjunction Principle may seem tempting, the lottery example shows it to be pathological---the temptation to embrace it is an illness we must combat, "conjunctivitis".
 
-One thing to consider about Kyburg's solution is that, even without the Conjunction Principle, your beliefs are still inconsistent as a collection. There's no one contradictory thing you believe. But your world-view, taken as a whole, is impossible. It just can't be that each individual ticket loses and yet one wins. Is this something we just have to live with? We'll come back to this in the next chapter, when we meet the preface paradox.
+One thing to consider about Kyburg's solution is that, even without the Conjunction Principle, your beliefs are still inconsistent as a collection. There's no one contradictory thing you believe. But your world-view, taken as a whole, is impossible. It just can't be that each individual ticket loses and yet one wins. Is this something we just have to live with? (We'll come back to this in the next chapter, when we meet the preface paradox.)
 
 A second worry about Kyburg's solution is that it puts the concept of belief in peril. What's the point of believing something if you can't count on it in logical reasoning?
 
@@ -67,7 +71,7 @@ Surely it's okay to combine your beliefs *sometimes*, like when you conclude tha
 
 The obvious answer is: it's okay when the combined belief is still highly probable. But if probability is the ultimate decider in what to believe, then what's the point of believing? What you believe doesn't inform what other beliefs you'll adopt; that all depends on probabilities. And your decisions about what to *do* will also be determined by the probabilities, via the expected utility rule.
 
-But if accepting something as true doesn't affect what else you accept, or what you choose to do, what effects *does* it have? What role does belief play in our mental lives, if not to guide our reasoning about what to think and do?
+If accepting something as true doesn't affect what else you accept, or what you choose to do, what effects *does* it have? What role does belief play in our mental lives, if not to guide our reasoning about what to think and do?
 
 
 ## Degrees of Belief
@@ -82,7 +86,7 @@ The fundamental requirement of consistent belief isn't avoiding contradictions, 
 
 And in the lottery paradox, your degrees of belief do obey the laws of probability. You are 99% certain that ticket #1 will lose, and likewise for ticket #2, or any other ticket. And this is perfectly consistent with the laws of probability. After all, if we repeated this lottery over and over again every day for many years, each ticket would lose 99% of the time.
 
-A concern for Jeffrey's view is whether it is psychologically realistic. Is it really true that humans never take a conclusion as given? Are we really always hedging under the hood, working with the high probability that something is true rather than just the flat assumption that it is true?
+A concern for Jeffrey's view is whether it is psychologically realistic. Is it really true that humans never take a conclusion as given? Are we really always hedging under the hood, working with the high probability that something is true, rather than just the flat assumption that it is true?
 
 For my part, I'm skeptical. It's not just that it doesn't *feel* like I'm working probabilistically when I look up and see that the sun is out. Introspection about the workings of the mind is a notoriously unreliable way of doing serious psychology, after all.
 
@@ -97,7 +101,7 @@ A different angle on the lottery paradox challenges The Threshold Principle inst
 
 What other factors? We can't review all the proposals out there, but here is one representative, due to Dana Nelkin.
 
-Nelkin points out that your basis for thinking your lottery ticket will lose is purely statistical. And this sets it apart from mundane cases where belief is reasonable.
+Nelkin points out that your basis for thinking your lottery ticket will lose is purely statistical. All you know is that the ticket has a 99% chance of losing. And this sets it apart from mundane cases where belief is reasonable.
 
 If you see a car accident while walking to work, your belief that there was an accident is based on direct, visual observation. Or, if a friend tells you they saw an accident, your belief is based on testimony.
 
@@ -105,13 +109,13 @@ Beliefs based on direct observation, or testimony, or other legitimate grounds, 
 
 But in the lottery paradox, your belief that (say) ticket #42 will lose isn't caused or explained by that ticket losing. The drawing may not even have happened yet (and future events can't cause past events!). So, Nelkin says, you should believe ticket #42 will lose, even though it's highly probable.
 
-The problem now is that some beliefs about future events *are* reasonable. Suppose I turn my stove on and go watch TV while I wait for it to heat up. I expect my stove to be hot in five minutes' time, but that future event doesn't cause or explain why I believe it will happen. Rather, a common cause explains both my belief and the future hotness: me turning the stove on.
+The problem now is that some beliefs about future events *are* reasonable. Suppose I turn my stove on and go watch TV while I wait for it to heat up. I expect my stove to be hot in five minutes' time, but that future event doesn't cause or explain why I believe it will happen. Rather, a common cause---me turning the stove on---explains both my belief, and the future hotness.
 
-So too in the lottery paradox, the arrangements made at the lottery commission's office are a common cause. Those arrangements explain why I believe ticket #42 will lose. And when that ticket does lose, those same arrangements explain why it did (it was just one of a hundred, so it was extremely likely to do so).
+Likewise, in the lottery paradox, the arrangements made at the lottery commission's office are a common cause. Those arrangements explain why I believe ticket #42 will lose. And when that ticket does lose, those same arrangements explain why it did (it was just one of a hundred, so it was extremely likely to do so).
 
 Still, many philosophers have held on to the idea that there's something distinctive about "purely statistical" evidence. It may be hard to say what separates the high probability in the lottery paradox from more mundane grounds for a belief, like observation and testimony. But there does seem to be something odd about believing that a given lottery ticket will lose.
 
-One way to get at this oddity is to consider what you would say after the drawing, where ticket #67 is selected as the winner. If someone claimed to know all along that ticket #42 would lose, you might retort that they couldn't have known that. "You had identical reasons for thinking ticket #67 would lose," you might say, "and yet it won."
+One way to get at this oddity is to consider what you would say after the drawing, where let's suppose ticket #67 is selected as the winner. If someone claimed to know all along that ticket #42 would lose, you might retort that they couldn't have known that. "You had identical reasons for thinking ticket #67 would lose," you might say, "and yet it won."
 
 For whatever reason, it seems you can't know ticket #42 will lose, even if you end up being right that it does. And this seems to speak against believing it'll lose. Perhaps because to believe something just is to take yourself to know it, as some philosophers have held.
 
