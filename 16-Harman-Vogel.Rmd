@@ -1,0 +1,132 @@
+# The Harman-Vogel Paradox
+
+Our next puzzle is usually put in terms of what we *know*, as opposed to what to believe. But it's a direct follow on to the lottery paradox.
+
+
+## Dude, Where's Your Car?
+
+Consider this story:
+
+> Anika parks her car in Lot 8 and goes to class. "Where's your car?", asks her friend. "Lot 8," Anika replies.
+>
+> Unfortunately Anika's friend has been reading about the lottery paradox: "How do you know it hasn't been stolen and moved? Cars are stolen in this town every day. Maybe you're a 'winner' in today's Car Theft Lottery."
+>
+> Anika rolls her eyes. "Don't get clever", she says, "of course I can't know about that. I just know where I parked it."
+
+At first it seems entirely natural to say that Anika knows where her car is. But then, contemplating the "lottery-esque" nature of car theft, it also becomes natural to say she can't know whether her car has been stolen. Yet these two things are in direct tension: if her car is still in Lot 8, it can't have been stolen and moved.
+
+To make the tension explicit, consider this plausible-seeming, general principle about knowledge and logic:
+
+Single Premise Closure
+
+:    If you know $P$, and you deduce $Q$ from $P$, then you know $Q$.
+
+The basic idea is that logical reasoning is a way to extend your knowledge. If something follows from the knowledge you already have, and you realize that it follows, then you know that further thing too.
+
+The puzzle is that Anika can't extend her knowledge in this way. She can't say, "well my car is in Lot 8, like I said, so it can't have been stolen and moved." That would be perverse!
+
+And yet, that's what the Single Premise Closure Principle seems to license.
+
+
+## Key Ingredients
+
+The puzzle trades on two key ingredients.
+
+The first is the unknowability of what we might call "lottery propositions". We noted that it seems weird to claim you knew ticket #42 would lose, even when it actually does lose. Because you had the same reasons to think #67 would lose, and it actually won.
+
+But lots of situations have a similar feel, even though they're not about actual lotteries. Anika can't know that her car isn't one of the ones to be stolen today. Because even if it doesn't get stolen, her reasons for thinking it wouldn't would have applied just as well to one of the cars that did.
+
+And these "lottery-esque" situations are everywhere. Will you be living in the same city next year? Maybe not: you might 'win' the Great Heart Attack Lottery. Will you have the same, modest bank balance you presently do a year from now? Maybe not: you might win the *actual* lottery.
+
+The second ingredient is the idea that logic is a way to extend your knowledge, captured in the Single Premise Closure principle. This idea is similar to one we touched on with the lottery and the preface paradoxes. But there are two important differences.
+
+Most importantly, we're talking about reasoning based on a *single* assumption now. The Conjunction Principle entitled you to collect together many assumptions, letting the risks of error pile up. But there's no "accrual of risk" in the kind of logical reasoning we're examining here. There is very little risk that Anika is wrong about her car being in Lot 8, and it follows from that assumption alone that it hasn't been stolen and moved elsewhere.
+
+A second difference is that we're talking about knowledge now, instead of (rational) belief. It's natural to say, at least at first, that Anika *knows* where her car is parked. And even though there's no added risk in concluding that her car hasn't been stolen, she can't do basic logical reasoning using that knowledge?! What gives??
+
+
+
+## The Skeptical Threat
+
+Notice how Anika's story ends: she concedes that she only knows where she parked her car. And there's something natural about that concession. So maybe she never knew it was in Lot 8 in the first place?
+
+That's a dangerous road to go down. Lottery-esque propositions are ubiquitous, we noted. So Anika's predicament is widespread. If we go this way then, we'll have to admit we don't know most of the things we take ourselves to know.
+
+You don't know whether you'll be rich or poor next year. You don't even know whether you'll be alive! At most, you know whether these things are *probable*. But we don't know whether they are *true*.
+
+Lovers of probability might delight in this result. But it goes pretty hard against both common sense, and common discourse. Is the most we can know really that something is more or less probable? If so, a lot of the way we think and talk is off the mark, even though it seems entirely reasonable.
+
+Let's try to avoid doing so much violence to common sense, if we can.
+
+
+## Probability & Intransitivity
+
+Here's a curious fact about probability: it doesn't travel well. Sometimes probabilistic support doesn't carry over from one thing to another.
+
+More exactly: sometimes $A$ makes $B$ probable, and $B$ makes $C$ probable, but $A$ doesn't make $C$ probable.
+
+Here's a simple example. Most Canadians live in North America, and most North American residents live in the U.S. But most Canadians do **not** live in the U.S. They almost all live in Canada!
+
+So if I told you that Anika is a Canadian citizen, you'd be right think she probably lives in North American. And if I had told you instead only that she lives in North America, you'd have been right to think she probably lives in the U.S. But from the information that she lives in Canada, you had better not get to thinking she lives in the U.S.
+
+In fact, things can even get a bit weirder. Sometimes $A$ increases the probability of $B$, and $B$ *logically entails* $C$, yet $A$ is irrelevant to $C$.
+
+For example, suppose I draw a random card from a normal deck. If it's an ace, that makes it more likely to be the ace of spades (up from $1/52$ to $1/4$). And if it's the ace of spades then it *must* be a spade. But the fact it's an ace has no bearing on whether it's a spade. That probably stays fixed at $1/4$.
+
+
+## Transitivity & Intransitivity
+
+Some relations are *transitive*, some are not. If $a$ is taller than $b$, and $b$ is taller than $c$, then $a$ is taller than $c$. But if $a$ is nice to $b$, and $b$ is nice to $c$, that doesn't necessarily mean (sadly) that $a$ is nice to $c$.
+
+Famously, reasoning involving certainties is transitive. Or, as logicians would say, the  relation of logical entailment is transitive. If $A$ entails $B$ and $B$ entails $C$, then $A$ entails $C$.
+
+But, as we've just seen, the uncertain counterpart to this relation is not transitive. The 'makes probable' relation isn't transitive (think: Canadian citizens living in North America). And even when $A$ makes $B$ probable *and $B$ makes $C$ perfectly certain*, that still doesn't necessarily mean $A$ makes $C$ probable (think: aces and spades).
+
+This is one way in which probabilistic reasoning is fundamentally different from logical ("deductive") reasoning. And it generates curious cases like Anika's.
+
+
+## Anika & Intransitivity
+
+Let's put Anika's situation in the $A$-$B$-$C$ format:
+
+- $A$ = I remember parking in Lot 8.
+- $B$ = My car is now in Lot 8.
+- $C$ = My car hasn't been stolen and moved somewhere else.
+
+$A$ makes $B$ probable because (let's assume) Anika's memory is usually reliable. And because cars usually stay where we park them. They don't *always* stay put, sadly. Which is why this is a case of reasoning with uncertainties. But the uncertainty is mild, because usually they do stay put.
+
+$B$ entails $C$ because it's *impossible* that the car has been stolen and moved elsewhere if it's in Lot 8. That's what "elsewhere" means: anywhere but Lot 8.
+
+Now the last bit: why does $A$ have no bearing on $C$? Think about it this way. Imagine Anika is one of the unlucky winners of today's Great Car Theft Lottery.  Would she still remember parking her car in Lot 8? Yes, she would. Whether her car has been stolen or not, she will remember the same thing: parking in Lot 8. So that memory doesn't discriminate between the possible cases where her car is stolen vs. not-stolen.
+
+
+## A Solution?
+
+How does this help us solve our puzzle? It seems to tell us Single Premise Closure is false. Whether you can deduce $Q$ from $P$ depends on how you know $P$ in the first place.
+
+If your knowledge of $P$ is based on something that also supports $Q$, then go ahead: deduce $Q$ from $P$. If you know the ice cream is vanilla based on tasting it, then you can deduce it's not chocolate. The flavour you tasted supports both that it is vanilla ($P$) and that it is not chocolate ($Q$).
+
+But if the basis for your knowledge of $P$ has no bearing on $Q$, then inferring $Q$ from $P$ would be bad form. You don't want to go around basing beliefs on things that aren't relevant to them.
+
+
+## More Intransitivity
+
+The intransitivity of probability may also help us understand other paradoxes we've been looking at, like the preface paradox.
+
+There, the research you did for your book makes each statement in the book probable. And those statements all together entail that the book has no errors. But your research doesn't support this "no-errors" conclusion. Even with all the research you did (and the double-checking of your peers), some errors are inevitable.
+
+The structure is a bit different from Anika's case, though. The preface paradox illustrates a failure of *collective transitivity*:
+
+- $A$ makes $B_1$ probable, and $B_2$ probable, ..., and $B_n$ probable.
+- $B_1$--$B_n$ together entail $C$.
+- But $A$ doesn't make $C$ probable.
+
+In terms of a diagram, the preface paradox looks like this:
+
+![](img/Intransitive-Preface.png)
+
+Whereas Anika's case looks like this:
+
+![](img/Intransitive-Harman-Vogel.png)
+
+There are still more forms of (in)transitivity, and we'll encounter one soon. But first let's try our hand at another paradox using what we've already learned.
