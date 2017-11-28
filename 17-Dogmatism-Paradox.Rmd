@@ -1,0 +1,108 @@
+# Dogmatism & Bootstrapping
+
+Here's one more puzzle about deploying your existing knowledge.
+
+> Oliver wants to know whether Manchester United won last night's match. So he goes to *The Guardian* website and sees that they did. Oliver now knows Manchester won.
+>
+> He then reasons that any evidence he might encounter to the contrary must be misleading. For example, if *The Standard* reports they lost, it must be an error since Manchester won.
+>
+> Later that day Oliver happens to be reading an article on *The Standard* website, when he notices the latest sports courses listed in the margin. Sure enough, *The Standard* reports a loss for Manchester. Oliver concludes they made a mistake.
+
+Something seems very wrong with Oliver's reasoning. Imagine he had visited to *The Standard* website first instead: then he would have dismissed *The Guardian*'s report that Manchester won, on the grounds that they lost (as he first read in *The Standard*.)
+
+But shouldn't the order be irrelevant? At the end of the day, he has two contrary reports from reliable sources. So he should be undecided about who won. He should suspend judgment until he can figure out which source made a mistake.
+
+
+## Single Premise Closure Again
+
+This puzzle shares a key ingredient of the Harman-Vogel puzzle: the idea that reasoning logically from something you know is a way to gain further knowledge.
+
+Oliver knows Manchester won. He deduces from there that any evidence to the contrary is misleading, thus *The Standard*'s report to the contrary must be misleading.
+
+This conclusion seems too strong, though. It seems to entitle him to ignore *The Standard*'s report, which seems just bull headed. (Hence the name "dogmatism paradox".)
+
+And yet, this seems to be what's licensed by the Single Premise Closure principle from the previous chapter. If you know something, can't you also know the things that follow directly from it?
+
+
+## Intransitivity Again
+
+The Dogmatism Puzzle has an intransitive structure, much like the Harman-Vogel paradox.
+
+The report in *The Guardian* makes it highly likely Manchester won. *The Guardian* is a highly reliable source after all, at least about mundane stuff like sports scores. To fix ideas, let's suppose Manchester's chances were 50% to start with, and *The Guardian*'s report then makes it almost certain they won: 99%.
+
+Now, if Manchester won, then *The Standard* must be mistaken when they report a loss instead. That's just elementary logic.
+
+But the report in *The Guardian* doesn't make it very likely *The Standard* is mistaken. In fact, the probability is just 50% if we assume the two papers are equally reliable.
+
+So we have another case where $A$ makes $B$ likely, and $B$ makes $C$ certain, yet $A$ doesn't make $C$ likely. In terms of a diagram:
+
+![](img/Intransitive-Dogmatism.png)
+
+Which looks a lot like the diagram we had in the case of Anika:
+
+![](img/Intransitive-Harman-Vogel.png)
+
+
+## The Bootstrapping Puzzle
+
+Our last puzzle in this neighbourhood has a somewhat different structure:
+
+> Suppose you know *The New York Times* to be a reliable source, albeit an imperfect one. One morning you go to their website and read their first headline, which reports some fact $P$. You thereby come to know $P$.
+>
+> You then think to yourself, "*The Times* reported $P$, and $P$ is true. So they got that one right."
+>
+> You then repeat the same reasoning for the next statement $Q$, and the next statement $R$, and so on. You conclude that they're on a roll today---*The Times* may even be a more reliable source than you thought. So far today, everything they've reported has been true!
+
+Once again, the reasoning here looks pretty dubious. Your only reason for believing $P$ (and $Q$, and $R$) is that's what *The Times* reports. How can you assess *The Times*' credibility by using them as the corroborating source??
+
+And yet, each step in your reasoning here seems legitimate, considered in isolation.
+
+If a newspaper is reliable, it's legitimate to believe what it says. So your belief in $P$ is perfectly reasonable.
+
+Further, it's obvious where you got this information. You can plainly see you're reading *The Times*. So your belief that *The Times* reported $P$ is reasonable too.
+
+So you've established a positive instance of *The Times*'s reliability, an instance where what they said is true. They reported $P$, and indeed $P$ is true. And you establish another such instance with $Q$, and another still with $R$.
+
+That's only three positive instances, of course, which is a very small sample. So you can only increase your trust in *The Times* by a teeny, tiny bit.
+
+But any positive increase at all in your trust feels wrong. You've done nothing to independently verify these reports!
+
+
+## Circularity to the Rescue?
+
+It's tempting to diagnose the problem in terms of circularity. For example, we might say that the problem is an illegitimate use of "rule circular" reasoning:
+
+Rule Circularity
+
+:    A piece of reasoning is *rule circular* if it relies on a given rule in the process of assessing that very rule's reliability.
+
+In our example, the rule woud be: *believe what the Times reports*.
+
+The problem is that rule circular is actually perfectly fine sometimes! Suppose you test how reliable your memory is by playing a round of the card game *Memory*. At the end of the game, you can rely on your memory of your performance to evaluate your memory's accuracy.
+
+Or take this example: suppose *The Times* reports on three independent studies conducted by universities around the world. All three studies found *The Times* more reliable than people think. If you read about these studies in *The Times*, it's still right to boost your view of their reliability on that basis.
+
+Sure, they *might* be lying, or maybe just exaggerating these studies' findings. But they usually report pretty objectively. And they'd get called out pretty quickly if they fabricated or exaggerated studies of their own reliability, damaging their own reputation. So there's a good chance the report is accurate, and they really are more reliable than you previously thought.
+
+
+## Intransitivity *Again*
+
+So what's the right diagnosis? We have another transitivity failure.
+
+The fact that *The Times* reports $P$ supports $P$, because they're generally reliable. And the fact that *The Times* reports $P$ and $P$ is true, supports their reliability, at least a teeny tiny bit, because it's a positive data point. But *The Times* reporting $P$ says nothing about their reliability.
+
+The structure here is a little bit different than before, though.
+
+For one thing, all steps in the reasoning are probabilistic. There are no deductive inferences, no certainties.
+
+But more interestingly, the steps are *cumulative*. The assumption $P$ has to be combined with the premise it was based on, that *The Times* reported $P$, in order to boost our trust in the *The Times*.
+
+![](img/Intransitive-Bootstrapping.png)
+
+In $A$-$B$-$C$ terms, this is a failure of *cumulative transitivity*.
+
+- $A$ supports $B$.
+- $A$ and $B$ **together** support $C$.
+- But $A$ by itself does not support $C$.
+
+But this wrinkle notwithstanding, the basic lesson is much the same as before. What you can infer from on an established conclusion depends on the basis of that conclusion in the first place.

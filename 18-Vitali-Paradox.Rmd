@@ -1,0 +1,114 @@
+# The Vitali Paradox
+
+
+Now for something completely different.
+
+Are there some questions where probability just doesn't apply? Are there some things where there just can't be any fact of the matter what the chances are?
+
+Yes. And we're going to describe one in this chapter.
+
+It's not that the probability is zero in these cases, mind you. It's that *there is no fact of the matter what the chances are*. The question, "what is the chance of $X$?" just has no answer. It *can't* have an answer, even for God.
+
+This chapter involves more mathematical nitpickery than previous ones, by the way. But you don't need any advanced math background. And the basic ideas can be grasped even without mastering all the gory details. So if the details are putting you to sleep, go ahead and gloss over to get the big picture.
+
+
+## Background
+
+Let's recall some basic concepts and symbols:
+
+The symbol $\mathbb{Q}$ represents the set of all *rational numbers*, i.e. ratios of whole numbers. (The $\mathbb{Q}$ is for "quotient".) These numbers can all be written in the form $m/n$, where $m$ and $n$ are whole numbers, and $n \neq 0$.
+
+Examples include $1/2$, $-35/7$, and $8/9$, and plenty more. Infinitely more, in fact.
+
+The symbol $\mathbb{R}$ stands for the set of *real numbers*. These include the rational numbers $\mathbb{Q}$, but also the numbers that can't be expressed as a ratio. Examples of these "irrational" numbers are $\pi$, $\sqrt{2}$, and $\pi - 3$.
+
+We're going to be focused just on numbers from $0$ to $1$, however. And we'll write $[0,1]$ for the set of real numbers in this range: $0 \leq x \leq 1$. This is called *the unit interval*.
+
+
+## First Steps
+
+Let's start by separating the numbers in $[0,1]$ into distinct subgroups. Specifically, we'll put two numbers in the same subgroup if the distance between them is a rational number.
+
+Definition
+
+:    If $(x - y) \in \mathbb{Q}$ then we write $x \sim y$.
+
+So, for example, since $3/4 - 1/2 = 1/4$ and $1/4$ is a rational number, $3/4 \sim 1/2$.
+
+For another example, consider the decimal part of $\pi$, namely $\pi - 3 = 0.14159\ldots$. Compare that with $\pi - 31/10 = 0.04159\ldots$. These two numbers are separated by $1/10$, a rational number. So $(\pi - 3) \sim (\pi - 31/10)$.
+
+Now here's an important fact about this relation $\sim$ we've created:
+
+Fact 1
+
+:    The relation $\sim$ is transitive: if $x \sim y$ and $y \sim z$, then $x \sim z$.
+
+Why? Well suppose $x \sim y$ and $y \sim z$. Then $x - y = r \in \mathbb{Q}$, and $y - z = s \in \mathbb{Q}$. So $z = y - s$. So $x - z = x - y - s = r - s$.
+And $r - s$ is rational (it's a difference of rational numbers). So $x \sim z$.
+
+Now let's use this $\sim$ relation to make our divvying up of $[0,1]$ official. We put two numbers $x$ and $y$ from $[0,1]$ in the same subset $S_x$ just in case $x \sim y$.
+
+Here's another important fact, about the resulting subsets $S_x$:
+
+Fact 2
+
+:    The resulting subsets $S_x$ form a *partition* of the unit interval. That is, every element of $[0,1]$ falls into one, and only one, subset $S_x$.
+
+Why? Well suppose $z$ is included in $S_x$ and in $S_y$. Then we have $z \sim x$ and $z \sim y$. So $x \sim y$, by transitivity (Fact 1). So really, $z$ is in just one of our subsets, since $S_x$ and $S_y$ are really the same set.
+
+
+## The Vitali Set
+
+Now we come to the set we're really interested in: the Vitali set, $V$.
+
+$V$ is composed by selecting one element from each subset $S_x$. So we take just one element of $S_x$, one element of $S_y$, etc. And we put all these elements together in a single set $V$.
+
+Definition
+
+:   The *Vitali set*, $V$, contains one and only one element from each $S_x$.
+
+Which element should we choose from each $S_x$? It doesn't matter. Just choose an arbitrary element from each. (For the math geeks: we've just used the notorious [Axiom of Choice](https://en.wikipedia.org/wiki/Axiom_of_choice).)
+
+
+## Rotations
+
+Now imagine the elements in the Vitali set as points scattered around the unit circle.
+
+We can rotate this set of points around the circle "rigidly". That is, we can move each point around the circle clockwise by the same distance $d$. The result will be a new subset of $[0,1]$, which we'll call $V \oplus d$.
+
+Notice, the distances between the points stay fixed when we do these rotations.
+So the rotated set has the same "shape" as the original.
+
+We're going to focus just on the "rational rotations": rotations $V \oplus r$ where $r$ is a rational number.
+
+Fact 3
+
+:   Rational rotations of $V$ do not overlap.
+
+Why not? Well suppose $V \oplus r$ and $V \oplus s$ had some element $y$ in common. Because $y \in (V \oplus r)$, we have $x \sim y$ for some $x \in V$. And because $y \in (V \oplus s)$, we have $y \sim z$ for some $z \in V$. But then $x \sim z$, contradicting the fact that $V$ contains just one element from each $S_x$.
+
+One last fact to establish:
+
+Fact 4
+
+:    The rational rotations of $V$ cover the unit interval. In other words, every point of $[0,1]$ falls in some rational rotation or other.
+
+Why? Well, every point $y$ of $[0,1]$ was in one of our original subsets $S_x$. So if $y$ wasn't selected to go into $V$, then $x \sim y$ for some $x$ that was put into $V$. So $y$ is a rational distance from some $x \in V$.
+
+Together Facts 3 and 4 tell us that the rational rotations of $V$ form a partition of the unit interval.
+
+
+## The Kicker
+
+Suppose you wake up in the middle of the night wondering what the time after the hour is---where the minute hand might be pointing.
+
+What is $Pr(V)$, the probability the minute hand is pointing to an element of $V$?
+
+Well it can't be $0$. Because if $Pr(V) = 0$, then $Pr(V \oplus r) = 0$ for every $r$. (Because $V$ and $V \oplus r$ always have the same "shape".)
+And by the law of Additivity, $\sum_r Pr(V \oplus r) = 1$.
+
+So it must be some positive number, right? Nope. If $Pr(V) = a > 0$, then $Pr([0,1]) = a + a + a + \ldots = \infty$, but it should be $1$!
+
+So there is no number $Pr(V)$! In fact, there's no number for any of its rotations either: $Pr(V \oplus r)$ is undefined.
+
+And yet, these possibilities are exhaustive. $V$ and its rotations cover all the points on the unit circle. So the minute hand must be pointing to one of them. But there's no fact of the matter how likely it is to be pointing to any one of them.
