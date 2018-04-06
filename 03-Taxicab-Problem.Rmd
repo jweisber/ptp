@@ -153,7 +153,7 @@ This question is from a paper Kahneman and Tversky published in 1983:
 
 Almost 85% of their subjects chose (2). But that can't be right, and you don't need to know anything about Linda to prove it.
 
-Imagine we gather a thousand random people in a big room. Some of them will be bank tellers; let's gather them in a circle at the center of the room. Some of the people in that bank teller circle will be feminists. But there can't be more feminist bank tellers in that circle than people in the circle So if you choose a random person, it's more likely they'll be a bank teller than both a bank teller *and* a feminist.
+Imagine we gather a thousand random people in a big room. Some of them will be bank tellers; let's gather them in a circle at the center of the room. Some of the people in that bank teller circle will be feminists. But there can't be more feminists in the bank teller circle than people in the circle! So if you choose a random person, it's more likely they'll be a bank teller than both a bank teller *and* a feminist.
 
 Even if we just consider people who meet the description of Linda, the same is true. Suppose we make sure the thousand people gathered in our big room all meet the description of Linda. Our central circle of bank tellers might have more feminists in it. But it still couldn't have more feminist bank tellers than bank tellers of any political stripe.
 
